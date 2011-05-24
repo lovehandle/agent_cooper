@@ -41,7 +41,7 @@ Response API allows one to utilize the pure goodness of Nokogiri:
 
 Specify a particular eBay locale (defaults to US):
 
-   AgentCooper::Shopper.new(:locale => :fr)
+    AgentCooper::Shopper.new(:locale => :fr)
 
 ----
 
