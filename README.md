@@ -11,13 +11,13 @@ Currently the following eBay APIs are supported:
 Usage
 -----
 Set up.
-    
+
     AgentCooper::Config.set do |config|
       config.app_id = "SOME_OBSCURE_APP_ID"
     end
 
 Initialize a request
-    
+
     request = AgentCooper::Finder.new
     request = AgentCooper::Shopper.new
     request = AgentCooper::Merchandiser.new
@@ -34,13 +34,13 @@ Get a response.
     response = request.get
 
 Return a hash:
-    
+
     response.to_hash
-   
+
     returns: {'getSearchKeywordsRecommendationResponse' => {'xmnls' => 'http://www.ebay.com/marketplace/search/v1/services', 'ack' => 'Success', 'version' => '1.9.0', 'keywords' => 'harry potter'}}
 
 
-Or parse the response with Nokogiri:    
+Or parse a response with Nokogiri:
 
     response.xml.css("Item > Title").each do |title|
       some business value
