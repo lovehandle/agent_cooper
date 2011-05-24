@@ -36,6 +36,10 @@ class Request
     @locale ||= :us
   end
 
+  def locale_code
+    LOCALE_CODES[locale]
+  end
+
   def get
     response = HTTParty.get(uri)
     Response.new(response)

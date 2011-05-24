@@ -6,16 +6,12 @@ module AgentCooper
     
     protected
 
-    def site_id
-      LOCALE_CODES[locale]
-    end
-
     def options
       {
         'APPID' => APP_ID,
         'RESPONSEENCODING' => ENCODING,
         'VERSION' => VERSION,
-        'SITEID' => site_id
+        'SITEID' => locale_code
       }.merge(parameters)
     end
 
