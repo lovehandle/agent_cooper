@@ -4,6 +4,8 @@ module AgentCooper
     HOST = 'http://svcs.ebay.com/services/search/FindingService/v1'
     VERSION = '1.9.0'
 
+    protected
+
     def options
       {
         'SECURITY-APPNAME' => APP_ID,
