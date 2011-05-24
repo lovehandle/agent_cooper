@@ -12,7 +12,9 @@ Usage
 -----
 Set up.
     
-    AgentCooper::Request::APP_ID = YOUR_APP_ID
+    AgentCooper::Config.set do |config|
+      config.app_id = "SOME_OBSCURE_APP_ID"
+    end
 
 Initialize a request
     
@@ -23,25 +25,28 @@ Initialize a request
 Build request params.
 
     request << {
-      'OPERATION-NAME' => 'findItemsByKeywords',
-      'keywords'       => 'harry potter'
+      'OPERATION-NAME' => 'getSearchKeywordsRecommendation',
+      'KEYWORDS'       => 'arry potter'
     }
 
 Get a response.
 
     response = request.get
 
-Response API allows one to utilize the pure goodness of Nokogiri:
+Return a hash:
+    
+    response.to_hash
+   
+    returns: {'getSearchKeywordsRecommendationResponse' => {'xmnls' => 'http://www.ebay.com/marketplace/search/v1/services', 'ack' => 'Success', 'version' => '1.9.0', 'keywords' => 'harry potter'}}
+
+
+Or parse the response with Nokogiri:    
 
     response.xml.css("Item > Title").each do |title|
       some business value
     end
 
     response.xml.xpath("//Item")
-
-Specify a particular eBay locale (defaults to US):
-
-    AgentCooper::Shopper.new(:locale => :fr)
 
 ----
 

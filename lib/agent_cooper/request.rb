@@ -1,47 +1,30 @@
 require 'httparty'
 
-class Request
-  ENCODING = 'XML'
-  LOCALE_CODES = {
-    :us => 0,
-    :fr => 71,
-    :es => 186,
-    :gb => 3,
-    :de => 77,
-    :nl => 146,
-    :it => 101,
-    :au => 15,
-    :ca => 2
-  }
+module AgentCooper
+  class Request
 
-  attr_accessor :locale
+    ENCODING = 'XML'
 
-  def initialize(args={})
-    args.each { |k, v| send("#{k}=", v) }
-  end
+    include HTTParty
+    format :xml
 
-  def parameters
-    @parameters ||= {}
-  end
+    attr_accessor :locale
 
-  def reset!
-    @parameters = {}
-  end
+    def options
+      @options ||= {}
+    end
 
-  def <<(hash)
-    parameters.merge!(hash)
-  end
+    def <<(hash)
+      options.merge!(hash)
+    end
 
-  def locale
-    @locale ||= :us
-  end
+    def reset!
+      @options = {}
+    end
 
-  def locale_code
-    LOCALE_CODES[locale]
-  end
-
-  def get
-    response = HTTParty.get(uri)
-    Response.new(response)
+    def get
+      r = self.class.get(path, :query => options)
+      Response.new(r)
+    end
   end
 end

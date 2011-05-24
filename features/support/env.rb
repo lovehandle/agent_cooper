@@ -14,12 +14,14 @@ module AgentCooperMethods
   end
 
   def cassette_name
-    Digest::MD5.hexdigest(@request.parameters.to_json)
+    Digest::MD5.hexdigest(@request.options.to_json)
   end
 end
 
 World(AgentCooperMethods)
 
 Before do
-  Request::APP_ID = ebay_app_id
+  AgentCooper::Config.set do |config|
+    config.app_id = 'SOME_OBSCURE_APP_ID'
+  end
 end

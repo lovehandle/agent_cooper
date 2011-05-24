@@ -1,30 +1,36 @@
 require 'nokogiri'
 
-class Response
+module AgentCooper
+  class Response
 
-  def initialize(response)
-    @response = response
-  end
+    def initialize(response)
+      @response = response
+    end
 
-  def body
-    response.body
-  end
+    def body
+      response.body
+    end
 
-  def code
-    response.code
-  end
+    def to_hash
+      response.parsed_response
+    end
 
-  def valid?
-    code == 200
-  end
+    def code
+      response.code
+    end
 
-  def xml
-    @xml ||= Nokogiri::XML(body)
-  end
+    def valid?
+      code == 200
+    end
 
-  protected
+    def xml
+      @xml ||= Nokogiri::XML(body)
+    end
 
-  def response
-    @response
+    protected
+
+    def response
+      @response
+    end
   end
 end

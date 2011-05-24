@@ -1,24 +1,20 @@
 module AgentCooper
   class Merchandiser < Request
 
-    HOST = 'http://svcs.ebay.com/MerchandisingService'
     SERVICE_NAME = 'MerchandisingService'
     VERSION = '1.4.0'
-    
+
+    base_uri 'svcs.ebay.com'
+    default_params 'CONSUMER-ID' => Config.app_id,
+      'SERVICE-NAME' => SERVICE_NAME,
+      'SERVICE-VERSION' => VERSION,
+      'RESPONSE-DATA-FORMAT' => ENCODING,
+      'REST-PAYLOAD' => ''
+
     protected
 
-    def options
-      {
-        'SERVICE-NAME' => SERVICE_NAME,
-        'SERVICE-VERSION' => VERSION,
-        'RESPONSE-DATA-FORMAT' => ENCODING,
-        'CONSUMER-ID' => APP_ID,
-        'REST-PAYLOAD' => ''
-      }.merge(parameters)
-    end
-
-    def uri
-      "#{HOST}?#{options.to_params}"
+    def path
+      '/MerchandisingService'
     end
   end
 end
