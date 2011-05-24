@@ -39,6 +39,10 @@ Response API allows one to utilize the pure goodness of Nokogiri:
 
     response.xml.xpath("//Item")
 
+Specify a particular eBay locale (defaults to US):
+
+   AgentCooper::Shopper.new(:locale => :fr)
+
 ----
 
 Based on papercavalier's [sucker](http://github.com/papercavalier/sucker).
