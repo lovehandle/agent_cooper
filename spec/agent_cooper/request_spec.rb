@@ -21,12 +21,6 @@ module AgentCooper
       end
     end
 
-    describe "#locale" do
-      it "defaults to :us" do
-        @request.locale.should == :us
-      end
-    end
-
     describe "#reset!" do
       it "resets the parameters to a blank hash" do
         @request << {:foo => 'bar'}
