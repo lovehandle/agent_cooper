@@ -14,6 +14,10 @@ class Response
     response.code
   end
 
+  def valid?
+    code == 200
+  end
+
   def xml
     @xml ||= Nokogiri::XML(body)
   end
