@@ -11,6 +11,10 @@ module AgentCooper
 
     protected
 
+    def credentials
+      { 'APPID' => Config.app_id }
+    end
+
     def path
       '/shopping'
     end

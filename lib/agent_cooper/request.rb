@@ -23,7 +23,7 @@ module AgentCooper
     end
 
     def get
-      r = self.class.get(path, :query => options)
+      r = self.class.get(path, :query => options.merge(credentials))
       Response.new(r)
     end
   end

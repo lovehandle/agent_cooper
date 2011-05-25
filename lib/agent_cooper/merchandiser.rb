@@ -13,6 +13,10 @@ module AgentCooper
 
     protected
 
+    def credentials
+      { 'CONSUMER-ID' => Config.app_id }
+    end
+
     def path
       '/MerchandisingService'
     end
