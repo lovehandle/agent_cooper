@@ -22,6 +22,6 @@ World(AgentCooperMethods)
 
 Before do
   AgentCooper::Config.set do |config|
-    config.app_id = 'SOME_OBSCURE_APP_ID'
+    config.app_id = ebay_app_id
   end
 end

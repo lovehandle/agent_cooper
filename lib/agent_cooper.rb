@@ -6,5 +6,4 @@ require 'agent_cooper/shopper'
 require 'agent_cooper/merchandiser'
 
 module AgentCooper
-  TRAVIS_CI = "TEST"
 end
