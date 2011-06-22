@@ -4,8 +4,7 @@ module AgentCooper
     VERSION = '717'
 
     base_uri 'open.api.ebay.com'
-    default_params 'APPID' => Config.app_id,
-      'RESPONSEENCODING' => ENCODING,
+    default_params 'RESPONSEENCODING' => ENCODING,
       'VERSION' => VERSION,
       'SITEID' => 0
 

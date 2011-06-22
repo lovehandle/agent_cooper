@@ -5,8 +5,7 @@ module AgentCooper
     VERSION = '1.4.0'
 
     base_uri 'svcs.ebay.com'
-    default_params 'CONSUMER-ID' => Config.app_id,
-      'SERVICE-NAME' => SERVICE_NAME,
+    default_params 'SERVICE-NAME' => SERVICE_NAME,
       'SERVICE-VERSION' => VERSION,
       'RESPONSE-DATA-FORMAT' => ENCODING,
       'REST-PAYLOAD' => ''
