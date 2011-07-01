@@ -6,4 +6,9 @@ require 'agent_cooper/shopper'
 require 'agent_cooper/merchandiser'
 
 module AgentCooper
+  class << self
+    def configure(&block)
+      yield Config
+    end
+  end
 end

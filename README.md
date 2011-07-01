@@ -12,7 +12,7 @@ Usage
 -----
 Set up.
 
-    AgentCooper::Config.set do |config|
+    AgentCooper.configure do |config|
       config.app_id = "SOME_OBSCURE_APP_ID"
     end
 
