@@ -1,0 +1,53 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://svcs.ebay.com:80/MerchandisingService?CONSUMER-ID=YOUR-APP-ID&OPERATION-NAME=getTopSellingProducts&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.4.0&maxResults=3
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml;charset=UTF-8
+      server:
+      - Apache-Coyote/1.1
+      x-ebay-esb-endpointurl:
+      - /Root/ESBFunctions/Services/Ports/7002/profile/ns/v1/MerchandisingService/destination_default/address_synapse
+      x-ebay-esb-guid:
+      - urn:uuid:3F2AA1A7B9FFBFE29E1312047893311
+      x-ebay-soa-locale-list:
+      - en-US_US
+      x-ebay-soa-message-protocol:
+      - NONE
+      x-ebay-soa-operation-name:
+      - getTopSellingProducts
+      x-ebay-soa-request-id:
+      - 131583e6-ebf0-a0a3-d754-7284fffe7cf0!MerchandisingService!10.10.61.117!v3soa1core[]
+      x-ebay-soa-response-data-format:
+      - XML
+      x-ebay-soa-service-name:
+      - ! '{http://www.ebay.com/marketplace/services}MerchandisingService'
+      x-ebay-soa-service-version:
+      - 1.4.0
+      date:
+      - Sat, 23 Jul 2011 18:25:11 GMT
+      transfer-encoding:
+      - chunked
+    body: ! '<?xml version=''1.0'' encoding=''UTF-8''?><getTopSellingProductsResponse
+      xmlns="http://www.ebay.com/marketplace/services"><ack>Success</ack><version>1.4.0</version><timestamp>2011-07-23T18:25:11.871Z</timestamp><productRecommendations><product><productId
+      type="Reference">100105036</productId><title>True Blood: The Complete Third
+      Season (DVD, 2011, 5-Disc Set)</title><productURL>http://www.ebay.com/ctg/100105036?_pcatid=1&amp;_tab=2&amp;_trksid=m108&amp;_trkparms=algo%3DMETSP%26otn%3D3%26pmod%3D0%26ps%3D51</productURL><catalogName>US
+      Muze Movies</catalogName><imageURL>http://i.ebayimg.com/00/$(KGrHqIOKp0E3uZ2)By!BOC!1ZyPE!~~_0.JPG?set_id=89040003C1</imageURL><reviewCount>117</reviewCount><priceRangeMin
+      currencyId="USD">9.99</priceRangeMin><priceRangeMax currencyId="USD">250.0</priceRangeMax></product><product><productId
+      type="Reference">3425338</productId><title>The Lion King (DVD, 2003, 2-Disc
+      Set, Platinum Edition; Features an All-New Song)</title><productURL>http://www.ebay.com/ctg/3425338?_pcatid=1&amp;_tab=2&amp;_trksid=m108&amp;_trkparms=algo%3DMETSP%26otn%3D3%26pmod%3D0%26ps%3D51</productURL><catalogName>US
+      Muze Movies</catalogName><imageURL>http://i.ebayimg.com/15/!!eBm)0QEGM~$(KGrHqR,!hIE0fgV1UVwBNQyQKRT1g~~_0.JPG?set_id=89040003C1</imageURL><reviewCount>1932</reviewCount><priceRangeMin
+      currencyId="USD">6.97</priceRangeMin><priceRangeMax currencyId="USD">100000.0</priceRangeMax></product><product><productId
+      type="Reference">53039031</productId><title>The Little Mermaid (DVD, 2006, 2-Disc
+      Set, Platinum Edition)</title><productURL>http://www.ebay.com/ctg/53039031?_pcatid=1&amp;_tab=2&amp;_trksid=m108&amp;_trkparms=algo%3DMETSP%26otn%3D3%26pmod%3D0%26ps%3D51</productURL><catalogName>US
+      Muze Movies</catalogName><imageURL>http://i.ebayimg.com/23/!!eB)4NwBGM~$(KGrHqJ,!hgE0fnpVpE0BNQ4)r8(Pw~~_0.JPG?set_id=89040003C1</imageURL><reviewCount>897</reviewCount><priceRangeMin
+      currencyId="USD">6.5</priceRangeMin><priceRangeMax currencyId="USD">139.99</priceRangeMax></product></productRecommendations></getTopSellingProductsResponse>'
+    http_version: '1.1'

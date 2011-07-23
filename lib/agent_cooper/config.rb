@@ -1,12 +1,10 @@
 module AgentCooper
   class Config
     class << self
-      def app_id=(app_id)
-        @app_id = app_id
-      end
+      attr_accessor :app_id
 
-      def app_id
-        @app_id ||= nil
+      def configure(&block)
+        yield self
       end
     end
   end

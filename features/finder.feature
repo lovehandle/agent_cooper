@@ -1,9 +1,9 @@
 Feature: Ebay Finder
   As an API consumer
 
-  Background: 
+  Background:
     Given a new finder request
-     
+
   Scenario: getSearchKeywordsRecommendation
     Given the following parameters:
         | OPERATION-NAME                  | keywords |
@@ -11,7 +11,7 @@ Feature: Ebay Finder
      When I tape the "finder" request as: "get_search_keywords_recommendation"
      Then the response code should be "200"
       And the response should have 1 "keywords" nodes
-  
+
   Scenario: findItemsByKeywords
     Given the following parameters:
         | OPERATION-NAME      | keywords             |
@@ -27,7 +27,7 @@ Feature: Ebay Finder
      When I tape the "finder" request as: "find_items_by_category"
      Then the response code should be "200"
       And the response should have 100 "item" nodes
-   
+
   Scenario: findItemsAdvanced
     Given the following parameters:
         | OPERATION-NAME    | keywords |
@@ -60,5 +60,3 @@ Feature: Ebay Finder
      When I tape the "finder" request as: "get_histograms"
      Then the response code should be "200"
       And the response should have 6 "childCategoryHistogram" nodes
-
-

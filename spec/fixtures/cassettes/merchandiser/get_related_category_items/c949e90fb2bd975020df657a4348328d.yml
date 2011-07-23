@@ -1,0 +1,41 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://svcs.ebay.com:80/MerchandisingService?CONSUMER-ID=YOUR-APP-ID&OPERATION-NAME=getRelatedCategoryItems&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.4.0&itemId=170192529715
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml;charset=UTF-8
+      server:
+      - Apache-Coyote/1.1
+      x-ebay-esb-endpointurl:
+      - /Root/ESBFunctions/Services/Ports/7003/profile/ns/v1/MerchandisingService/destination_default/address_synapse
+      x-ebay-esb-guid:
+      - urn:uuid:B6BF4AB7745A5EEEB91312047892715
+      x-ebay-soa-locale-list:
+      - en-US_US
+      x-ebay-soa-message-protocol:
+      - NONE
+      x-ebay-soa-operation-name:
+      - getRelatedCategoryItems
+      x-ebay-soa-request-id:
+      - 131583e6-df20-a0a3-d775-5395fffe7481!MerchandisingService!10.10.61.119!v3soa1core[]
+      x-ebay-soa-response-data-format:
+      - XML
+      x-ebay-soa-service-name:
+      - ! '{http://www.ebay.com/marketplace/services}MerchandisingService'
+      x-ebay-soa-service-version:
+      - 1.4.0
+      date:
+      - Sat, 23 Jul 2011 18:25:11 GMT
+      transfer-encoding:
+      - chunked
+    body: <?xml version='1.0' encoding='UTF-8'?><getRelatedCategoryItemsResponse xmlns="http://www.ebay.com/marketplace/services"><ack>Failure</ack><errorMessage><error><errorId>8</errorId><domain>Marketplace</domain><severity>Error</severity><category>Application</category><message>Please
+      specify a valid itemId.</message><subdomain>MarketplaceCommon</subdomain></error></errorMessage><version>1.4.0</version><timestamp>2011-07-23T18:25:11.712Z</timestamp></getRelatedCategoryItemsResponse>
+    http_version: '1.1'

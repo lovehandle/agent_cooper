@@ -1,0 +1,41 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://svcs.ebay.com:80/MerchandisingService?CONSUMER-ID=YOUR-APP-ID&OPERATION-NAME=getSimilarItems&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.4.0&itemId=280254552262
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml;charset=UTF-8
+      server:
+      - Apache-Coyote/1.1
+      x-ebay-esb-endpointurl:
+      - /Root/ESBFunctions/Services/Ports/7002/profile/ns/v1/MerchandisingService/destination_default/address_synapse
+      x-ebay-esb-guid:
+      - urn:uuid:3F2AA1A7B9FFBFE29E1312047893101
+      x-ebay-soa-locale-list:
+      - en-US_US
+      x-ebay-soa-message-protocol:
+      - NONE
+      x-ebay-soa-operation-name:
+      - getSimilarItems
+      x-ebay-soa-request-id:
+      - 131583e6-e420-a0a3-d754-7284fffe7cf1!MerchandisingService!10.10.61.117!v3soa1core[]
+      x-ebay-soa-response-data-format:
+      - XML
+      x-ebay-soa-service-name:
+      - ! '{http://www.ebay.com/marketplace/services}MerchandisingService'
+      x-ebay-soa-service-version:
+      - 1.4.0
+      date:
+      - Sat, 23 Jul 2011 18:25:11 GMT
+      transfer-encoding:
+      - chunked
+    body: <?xml version='1.0' encoding='UTF-8'?><getSimilarItemsResponse xmlns="http://www.ebay.com/marketplace/services"><ack>Failure</ack><errorMessage><error><errorId>10</errorId><domain>Marketplace</domain><severity>Error</severity><category>Application</category><message>Invalid
+      item ID. Item does not exist or has ended more than two weeks ago.</message><subdomain>Merchandising</subdomain></error></errorMessage><version>1.4.0</version><timestamp>2011-07-23T18:25:11.824Z</timestamp></getSimilarItemsResponse>
+    http_version: '1.1'

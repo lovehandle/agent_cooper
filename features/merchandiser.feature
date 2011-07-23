@@ -1,7 +1,7 @@
 Feature: Ebay Merchandiser
   As an API consumer
 
-  Background: 
+  Background:
     Given a new merchandiser request
 
   Scenario: getMostWatchedItems
@@ -31,4 +31,3 @@ Feature: Ebay Merchandiser
         | getTopSellingProducts |          3 |
      When I tape the "merchandiser" request as: "get_top_selling_products"
      Then the response code should be "200"
-

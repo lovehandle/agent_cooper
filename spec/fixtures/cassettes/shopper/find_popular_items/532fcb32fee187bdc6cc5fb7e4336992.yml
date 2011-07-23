@@ -1,0 +1,258 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://open.api.ebay.com:80/shopping?APPID=YOUR-APP-ID&CALLNAME=FindPopularItems&QueryKeywords=harry%20original&RESPONSEENCODING=XML&SITEID=0&VERSION=717
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml;charset=utf-8
+      cache-control:
+      - no-cache
+      expires:
+      - Sat, 25 Dec 1999 00:00:00 GMT
+      last-modified:
+      - Sat, 23 Jul 2011 18:25:12 GMT
+      pragma:
+      - no-cache
+      server:
+      - Apache-Coyote/1.1
+      x-ebay-api-build-tag:
+      - E731_CORE_BUNDLED_13527319_R1
+      x-ebay-api-pool-name:
+      - ___cDRidW9rdDdlaHFg
+      x-ebay-api-server-name:
+      - ___dW0ucm43Nyg/MzZxcXNiKjc3LTMoMTorPjM5PTY/Mw==
+      x-ebay-esb-guid:
+      - urn:uuid:5CD0BB9874BFF7D9EB27285028445811427-498799087
+      date:
+      - Sat, 23 Jul 2011 18:25:12 GMT
+      transfer-encoding:
+      - chunked
+    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <FindPopularItemsResponse
+      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-23T18:25:12.972Z</Timestamp>\n
+      \  <Ack>Success</Ack>\n   <Build>E731_CORE_BUNDLED_13527319_R1</Build>\n   <Version>731</Version>\n
+      \  <ItemArray>\n    <Item>\n     <ItemID>180695226180</ItemID>\n     <EndTime>2011-07-25T04:49:00.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/Tonner-HERMIONE-GRANGER-Doll-Harry-Potter-ORIGINAL-Box-/180695226180</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/1806952261808080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>29798</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectibles:Fantasy,
+      Mythical &amp; Magic:Harry Potter</PrimaryCategoryName>\n     <BidCount>18</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">190.0</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT10H23M48S</TimeLeft>\n
+      \    <Title>Tonner HERMIONE GRANGER Doll Harry Potter ORIGINAL Box</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingType>Calculated</ShippingType>\n
+      \    </ShippingCostSummary>\n     <WatchCount>49</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>270540814077</ItemID>\n     <EndTime>2011-07-26T16:52:00.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/HARRY-POTTER-SORCERERS-STONE-ORIGINAL-THEATRICAL-POSTER-/270540814077</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs2.ebaystatic.com/pict/2705408140778080_3.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>61104</PrimaryCategoryID>\n     <PrimaryCategoryName>Entertainment
+      Memorabilia:Movie Memorabilia:Posters:Originals-United States:2000-Now</PrimaryCategoryName>\n
+      \    <BidCount>13</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">60.0</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P2DT22H26M48S</TimeLeft>\n
+      \    <Title>HARRY POTTER SORCERERS STONE ORIGINAL THEATRICAL POSTER</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">0.0</ShippingServiceCost>\n
+      \     <ShippingType>FlatDomesticCalculatedInternational</ShippingType>\n      <ListedShippingServiceCost
+      currencyID=\"USD\">0.0</ListedShippingServiceCost>\n     </ShippingCostSummary>\n
+      \    <WatchCount>23</WatchCount>\n    </Item>\n    <Item>\n     <ItemID>260818392519</ItemID>\n
+      \    <EndTime>2011-07-25T03:38:20.000Z</EndTime>\n     <ViewItemURLForNaturalSearch>http://cgi.ebay.com/ORIGINAL-U-S-M-C-R-DOG-TAGS-HARRY-EDWIN-SHILLING-Jr-/260818392519</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/2608183925198080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>4726</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectibles:Militaria:WW
+      II (1939-45):Original Period Items:United States:Personal Gear</PrimaryCategoryName>\n
+      \    <BidCount>4</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">20.5</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT9H13M8S</TimeLeft>\n
+      \    <Title>ORIGINAL U.S.M.C.R. DOG TAGS OF HARRY EDWIN SHILLING Jr</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">3.0</ShippingServiceCost>\n
+      \     <ShippingType>FlatDomesticCalculatedInternational</ShippingType>\n      <ListedShippingServiceCost
+      currencyID=\"USD\">3.0</ListedShippingServiceCost>\n     </ShippingCostSummary>\n
+      \    <WatchCount>21</WatchCount>\n    </Item>\n    <Item>\n     <ItemID>260817949790</ItemID>\n
+      \    <EndTime>2011-07-24T09:57:01.000Z</EndTime>\n     <ViewItemURLForNaturalSearch>http://cgi.ebay.com/Harry-J-Allstars-Liquidator-Original-LP-1st-Press-/260817949790</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/2608179497908080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>1581</PrimaryCategoryID>\n     <PrimaryCategoryName>Music:Records:Albums/
+      LPs:Dance:Other Dance</PrimaryCategoryName>\n     <BidCount>5</BidCount>\n     <ConvertedCurrentPrice
+      currencyID=\"USD\">8.97</ConvertedCurrentPrice>\n     <ListingStatus>Active</ListingStatus>\n
+      \    <TimeLeft>PT15H31M49S</TimeLeft>\n     <Title>Harry J Allstars - Liquidator
+      - Original LP - 1st Press</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
+      currencyID=\"USD\">14.66</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+      \     <ListedShippingServiceCost currencyID=\"GBP\">8.99</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>16</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>320729434665</ItemID>\n     <EndTime>2011-07-27T09:23:21.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/HARRY-POTTER-DEATHLY-HALLOWS-2-Original-Cinema-Poster-/320729434665</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs2.ebaystatic.com/pict/3207294346658080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>29798</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectables:Fantasy/
+      Myth/ Magic:Harry Potter</PrimaryCategoryName>\n     <BidCount>7</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">17.13</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P3DT14H58M9S</TimeLeft>\n
+      \    <Title>HARRY POTTER DEATHLY HALLOWS 2 Original Cinema Poster </Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">8.16</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"GBP\">5.0</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>15</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>200631598855</ItemID>\n     <EndTime>2011-07-24T21:39:20.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/Original-Lawman-Leather-Dirty-Harry-holster-/200631598855</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/2006315988558080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>73966</PrimaryCategoryID>\n     <PrimaryCategoryName>Sporting
+      Goods:Outdoor Sports:Hunting:Holsters &amp; Pouches:Holsters, Standard</PrimaryCategoryName>\n
+      \    <BidCount>11</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">242.5</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT3H14M8S</TimeLeft>\n
+      \    <Title>Original Lawman Leather Dirty Harry holster</Title>\n     <ShippingCostSummary>\n
+      \     <ShippingServiceCost currencyID=\"USD\">6.0</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+      \     <ListedShippingServiceCost currencyID=\"USD\">6.0</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>14</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>150577340912</ItemID>\n     <EndTime>2011-08-12T06:20:54.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/HARRY-CHAPIN-ORIGINAL-ALBUM-SERiES-5CD-/150577340912</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/1505773409128080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>307</PrimaryCategoryID>\n     <PrimaryCategoryName>Music:CDs</PrimaryCategoryName>\n
+      \    <BidCount>16</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">23.0</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P19DT11H55M42S</TimeLeft>\n
+      \    <Title>HARRY CHAPIN - ORIGINAL ALBUM SERiES  5CD</Title>\n     <ShippingCostSummary>\n
+      \     <ShippingServiceCost currencyID=\"USD\">0.0</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+      \     <ListedShippingServiceCost currencyID=\"USD\">0.0</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>14</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>250857136762</ItemID>\n     <EndTime>2011-07-24T18:07:50.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/ORIGINAL-ACEO-sketch-HARRY-POTTER-Emma-Watson-HERMIONE-/250857136762</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/2508571367628080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>73570</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectables:Trading
+      Cards/ CCG:Films:Harry Potter</PrimaryCategoryName>\n     <BidCount>4</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">12.23</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>PT23H42M38S</TimeLeft>\n
+      \    <Title>ORIGINAL ACEO sketch HARRY POTTER Emma Watson HERMIONE</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">3.26</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"GBP\">2.0</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>13</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>120607932528</ItemID>\n     <EndTime>2011-08-07T01:54:50.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/Harry-Potter-Deathly-Hallows-Original-D-S-Movie-Posters-/120607932528</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>StoresFixedPrice</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/1206079325288080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>18828</PrimaryCategoryID>\n     <PrimaryCategoryName>Movies:Movie
+      Memorabilia:Posters</PrimaryCategoryName>\n     <BidCount>3</BidCount>\n     <ConvertedCurrentPrice
+      currencyID=\"USD\">108.52</ConvertedCurrentPrice>\n     <ListingStatus>Active</ListingStatus>\n
+      \    <TimeLeft>P14DT7H29M38S</TimeLeft>\n     <Title>Harry Potter Deathly Hallows
+      Original D/S Movie Posters</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
+      currencyID=\"USD\">22.8</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+      \     <ListedShippingServiceCost currencyID=\"AUD\">21.0</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>13</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>370474163490</ItemID>\n     <EndTime>2011-08-08T21:48:28.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/HARRY-POTTER-1st-MOVIE-ORIGINAL-POSTER-/370474163490</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>StoresFixedPrice</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/3704741634908080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>61108</PrimaryCategoryID>\n     <PrimaryCategoryName>Entertainment
+      Memorabilia:Movie Memorabilia:Posters:Originals-International:2000-Now</PrimaryCategoryName>\n
+      \    <BidCount>1</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">19.99</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P16DT3H23M16S</TimeLeft>\n
+      \    <Title>HARRY POTTER 1st MOVIE ORIGINAL  POSTER</Title>\n     <ShippingCostSummary>\n
+      \     <ShippingServiceCost currencyID=\"USD\">5.0</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+      \     <ListedShippingServiceCost currencyID=\"USD\">5.0</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>9</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>280711804615</ItemID>\n     <EndTime>2011-07-26T00:55:59.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/Lego-Harry-Potter-4733-Dueling-Club-Original-Box-/280711804615</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/2807118046158080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>58727</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Hobbies:Building Toys:LEGO:Sets:Harry Potter</PrimaryCategoryName>\n     <BidCount>3</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">21.5</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P2DT6H30M47S</TimeLeft>\n
+      \    <Title>Lego Harry Potter 4733 Dueling Club In Original Box</Title>\n     <ShippingCostSummary>\n
+      \     <ShippingServiceCost currencyID=\"USD\">6.0</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+      \     <ListedShippingServiceCost currencyID=\"USD\">6.0</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>8</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>170670155611</ItemID>\n     <EndTime>2011-07-26T04:25:34.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/LEGO-PROFESSOR-DUMBLEDORE-HARRY-POTTER-ORIGINAL-MINIFIG-/170670155611</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/1706701556118080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>58727</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Hobbies:Building Toys:LEGO:Sets:Harry Potter</PrimaryCategoryName>\n     <BidCount>2</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">2.25</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P2DT10H22S</TimeLeft>\n
+      \    <Title>LEGO PROFESSOR DUMBLEDORE HARRY POTTER ORIGINAL MINIFIG</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">1.5</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"USD\">1.5</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>8</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>160557542835</ItemID>\n     <EndTime>2011-08-07T20:23:10.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/HARRY-CHAPIN-ORIGINAL-ALBUM-SERIES-BOX-SET-NEW-5-CD-/160557542835</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>StoresFixedPrice</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/1605575428358080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>307</PrimaryCategoryID>\n     <PrimaryCategoryName>Music:CDs</PrimaryCategoryName>\n
+      \    <BidCount>4</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">29.99</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P15DT1H57M58S</TimeLeft>\n
+      \    <Title>HARRY CHAPIN *ORIGINAL ALBUM SERIES* BOX SET NEW 5 CD</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">2.95</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"USD\">2.95</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>7</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>230554268969</ItemID>\n     <EndTime>2011-08-20T16:32:00.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/DIRTY-HARRY-NINTENDO-GAME-SYSTEM-ORIGINAL-NES-HQ-/230554268969</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>StoresFixedPrice</ListingType>\n     <GalleryURL>http://thumbs2.ebaystatic.com/pict/2305542689698080_2.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>139973</PrimaryCategoryID>\n     <PrimaryCategoryName>Video
+      Games:Games</PrimaryCategoryName>\n     <BidCount>11</BidCount>\n     <ConvertedCurrentPrice
+      currencyID=\"USD\">8.0</ConvertedCurrentPrice>\n     <ListingStatus>Active</ListingStatus>\n
+      \    <TimeLeft>P27DT22H6M48S</TimeLeft>\n     <Title>DIRTY HARRY NINTENDO GAME
+      SYSTEM ORIGINAL NES HQ</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
+      currencyID=\"USD\">0.0</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+      \     <ListedShippingServiceCost currencyID=\"USD\">0.0</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>7</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>380355358534</ItemID>\n     <EndTime>2011-07-24T18:09:03.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/ORIGINAL-ACEO-sketch-HARRY-POTTER-R-Fiennes-VOLDERMORT-/380355358534</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/3803553585348080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>73570</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectables:Trading
+      Cards/ CCG:Films:Harry Potter</PrimaryCategoryName>\n     <BidCount>1</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">4.08</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>PT23H43M51S</TimeLeft>\n
+      \    <Title>ORIGINAL ACEO sketch HARRY POTTER R. Fiennes VOLDERMORT</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">3.26</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"GBP\">2.0</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>6</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>190507079462</ItemID>\n     <EndTime>2011-07-28T09:01:24.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/Harry-Potter-Original-Costume-and-Quidditch-Costume-/190507079462</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>StoresFixedPrice</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/1905070794628080002_5.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>80913</PrimaryCategoryID>\n     <PrimaryCategoryName>Clothing,
+      Shoes, Accessories:Costumes:Full Outfits:Boys</PrimaryCategoryName>\n     <BidCount>1</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">45.6</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P4DT14H36M12S</TimeLeft>\n
+      \    <Title>Harry Potter Original Costume and Quidditch Costume</Title>\n     <ShippingCostSummary>\n
+      \     <ShippingServiceCost currencyID=\"USD\">39.36</ShippingServiceCost>\n
+      \     <ShippingType>FlatDomesticCalculatedInternational</ShippingType>\n      <ListedShippingServiceCost
+      currencyID=\"AUD\">36.25</ListedShippingServiceCost>\n     </ShippingCostSummary>\n
+      \    <WatchCount>6</WatchCount>\n    </Item>\n    <Item>\n     <ItemID>200555089925</ItemID>\n
+      \    <EndTime>2011-08-11T22:44:49.000Z</EndTime>\n     <ViewItemURLForNaturalSearch>http://cgi.ebay.com/HARRY-POTTER-ORIGINAL-BOOSTER-BOX-36-PACKS-SEALED-/200555089925</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>StoresFixedPrice</ListingType>\n     <GalleryURL>http://thumbs2.ebaystatic.com/pict/2005550899258080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>22727</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Hobbies:Trading Card Games:Harry Potter</PrimaryCategoryName>\n     <BidCount>11</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">23.95</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P19DT4H19M37S</TimeLeft>\n
+      \    <Title>HARRY POTTER ORIGINAL BOOSTER BOX 36 PACKS SEALED</Title>\n     <ShippingCostSummary>\n
+      \     <ShippingServiceCost currencyID=\"USD\">10.95</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"USD\">10.95</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>6</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>370413086448</ItemID>\n     <EndTime>2011-08-21T03:38:58.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/Original-Harry-Willard-Poster-Window-Card-/370413086448</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>StoresFixedPrice</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/3704130864488080_3.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>35877</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectibles:Fantasy,
+      Mythical &amp; Magic:Magic:Posters, Prints</PrimaryCategoryName>\n     <BidCount>1</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">35.0</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P28DT9H13M46S</TimeLeft>\n
+      \    <Title>Original Harry Willard Poster/Window Card</Title>\n     <ShippingCostSummary>\n
+      \     <ShippingServiceCost currencyID=\"USD\">5.0</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+      \     <ListedShippingServiceCost currencyID=\"USD\">5.0</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>6</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>270771641695</ItemID>\n     <EndTime>2011-07-23T23:33:08.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/HARRY-POTTER-PHILOSPHER-STONE-ORIGINAL-MOVIE-POSTER-/270771641695</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/2707716416958080_2.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>61104</PrimaryCategoryID>\n     <PrimaryCategoryName>Entertainment
+      Memorabilia:Movie Memorabilia:Posters:Originals-United States:2000-Now</PrimaryCategoryName>\n
+      \    <BidCount>1</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">25.0</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>PT5H7M56S</TimeLeft>\n
+      \    <Title>HARRY POTTER PHILOSPHER STONE ORIGINAL MOVIE POSTER</Title>\n     <ShippingCostSummary>\n
+      \     <ShippingServiceCost currencyID=\"USD\">0.0</ShippingServiceCost>\n      <ShippingType>FlatDomesticCalculatedInternational</ShippingType>\n
+      \     <ListedShippingServiceCost currencyID=\"USD\">0.0</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>5</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>280711969543</ItemID>\n     <EndTime>2011-07-26T12:45:11.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/Harry-Potter-Severus-Snape-Original-Figure-NIB-MINT-/280711969543</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/2807119695438080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>29798</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectibles:Fantasy,
+      Mythical &amp; Magic:Harry Potter</PrimaryCategoryName>\n     <BidCount>1</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">12.99</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P2DT18H19M59S</TimeLeft>\n
+      \    <Title>Harry Potter Severus Snape Original Figure - NIB MINT</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">9.99</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"USD\">9.99</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>5</WatchCount>\n    </Item>\n
+      \  </ItemArray>\n  </FindPopularItemsResponse>\n "
+    http_version: '1.1'

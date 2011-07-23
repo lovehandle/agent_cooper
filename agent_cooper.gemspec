@@ -15,22 +15,21 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "agent_cooper"
 
   {
-    'httparty'          => '~> 0.7.7',
-    'nokogiri'            => '~> 1.4.4'
+    'httpclient'          => '~> 2.2',
+    'nokogiri'            => '~> 1.4'
   }.each {|lib, version| s.add_runtime_dependency lib, version }
-  
-  
+
+
   {
-    'bundler'             => '~> 1.0.0',
-    'addressable'         => '2.2.4',
-    'cucumber'            => '~> 0.10.0',
-    'rake'                => '~> 0.8.7',
-    'relish'              => '~> 0.3.0.pre',
-    'rspec'               => '~> 2.5.0',
-    'vcr'                 => '~> 1.9.0',
-    'webmock'             => '~> 1.6.0'
+    'cucumber'            => '~> 1.0',
+    'em-http-request'     => '~> 1.0.0.beta.4',
+    'em-synchrony'        => '~> 0.3.0.beta.1',
+    'rake'                => '~> 0.9',
+    'rspec'               => '~> 2.6',
+    'vcr'                 => '~> 1.10',
+    'webmock'             => '~> 1.6'
   }.each {|lib, version| s.add_development_dependency lib, version }
-  
+
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }

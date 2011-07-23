@@ -1,0 +1,51 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://svcs.ebay.com:80/MerchandisingService?CONSUMER-ID=YOUR-APP-ID&OPERATION-NAME=getMostWatchedItems&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.4.0&maxResults=3
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml;charset=UTF-8
+      server:
+      - Apache-Coyote/1.1
+      x-ebay-esb-endpointurl:
+      - /Root/ESBFunctions/Services/Ports/7003/profile/ns/v1/MerchandisingService/destination_default/address_synapse
+      x-ebay-esb-guid:
+      - urn:uuid:14EB01C54D7CDDC2FA1311501196128
+      x-ebay-soa-locale-list:
+      - en-US_US
+      x-ebay-soa-message-protocol:
+      - NONE
+      x-ebay-soa-operation-name:
+      - getMostWatchedItems
+      x-ebay-soa-request-id:
+      - 131583e6-d870-a0a3-d821-8521fffe777d!MerchandisingService!10.10.61.130!v3soa1core[]
+      x-ebay-soa-response-data-format:
+      - XML
+      x-ebay-soa-service-name:
+      - ! '{http://www.ebay.com/marketplace/services}MerchandisingService'
+      x-ebay-soa-service-version:
+      - 1.4.0
+      date:
+      - Sat, 23 Jul 2011 18:25:10 GMT
+      transfer-encoding:
+      - chunked
+    body: <?xml version='1.0' encoding='UTF-8'?><getMostWatchedItemsResponse xmlns="http://www.ebay.com/marketplace/services"><ack>Success</ack><version>1.4.0</version><timestamp>2011-07-23T18:25:11.622Z</timestamp><itemRecommendations><item><itemId>390120901957</itemId><title>Wireless
+      Spy Nanny Mini Micro Camera FULL SYSTEM!</title><viewItemURL>http://cgi.ebay.com/Wireless-Spy-Nanny-Mini-Micro-Camera-FULL-SYSTEM-/390120901957?_trksid=m8&amp;_trkparms=algo%3DMW%26itu%3DUCC%26otn%3D3%26ps%3D50</viewItemURL><globalId>EBAY-US</globalId><timeLeft>P19DT4H43M37S</timeLeft><primaryCategoryId>293</primaryCategoryId><primaryCategoryName>Consumer
+      Electronics</primaryCategoryName><subtitle>NEW 2011 MODEL WITH 4 CHANNEL FREQUENCY
+      SELECTOR!!</subtitle><buyItNowPrice currencyId="USD">39.99</buyItNowPrice><country>US</country><imageURL>http://thumbs2.ebaystatic.com/m/mdci5SsHo-pBCzix3IGaamg/80.jpg</imageURL><shippingCost
+      currencyId="USD">0.0</shippingCost><shippingType>Flat</shippingType><watchCount>4333</watchCount></item><item><itemId>280479498575</itemId><title>Sexy
+      Black Corset Embroidered Cap Sleeve Top, S M L XL</title><viewItemURL>http://cgi.ebay.com/Sexy-Black-Corset-Embroidered-Cap-Sleeve-Top-S-M-L-XL-/280479498575?_trksid=m8&amp;_trkparms=algo%3DMW%26itu%3DUCC%26otn%3D3%26ps%3D50</viewItemURL><originalPrice
+      currencyId="USD">26.65</originalPrice><globalId>EBAY-US</globalId><timeLeft>P15DT14H21M52S</timeLeft><primaryCategoryId>11450</primaryCategoryId><primaryCategoryName>Clothing,
+      Shoes &amp; Accessories</primaryCategoryName><buyItNowPrice currencyId="USD">23.99</buyItNowPrice><country>HK</country><imageURL>http://thumbs4.ebaystatic.com/m/mqqbDLi1lyHsd9YFn1n-DEQ/80.jpg</imageURL><shippingCost
+      currencyId="USD">0.0</shippingCost><shippingType>Flat</shippingType><watchCount>4003</watchCount></item><item><itemId>380226410093</itemId><title>NEW
+      1TB USB Mini 2.5" External Portable Hard Drive 1 TB</title><viewItemURL>http://cgi.ebay.com/NEW-1TB-USB-Mini-2-5-External-Portable-Hard-Drive-1-TB-/380226410093?_trksid=m8&amp;_trkparms=algo%3DMW%26itu%3DUCC%26otn%3D3%26ps%3D50</viewItemURL><globalId>EBAY-US</globalId><timeLeft>P21DT2H45M45S</timeLeft><primaryCategoryId>58058</primaryCategoryId><primaryCategoryName>Computers
+      &amp; Networking</primaryCategoryName><subtitle>2 YEAR WARRANTY~BRAND NEW~SPECIAL
+      EXCLUSIVE EBAY OFFER</subtitle><buyItNowPrice currencyId="USD">119.95</buyItNowPrice><country>US</country><imageURL>http://thumbs2.ebaystatic.com/m/mJaLLIkvPVN8XNsfGda6jCQ/80.jpg</imageURL><shippingType>CalculatedDomesticFlatInternational</shippingType><watchCount>3806</watchCount></item></itemRecommendations></getMostWatchedItemsResponse>
+    http_version: '1.1'

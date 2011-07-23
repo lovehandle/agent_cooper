@@ -12,7 +12,7 @@ module AgentCooper
     end
 
     def to_hash
-      response.parsed_response
+      xml.to_hash
     end
 
     def code
@@ -29,8 +29,7 @@ module AgentCooper
 
     protected
 
-    def response
-      @response
-    end
+    attr_reader :response
+
   end
 end

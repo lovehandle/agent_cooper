@@ -1,9 +1,9 @@
 Feature: Ebay Shopper
   As an API consumer
 
-  Background: 
+  Background:
     Given a new shopper request
-     
+
   Scenario: FindProducts
     Given the following parameters:
         | CALLNAME     | QueryKeywords |

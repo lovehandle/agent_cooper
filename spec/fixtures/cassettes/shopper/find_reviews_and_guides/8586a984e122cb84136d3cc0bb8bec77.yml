@@ -1,0 +1,174 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://open.api.ebay.com:80/shopping?APPID=YOUR-APP-ID&CALLNAME=FindReviewsAndGuides&CategoryID=177&RESPONSEENCODING=XML&SITEID=0&VERSION=717
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml;charset=utf-8
+      cache-control:
+      - no-cache
+      expires:
+      - Sat, 25 Dec 1999 00:00:00 GMT
+      last-modified:
+      - Sat, 23 Jul 2011 18:25:12 GMT
+      pragma:
+      - no-cache
+      server:
+      - Apache-Coyote/1.1
+      x-ebay-api-build-tag:
+      - E731_CORE_BUNDLED_13527319_R1
+      x-ebay-api-pool-name:
+      - ___cDRidW9rdDdlaHFg
+      x-ebay-api-server-name:
+      - ___dW0ucm83Nyg2MTY0MzIzKjc3LTMoNjQ2KDU0Pz43OzU=
+      x-ebay-esb-guid:
+      - urn:uuid:5CD0BB9874BFF7D9EB2728502858908350760218944
+      date:
+      - Sat, 23 Jul 2011 18:25:12 GMT
+      transfer-encoding:
+      - chunked
+    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <FindReviewsAndGuidesResponse
+      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-23T18:25:12.926Z</Timestamp>\n
+      \  <Ack>Success</Ack>\n   <Build>E731_CORE_BUNDLED_13527319_R1</Build>\n   <Version>731</Version>\n
+      \  <BuyingGuideCount>596</BuyingGuideCount>\n   <ReviewsAndGuidesURL>http://search.reviews.ebay.com/_PC+Laptops+%26+Netbooks_W0QQuqtZgQQucatZ177</ReviewsAndGuidesURL>\n
+      \  <PageNumber>1</PageNumber>\n   <TotalPages>120</TotalPages>\n   <BuyingGuideDetails>\n
+      \   <BuyingGuide>\n     <Name>Laptops</Name>\n     <URL>http://reviews.ebay.com/Laptops-Buying-Guide_W0QQugidZ10000000000025018</URL>\n
+      \    <CategoryID>177</CategoryID>\n     <Title>Laptops Buying Guide</Title>\n
+      \    <Text>&lt;html&gt;&lt;a name=&quot;top&quot;&gt;&lt;/a&gt;&lt;head&gt;\n
+      \     &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;
+      charset=ISO-8859-1&quot;&gt;\n   &lt;title&gt;eBay Guides - Laptops Buying Guide&lt;/title&gt;&lt;meta
+      name=&quot;keywords&quot; content=&quot;laptops, notebooks, dell laptops, ultraportable,
+      ibook, powerbook&amp;nbsp;&quot;&gt;&lt;meta name=&quot;description&quot; content=&quot;Learn
+      about&amp;nbsp;laptops&amp;nbsp;and notebooks for work or home. Use eBay&apos;s
+      Laptops Buying Guide to inform your next purchase! &quot;&gt;&lt;script type=&quot;text/javascript&quot;&gt;var
+      pageName = &quot;Reviews_guide_view_eBay&quot;;&lt;/script&gt;&lt;!--GuideSummary:
+      \n                Laptop computers, also called notebooks, give you the freedom
+      to take your computer into different rooms and on the road. Students, frequent
+      travelers, and people looking for a small, portable second computer love these
+      alternatives --&gt;&lt;/head&gt;&lt;body&gt;&lt;script language=&quot;javascript&quot;
+      type=&quot;text/javascript&quot;&gt;&lt;!--\n\t\t\t\t\tvar isXconPage = &quot;This
+      is an xCon page\\nasset id: eBayGuides.BuyingGuides.CN_LaptopComputer&quot;;\n\t\t\t\t//--&gt;&lt;/script&gt;&lt;div
+      id=&quot;HelpHeader&quot;&gt;&lt;!--H=header1_0--&gt;&lt;link rel=&quot;stylesheet&quot;
+      type=&quot;text/css&quot; href=&quot;http://include.ebaystatic.com/v4css/en_US_MAIN/v/GlobalNav_EbayStatic_v_en_US_MAIN.css&quot;&gt;&lt;!--cacheStatus:
+      true--&gt;&lt;script src=&quot;http://include.ebaystatic.com/v4js/en_US_MAIN/v/GlobalNav_EbayStatic_v_1_en_US_MAIN.js&quot;&gt;&lt;/script&gt;&lt;script
+      type=&quot;text/javascript&quot;&gt;function jsEvt0() {\n}\njsEvt0.prototype.handle
+      = function(event) { \noRegistry.get(&apos;playground&apos;).show();\n};\n\n&lt;/script&gt;&lt;script
+      type=&quot;text/javascript&quot;&gt;eventDispatcher.attachHandlerToElement(&apos;body&apos;,&apos;onload&apos;,new
+      jsEvt0());\n\n&lt;/script&gt;&lt;span class=&quot;ebay&quot;&gt;&lt;div id=&quot;gnheader&quot;
+      clas...</Text>\n     <CreationTime>2005-10-13T10:14:38.000Z</CreationTime>\n
+      \   </BuyingGuide>\n    <BuyingGuide>\n     <Name>Laptops</Name>\n     <URL>http://reviews.ebay.com/Laptops-Buying-Guide_W0QQugidZ10000000000000932</URL>\n
+      \    <CategoryID>177</CategoryID>\n     <Title>Laptops Buying Guide</Title>\n
+      \    <Text>&lt;html xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&lt;a
+      name=&quot;top&quot;&gt;&lt;/a&gt;&lt;head&gt;\n      &lt;meta http-equiv=&quot;Content-Type&quot;
+      content=&quot;text/html; charset=ISO-8859-1&quot;&gt;\n   &lt;title&gt;Laptops
+      Buying Guide &lt;/title&gt;&lt;meta name=&quot;keywords&quot; content=&quot;laptops,
+      notebooks, dell laptops, ultraportable, ibook, powerbook&amp;nbsp;&quot;&gt;&lt;meta
+      name=&quot;description&quot; content=&quot;Learn about&amp;nbsp;laptops&amp;nbsp;and
+      notebooks for work or home. Use eBay&apos;s Laptops Buying Guide to inform your
+      next purchase! &quot;&gt;&lt;!--GuideSummary: Laptop computers, also called
+      notebooks, give you the freedom to take your computer into different rooms and
+      on the road. Students, frequent travelers, and people looking for a small, portable
+      second computer love these alternatives to desktop PCs. P--&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;&lt;link
+      rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://include.ebaystatic.com/aw/pics/css/ebay.css&quot;&gt;&lt;/noscript&gt;&lt;script
+      type=&quot;text/javascript&quot; language=&quot;JavaScript1.1&quot;&gt;includeHost
+      = &apos;http://include.ebaystatic.com/&apos;;&lt;/script&gt;&lt;script src=&quot;http://include.ebaystatic.com/js/v/us/ebaybase.js&quot;&gt;&lt;/script&gt;&lt;script
+      src=&quot;http://include.ebaystatic.com/js/v/us/ebaysup.js&quot;&gt;&lt;/script&gt;&lt;script
+      type=&quot;text/javascript&quot; language=&quot;JavaScript1.1&quot;&gt;\n\t\t\tebay.oDocument._getControl(&quot;headerCommon&quot;)._exec(&quot;writeStyleSheet&quot;);\n\t\t&lt;/script&gt;&lt;script
+      type=&quot;text/javascript&quot; language=&quot;JavaScript1.1&quot;&gt;\n\t\t\tebay.oDocument._getControlEx(&quot;cobrandCollection&quot;)._exec(&quot;writeHeader&quot;);\n\t\t&lt;/script&gt;&lt;span
+      class=&quot;ebay&quot;&gt;&lt;form class=&quot;nomargin&quot; method=&quot;get&quot;
+      name=&quot;headerSearch&quot; onsubmit=&quot;ebay.oDocument._getControl(&apos;searchHeader&apos;)._...</Text>\n
+      \    <CreationTime>2005-09-22T20:41:32.000Z</CreationTime>\n    </BuyingGuide>\n
+      \   <BuyingGuide>\n     <Name>How to buy a noteboo...</Name>\n     <URL>http://reviews.ebay.com/How-to-buy-a-notebook-computer_W0QQugidZ10000000000068196</URL>\n
+      \    <CategoryID>177</CategoryID>\n     <Title>How to buy a notebook computer.</Title>\n
+      \    <Text>(1)&amp;nbsp;&amp;nbsp; &amp;nbsp;Before you buy&amp;nbsp;a computer
+      you need to decide what your needs are. The first decision is whether you want
+      to buy a &lt;SPAN style=&quot;FONT-WEIGHT: bold&quot;&gt;Desktop Computer&lt;/SPAN&gt;
+      or a &lt;SPAN style=&quot;FONT-WEIGHT: bold&quot;&gt;Notebook Computer&lt;/SPAN&gt;.
+      If you&apos;ve already decided on getting a notebook computer, then you need
+      to decide on the type of notebook computer. There are 3 main types of notebooks:
+      &lt;BR&gt;A) &lt;SPAN style=&quot;FONT-WEIGHT: bold&quot;&gt;All-Purpose Notebooks&lt;/SPAN&gt;
+      (these are the middle of the road type, not too big or too small, not really
+      heavy or really light &lt;BR&gt;B) &lt;SPAN style=&quot;FONT-WEIGHT: bold&quot;&gt;Desktop
+      Replacement Notebooks&lt;/SPAN&gt; (these are bigger and heavier than the All-Purpose
+      type notebooks, Desktop replacement notebooks have the biggest screens and keyboards
+      but are somewhat heavy, not something you&apos;d want to be carrying around
+      every day). &lt;BR&gt;C) &lt;SPAN style=&quot;FONT-WEIGHT: bold&quot;&gt;Ultraportable
+      Notebooks&lt;/SPAN&gt;: These are the lightest and most portable type of notebooks.
+      They are designed for people that carry the notebook with them almost every
+      day. The disadvantages are the screen can be hard to read and the keyboard can
+      be cramped. Also, the price for these can be a bit higher for the similar features.
+      This is because the portability of these light notebooks is highly prized by
+      many. &lt;BR&gt;&lt;BR&gt;(2) I used to always buy a desktop computer because
+      for a given amount of money you could buy a faster computer or one that stored
+      more information by buying a desktop instead of a notebook. Portability was
+      not a factor for me until I moved overseas. It was impractical to bring a desktop
+      computer from the US, so I decided to buy a notebook computer. Since I would
+      not be moving the notebook often, I chose to get a desktop replacement notebook.
+      The ability to pick up the whole computer and put i...</Text>\n     <CreationTime>2005-11-20T09:31:23.000Z</CreationTime>\n
+      \    <UserID>danielnyc</UserID>\n    </BuyingGuide>\n    <BuyingGuide>\n     <Name>Simple
+      Laptop Buying...</Name>\n     <URL>http://reviews.ebay.com/Simple-Laptop-Buying-Numbers-Aren-apos-t-Everything_W0QQugidZ10000000000790441</URL>\n
+      \    <CategoryID>177</CategoryID>\n     <Title>Simple Laptop Buying: Numbers
+      Aren&apos;t Everything</Title>\n     <Text>I started out looking for a laptop
+      for school: I gave myself a budget and said to myself, &quot;Buy the best laptop
+      for the money.&quot; That shouldn&apos;t be hard, I figured. Just compare the
+      numbers in speed and memory. Unfortunately, numbers aren&apos;t everything,
+      and some numbers are more important than you would think. Here are the basics
+      for non-computer-geeks about what I learned. &lt;br&gt;&lt;br&gt;April 11, 2007:
+      Please note that this guide was written in early 2006 and is directed mostly
+      towards Windows XP or earlier laptops. However, this information will give you
+      a very solid start even if you are looking for the latest and greatest. I will
+      update this guide in a year or two when I upgrade to a Vista laptop... what
+      is top-of-the-line today will be very affordable (and still current) tomorrow!&lt;br&gt;&lt;br&gt;*
+      &lt;span style=&quot;font-weight: bold;&quot;&gt;Processor Speed&lt;/span&gt;:
+      This is usually given in GHz (1GHz is 1000 MHz). This is a good indication of
+      how fast a computer is with a given processor. Unfortunately, this is useless
+      for comparing the speed for computers with different processors. For a certain
+      computer speed, the processor with the least GHz usually takes less battery
+      power and produces less heat.&lt;br&gt;&lt;br&gt;* &lt;span style=&quot;font-weight:
+      bold;&quot;&gt;Processor&lt;/span&gt;: This is a good indication of how new
+      and fast a computer is, and gives the speed in GHz between different models
+      of a processor. Up-to-date processors include AMD Athlon, Pentium 4, Pentium
+      Celeron, and Pentium M. Of the four, Pentium M is fastest for a given GHz rating,
+      and as of 2006 is a very safe bet. In terms of comparing AMD Athlons and Intel
+      Pentiums, I doubt there is an exact formula - each processor has to be compared
+      separately. I just decided to go with the Pentium M, as it is more popular and
+      gives me more options (but see below in the &quot;advanced stuff&quot;).&lt;br&gt;&lt;br&gt;-
+      Centrino: This is a common label emphasize...</Text>\n     <CreationTime>2006-03-12T03:06:34.000Z</CreationTime>\n
+      \    <UserID>oprya001</UserID>\n    </BuyingGuide>\n    <BuyingGuide>\n     <Name>Best
+      Laptops 2006 - ...</Name>\n     <URL>http://reviews.ebay.com/Best-Laptops-2006-Buying-Guide_W0QQugidZ10000000001420898</URL>\n
+      \    <CategoryID>177</CategoryID>\n     <Title>Best Laptops 2006 - Buying Guide</Title>\n
+      \    <Text>&lt;h2 style=&quot;margin-left: 40px;&quot;&gt;Best Laptops of 2006&lt;br&gt;&lt;/h2&gt;Of
+      course, everyone is entitled to bias when it comes to picking their laptop.
+      I have bought and sold laptops and work as an IT professional. Here are my take
+      on buying a laptop in 2006.&amp;nbsp; Believe it or not, there are currently
+      about a dozen primary laptop groups that are suitable to various people. I&apos;ve
+      seen many people frustrate over their laptop performance, it is usually because
+      they bought the wrong one to begin with.&lt;br&gt;&lt;br&gt;First thing on most
+      IT professionals&apos; minds in 2006 is Windows Vista. The much anticipated
+      new version of Windows from Microsoft that is rumored to revolutionize Windows
+      computing (it took them about 6+ years to produce it versus the 2 to 3 years
+      between the previous Windows). We are all skeptics about Vista&apos;s performance
+      on current hardware, if I can put it in layman&apos;s terms: don&apos;t wait.
+      Just buy a solid machine today while the sales are going on. Here&apos;s why
+      you shouldn&apos;t wait: the new releases of Windows are always buggy and not
+      refined, it took Windows XP a few years to mature. Technology gets cheaper by
+      the day, if you keep waiting, you don&apos;t have anything to use, just buy
+      something and don&apos;t envy new technology. Vista is far away from being the
+      best.&lt;br&gt;&lt;br&gt;Second thing is eBay, with a big decisions like dropping
+      2 grand on a laptop, spend a little extra to make sure you&apos;re buying from
+      a reputable seller with some sort of buyer protection. I&apos;ve been ripped
+      off on eBay many a times. Don&apos;t let it happen! No one will hear your cries.&lt;br&gt;&lt;br&gt;Now
+      let&apos;s get down to business and talk about brand names:&lt;br&gt;&lt;br&gt;There
+      are many brands to begin with, most of them offer similar specs.&lt;br&gt;&lt;br&gt;Most
+      popular laptop brands are (in no particular order): Dell, Apple, Lenovo (IBM
+      Thinkpad), HP, Fujitsu, Sony, Gateway, Alienware, Acer, and ...</Text>\n     <CreationTime>2006-07-20T20:33:38.000Z</CreationTime>\n
+      \    <UserID>aquacs</UserID>\n    </BuyingGuide>\n    <BuyingGuideHub>http://search.reviews.ebay.com/_PC-Laptops-Netbooks_W0QQucatZ177QQuqtZg</BuyingGuideHub>\n
+      \  </BuyingGuideDetails>\n  </FindReviewsAndGuidesResponse>\n "
+    http_version: '1.1'

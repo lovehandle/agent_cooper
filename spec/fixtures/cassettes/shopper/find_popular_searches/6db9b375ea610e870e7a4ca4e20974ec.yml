@@ -1,0 +1,45 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://open.api.ebay.com:80/shopping?APPID=YOUR-APP-ID&CALLNAME=FindPopularSearches&QueryKeywords=dell&RESPONSEENCODING=XML&SITEID=0&VERSION=717
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml;charset=utf-8
+      cache-control:
+      - no-cache
+      expires:
+      - Sat, 25 Dec 1999 00:00:00 GMT
+      last-modified:
+      - Sat, 23 Jul 2011 18:25:12 GMT
+      pragma:
+      - no-cache
+      server:
+      - Apache-Coyote/1.1
+      x-ebay-api-build-tag:
+      - E731_CORE_BUNDLED_13527319_R1
+      x-ebay-api-pool-name:
+      - ___cDRidW9rdDdlaHFg
+      x-ebay-api-server-name:
+      - ___dW0ucm83Nyg2MWE8MjQ1Kjc3LTMoNjQ2KDMwPz43OzU=
+      x-ebay-esb-guid:
+      - urn:uuid:5CD0BB9874BFF7D9EB27285028377285391969966676
+      date:
+      - Sat, 23 Jul 2011 18:25:12 GMT
+      transfer-encoding:
+      - chunked
+    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <FindPopularSearchesResponse
+      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-23T18:25:12.577Z</Timestamp>\n
+      \  <Ack>Success</Ack>\n   <Build>E731_CORE_BUNDLED_13527319_R1</Build>\n   <Version>731</Version>\n
+      \  <PopularSearchResult>\n    <QueryKeywords>dell</QueryKeywords>\n    <AlternativeSearches>dell
+      laptop;dell desktop;laptop;dell xps;dell inspiron</AlternativeSearches>\n    <RelatedSearches>hp;dell
+      axim x30;dell latitude;acer;dell phone;dell optiplex;alienware laptop;dell precision;dell
+      tablet;dell pc;dell lot;alienware;dell tower;compaq;dell printer</RelatedSearches>\n
+      \  </PopularSearchResult>\n  </FindPopularSearchesResponse>\n "
+    http_version: '1.1'
