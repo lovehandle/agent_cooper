@@ -1,6 +1,8 @@
 Agent Cooper
 ======
 
+[![travis](https://secure.travis-ci.org/rclosner/agent_cooper.png)](http://travis-ci.org/rclosner/agent_cooper)
+
 Agent Cooper is a minimalistic, Nokogiri-based Ruby wrapper to the [eBay Web Services API](http://developer.ebay.com/).
 
 Currently the following eBay APIs are supported:
