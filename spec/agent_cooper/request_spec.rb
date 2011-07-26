@@ -88,7 +88,7 @@ module AgentCooper
       end
 
       it "returns the query" do
-        @request.query.should == "bar=foo&bar=foo"
+        @request.query.should == "bar=foo&foo=bar"
       end
     end
 
