@@ -1,2 +1,0 @@
-before_script:
-  - cp spec/fixtures/ebay.yml.sample  spec/fixtures/ebay.yml
