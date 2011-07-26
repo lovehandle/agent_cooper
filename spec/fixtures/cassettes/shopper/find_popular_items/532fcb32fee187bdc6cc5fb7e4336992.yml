@@ -2,7 +2,7 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: http://open.api.ebay.com:80/shopping?APPID=YOUR-APP-ID&CALLNAME=FindPopularItems&QueryKeywords=harry%20original&RESPONSEENCODING=XML&SITEID=0&VERSION=717
+    uri: http://open.api.ebay.com:80/shopping?APPID=APP_ID&CALLNAME=FindPopularItems&QueryKeywords=harry%20original&RESPONSEENCODING=XML&SITEID=0&VERSION=717
     body: !!null 
     headers: !!null 
   response: !ruby/struct:VCR::Response
@@ -17,7 +17,7 @@
       expires:
       - Sat, 25 Dec 1999 00:00:00 GMT
       last-modified:
-      - Tue, 26 Jul 2011 08:52:25 GMT
+      - Tue, 26 Jul 2011 09:24:54 GMT
       pragma:
       - no-cache
       server:
@@ -27,15 +27,15 @@
       x-ebay-api-pool-name:
       - ___cDRidW9rdDdlaHFg
       x-ebay-api-server-name:
-      - ___dm8ucnA3MyhnZjc3NDQ2Kjc3LTI3KTIzMikyNjA9OzU+Nw==
+      - ___dm8ucnA3MyhjZmJmP2YyKjc3LTI3KTIzNSk3NTw/Mz02
       x-ebay-esb-guid:
-      - urn:uuid:466C971CA8733FA1D1294737301341022522116691508
+      - urn:uuid:BF0466A7C28C765E8D125777588817751241667706267
       date:
-      - Tue, 26 Jul 2011 08:52:25 GMT
+      - Tue, 26 Jul 2011 09:24:53 GMT
       transfer-encoding:
       - chunked
     body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <FindPopularItemsResponse
-      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-26T08:52:25.787Z</Timestamp>\n
+      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-26T09:24:54.650Z</Timestamp>\n
       \  <Ack>Success</Ack>\n   <Build>E731_CORE_BUNDLED_13527319_R1</Build>\n   <Version>731</Version>\n
       \  <ItemArray>\n    <Item>\n     <ItemID>250860133448</ItemID>\n     <EndTime>2011-07-27T21:57:49.000Z</EndTime>\n
       \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/Vintage-Original-Harry-Bertoia-Side-Chairs-Knoll-/250860133448</ViewItemURLForNaturalSearch>\n
@@ -43,7 +43,7 @@
       \    <PrimaryCategoryID>38200</PrimaryCategoryID>\n     <PrimaryCategoryName>Home
       &amp; Garden:Inside the Home:Furniture:Chairs</PrimaryCategoryName>\n     <BidCount>5</BidCount>\n
       \    <ConvertedCurrentPrice currencyID=\"USD\">125.5</ConvertedCurrentPrice>\n
-      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT13H5M24S</TimeLeft>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT12H32M55S</TimeLeft>\n
       \    <Title>Vintage Original Harry Bertoia Side Chairs for Knoll</Title>\n     <ShippingCostSummary>\n
       \     <ShippingServiceCost currencyID=\"USD\">30.0</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
       \     <ListedShippingServiceCost currencyID=\"USD\">30.0</ListedShippingServiceCost>\n
@@ -54,7 +54,7 @@
       \    <PrimaryCategoryID>29798</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectables:Fantasy/
       Myth/ Magic:Harry Potter</PrimaryCategoryName>\n     <BidCount>7</BidCount>\n
       \    <ConvertedCurrentPrice currencyID=\"USD\">17.1</ConvertedCurrentPrice>\n
-      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT30M56S</TimeLeft>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>PT23H58M27S</TimeLeft>\n
       \    <Title>HARRY POTTER DEATHLY HALLOWS 2 Original Cinema Poster </Title>\n
       \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">8.14</ShippingServiceCost>\n
       \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"GBP\">5.0</ListedShippingServiceCost>\n
@@ -65,7 +65,7 @@
       \    <PrimaryCategoryID>61104</PrimaryCategoryID>\n     <PrimaryCategoryName>Entertainment
       Memorabilia:Movie Memorabilia:Posters:Originals-United States:2000-Now</PrimaryCategoryName>\n
       \    <BidCount>13</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">60.0</ConvertedCurrentPrice>\n
-      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>PT7H59M35S</TimeLeft>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>PT7H27M6S</TimeLeft>\n
       \    <Title>HARRY POTTER SORCERERS STONE ORIGINAL THEATRICAL POSTER</Title>\n
       \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">0.0</ShippingServiceCost>\n
       \     <ShippingType>FlatDomesticCalculatedInternational</ShippingType>\n      <ListedShippingServiceCost
@@ -75,18 +75,18 @@
       \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/1505773409128080_1.jpg</GalleryURL>\n
       \    <PrimaryCategoryID>307</PrimaryCategoryID>\n     <PrimaryCategoryName>Music:CDs</PrimaryCategoryName>\n
       \    <BidCount>17</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">23.0</ConvertedCurrentPrice>\n
-      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P16DT21H28M29S</TimeLeft>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P16DT20H56M</TimeLeft>\n
       \    <Title>HARRY CHAPIN - ORIGINAL ALBUM SERiES  5CD</Title>\n     <ShippingCostSummary>\n
       \     <ShippingServiceCost currencyID=\"USD\">0.0</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
       \     <ListedShippingServiceCost currencyID=\"USD\">0.0</ListedShippingServiceCost>\n
-      \    </ShippingCostSummary>\n     <WatchCount>17</WatchCount>\n    </Item>\n
+      \    </ShippingCostSummary>\n     <WatchCount>16</WatchCount>\n    </Item>\n
       \   <Item>\n     <ItemID>120607932528</ItemID>\n     <EndTime>2011-08-07T01:54:50.000Z</EndTime>\n
       \    <ViewItemURLForNaturalSearch>http://cgi.ebay.com/Harry-Potter-Deathly-Hallows-Original-D-S-Movie-Posters-/120607932528</ViewItemURLForNaturalSearch>\n
       \    <ListingType>StoresFixedPrice</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/1206079325288080_1.jpg</GalleryURL>\n
       \    <PrimaryCategoryID>18828</PrimaryCategoryID>\n     <PrimaryCategoryName>Movies:Movie
       Memorabilia:Posters</PrimaryCategoryName>\n     <BidCount>3</BidCount>\n     <ConvertedCurrentPrice
       currencyID=\"USD\">108.37</ConvertedCurrentPrice>\n     <ListingStatus>Active</ListingStatus>\n
-      \    <TimeLeft>P11DT17H2M25S</TimeLeft>\n     <Title>Harry Potter Deathly Hallows
+      \    <TimeLeft>P11DT16H29M56S</TimeLeft>\n     <Title>Harry Potter Deathly Hallows
       Original D/S Movie Posters</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
       currencyID=\"USD\">22.77</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
       \     <ListedShippingServiceCost currencyID=\"AUD\">21.0</ListedShippingServiceCost>\n
@@ -97,7 +97,7 @@
       \    <PrimaryCategoryID>377</PrimaryCategoryID>\n     <PrimaryCategoryName>Books:Fiction
       &amp; Literature</PrimaryCategoryName>\n     <BidCount>12</BidCount>\n     <ConvertedCurrentPrice
       currencyID=\"USD\">59.51</ConvertedCurrentPrice>\n     <ListingStatus>Active</ListingStatus>\n
-      \    <TimeLeft>PT17H40M</TimeLeft>\n     <Title>Harry Potter Books 1-7 Hardcover,
+      \    <TimeLeft>PT17H7M31S</TimeLeft>\n     <Title>Harry Potter Books 1-7 Hardcover,
       Original, Like New</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
       currencyID=\"USD\">4.0</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
       \     <ListedShippingServiceCost currencyID=\"USD\">4.0</ListedShippingServiceCost>\n
@@ -108,7 +108,7 @@
       \    <PrimaryCategoryID>279</PrimaryCategoryID>\n     <PrimaryCategoryName>Books:Children
       &amp; Young Adults</PrimaryCategoryName>\n     <BidCount>1</BidCount>\n     <ConvertedCurrentPrice
       currencyID=\"USD\">0.99</ConvertedCurrentPrice>\n     <ListingStatus>Active</ListingStatus>\n
-      \    <TimeLeft>P5DT12H35M50S</TimeLeft>\n     <Title>Harry Potter Prisoner of
+      \    <TimeLeft>P5DT12H3M21S</TimeLeft>\n     <Title>Harry Potter Prisoner of
       Azkaban ORIGINAL HARDCOVER1999</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
       currencyID=\"USD\">3.49</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
       \     <ListedShippingServiceCost currencyID=\"USD\">3.49</ListedShippingServiceCost>\n
@@ -119,7 +119,7 @@
       \    <PrimaryCategoryID>61108</PrimaryCategoryID>\n     <PrimaryCategoryName>Entertainment
       Memorabilia:Movie Memorabilia:Posters:Originals-International:2000-Now</PrimaryCategoryName>\n
       \    <BidCount>1</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">19.99</ConvertedCurrentPrice>\n
-      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P13DT12H56M3S</TimeLeft>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P13DT12H23M34S</TimeLeft>\n
       \    <Title>HARRY POTTER 1st MOVIE ORIGINAL  POSTER</Title>\n     <ShippingCostSummary>\n
       \     <ShippingServiceCost currencyID=\"USD\">5.0</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
       \     <ListedShippingServiceCost currencyID=\"USD\">5.0</ListedShippingServiceCost>\n
@@ -130,7 +130,7 @@
       \    <PrimaryCategoryID>29798</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectibles:Fantasy,
       Mythical &amp; Magic:Harry Potter</PrimaryCategoryName>\n     <BidCount>1</BidCount>\n
       \    <ConvertedCurrentPrice currencyID=\"USD\">12.99</ConvertedCurrentPrice>\n
-      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>PT3H52M46S</TimeLeft>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>PT3H20M17S</TimeLeft>\n
       \    <Title>Harry Potter Severus Snape Original Figure - NIB MINT</Title>\n
       \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">9.99</ShippingServiceCost>\n
       \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"USD\">9.99</ListedShippingServiceCost>\n
@@ -141,7 +141,7 @@
       \    <PrimaryCategoryID>80913</PrimaryCategoryID>\n     <PrimaryCategoryName>Clothing,
       Shoes, Accessories:Costumes:Full Outfits:Boys</PrimaryCategoryName>\n     <BidCount>1</BidCount>\n
       \    <ConvertedCurrentPrice currencyID=\"USD\">45.54</ConvertedCurrentPrice>\n
-      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P2DT8M59S</TimeLeft>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT23H36M30S</TimeLeft>\n
       \    <Title>Harry Potter Original Costume and Quidditch Costume</Title>\n     <ShippingCostSummary>\n
       \     <ShippingServiceCost currencyID=\"USD\">39.3</ShippingServiceCost>\n      <ShippingType>FlatDomesticCalculatedInternational</ShippingType>\n
       \     <ListedShippingServiceCost currencyID=\"AUD\">36.25</ListedShippingServiceCost>\n
@@ -152,7 +152,7 @@
       \    <PrimaryCategoryID>29798</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectibles:Fantasy,
       Mythical &amp; Magic:Harry Potter</PrimaryCategoryName>\n     <BidCount>1</BidCount>\n
       \    <ConvertedCurrentPrice currencyID=\"USD\">4.99</ConvertedCurrentPrice>\n
-      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT10H14M24S</TimeLeft>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT9H41M55S</TimeLeft>\n
       \    <Title>Harry Potter-Hermione Granger bookend-original box</Title>\n     <ShippingCostSummary>\n
       \     <ShippingServiceCost currencyID=\"USD\">4.95</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
       \     <ListedShippingServiceCost currencyID=\"USD\">4.95</ListedShippingServiceCost>\n
@@ -163,7 +163,7 @@
       \    <PrimaryCategoryID>139973</PrimaryCategoryID>\n     <PrimaryCategoryName>Video
       Games:Games</PrimaryCategoryName>\n     <BidCount>11</BidCount>\n     <ConvertedCurrentPrice
       currencyID=\"USD\">8.0</ConvertedCurrentPrice>\n     <ListingStatus>Active</ListingStatus>\n
-      \    <TimeLeft>P25DT7H39M35S</TimeLeft>\n     <Title>DIRTY HARRY NINTENDO GAME
+      \    <TimeLeft>P25DT7H7M6S</TimeLeft>\n     <Title>DIRTY HARRY NINTENDO GAME
       SYSTEM ORIGINAL NES HQ</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
       currencyID=\"USD\">0.0</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
       \     <ListedShippingServiceCost currencyID=\"USD\">0.0</ListedShippingServiceCost>\n
@@ -174,7 +174,7 @@
       \    <PrimaryCategoryID>29798</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectibles:Fantasy,
       Mythical &amp; Magic:Harry Potter</PrimaryCategoryName>\n     <BidCount>2</BidCount>\n
       \    <ConvertedCurrentPrice currencyID=\"USD\">3.74</ConvertedCurrentPrice>\n
-      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT11H4M45S</TimeLeft>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT10H32M16S</TimeLeft>\n
       \    <Title>Harry Potter-Ron-Hermione wall plaques-original boxes</Title>\n
       \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">4.95</ShippingServiceCost>\n
       \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"USD\">4.95</ListedShippingServiceCost>\n
@@ -186,7 +186,7 @@
       \    <PrimaryCategoryID>86207</PrimaryCategoryID>\n     <PrimaryCategoryName>Clothing,
       Shoes &amp; Accessories:Costumes &amp; Reenactment Attire:Costumes:Unisex</PrimaryCategoryName>\n
       \    <BidCount>1</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">1.99</ConvertedCurrentPrice>\n
-      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P4DT5H33M15S</TimeLeft>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P4DT5H46S</TimeLeft>\n
       \    <Title>Harry Potter Character Glasses NIP Original Licensed</Title>\n     <ShippingCostSummary>\n
       \     <ShippingServiceCost currencyID=\"USD\">2.0</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
       \     <ListedShippingServiceCost currencyID=\"USD\">2.0</ListedShippingServiceCost>\n
@@ -197,7 +197,7 @@
       \    <PrimaryCategoryID>29798</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectibles:Fantasy,
       Mythical &amp; Magic:Harry Potter</PrimaryCategoryName>\n     <BidCount>2</BidCount>\n
       \    <ConvertedCurrentPrice currencyID=\"USD\">6.0</ConvertedCurrentPrice>\n
-      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P10DT5H47M24S</TimeLeft>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P10DT5H14M55S</TimeLeft>\n
       \    <Title>HARRY POTTER- ORIGINAL HARRY POTTER PROMO GLASSES - NEW</Title>\n
       \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">0.0</ShippingServiceCost>\n
       \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"USD\">0.0</ListedShippingServiceCost>\n
@@ -208,7 +208,7 @@
       \    <PrimaryCategoryID>35877</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectibles:Fantasy,
       Mythical &amp; Magic:Magic:Posters, Prints</PrimaryCategoryName>\n     <BidCount>1</BidCount>\n
       \    <ConvertedCurrentPrice currencyID=\"USD\">35.0</ConvertedCurrentPrice>\n
-      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P25DT18H46M33S</TimeLeft>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P25DT18H14M4S</TimeLeft>\n
       \    <Title>Original Harry Willard Poster/Window Card</Title>\n     <ShippingCostSummary>\n
       \     <ShippingServiceCost currencyID=\"USD\">5.0</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
       \     <ListedShippingServiceCost currencyID=\"USD\">5.0</ListedShippingServiceCost>\n
@@ -219,7 +219,7 @@
       \    <PrimaryCategoryID>617</PrimaryCategoryID>\n     <PrimaryCategoryName>DVDs
       &amp; Movies:DVD, HD DVD &amp; Blu-ray</PrimaryCategoryName>\n     <BidCount>1</BidCount>\n
       \    <ConvertedCurrentPrice currencyID=\"USD\">19.99</ConvertedCurrentPrice>\n
-      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT13H33M24S</TimeLeft>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT13H55S</TimeLeft>\n
       \    <Title>All 6 Original Harry Potter dvds, Like New Cond., N/R</Title>\n
       \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">0.0</ShippingServiceCost>\n
       \     <ShippingType>FlatDomesticCalculatedInternational</ShippingType>\n      <ListedShippingServiceCost
@@ -230,7 +230,7 @@
       \    <PrimaryCategoryID>279</PrimaryCategoryID>\n     <PrimaryCategoryName>Books:Children
       &amp; Young Adults</PrimaryCategoryName>\n     <BidCount>3</BidCount>\n     <ConvertedCurrentPrice
       currencyID=\"USD\">1.04</ConvertedCurrentPrice>\n     <ListingStatus>Active</ListingStatus>\n
-      \    <TimeLeft>P3DT12H49M45S</TimeLeft>\n     <Title>Harry Potter and the Chamber
+      \    <TimeLeft>P3DT12H17M16S</TimeLeft>\n     <Title>Harry Potter and the Chamber
       of Secrets (original one)</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
       currencyID=\"USD\">3.95</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
       \     <ListedShippingServiceCost currencyID=\"USD\">3.95</ListedShippingServiceCost>\n
@@ -241,7 +241,7 @@
       \    <PrimaryCategoryID>163885</PrimaryCategoryID>\n     <PrimaryCategoryName>Entertainment
       Memorabilia:Movie Memorabilia:Posters:Reproductions:Current Releases</PrimaryCategoryName>\n
       \    <BidCount>3</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">21.5</ConvertedCurrentPrice>\n
-      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P3DT21H37M39S</TimeLeft>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P3DT21H5M10S</TimeLeft>\n
       \    <Title>Harry Potter 7 original movie banner 10x5 &amp; 3D glasses </Title>\n
       \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">20.0</ShippingServiceCost>\n
       \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"USD\">20.0</ListedShippingServiceCost>\n
@@ -251,7 +251,7 @@
       \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/1506267255838080_1.jpg</GalleryURL>\n
       \    <PrimaryCategoryID>307</PrimaryCategoryID>\n     <PrimaryCategoryName>Music:CDs</PrimaryCategoryName>\n
       \    <BidCount>4</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">19.18</ConvertedCurrentPrice>\n
-      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P5DT6H57M25S</TimeLeft>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P5DT6H24M56S</TimeLeft>\n
       \    <Title>Original Album Classics [Box] by Harry Nilsson (CD, ...</Title>\n
       \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">2.98</ShippingServiceCost>\n
       \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"USD\">2.98</ListedShippingServiceCost>\n

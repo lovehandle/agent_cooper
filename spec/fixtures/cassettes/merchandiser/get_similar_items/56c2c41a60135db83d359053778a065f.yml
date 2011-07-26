@@ -2,7 +2,7 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: http://svcs.ebay.com:80/MerchandisingService?CONSUMER-ID=YOUR-APP-ID&OPERATION-NAME=getSimilarItems&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.4.0&itemId=280254552262
+    uri: http://svcs.ebay.com:80/MerchandisingService?CONSUMER-ID=APP_ID&OPERATION-NAME=getSimilarItems&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.4.0&itemId=280254552262
     body: !!null 
     headers: !!null 
   response: !ruby/struct:VCR::Response
@@ -17,7 +17,7 @@
       x-ebay-esb-endpointurl:
       - /Root/ESBFunctions/Services/Ports/7003/profile/ns/v1/MerchandisingService/destination_default/address_synapse
       x-ebay-esb-guid:
-      - urn:uuid:4A63D22AE63EE9F2C41311688724378
+      - urn:uuid:72BA8539DE2444825E1311689675517
       x-ebay-soa-locale-list:
       - en-US_US
       x-ebay-soa-message-protocol:
@@ -25,7 +25,7 @@
       x-ebay-soa-operation-name:
       - getSimilarItems
       x-ebay-soa-request-id:
-      - 13165a51-b760-a0a3-d7f4-0b34fffc12ce!MerchandisingService!10.10.61.127!v3soa1core[]
+      - 13165c2d-7c70-a47a-c602-c2b2fffbcdeb!MerchandisingService!10.71.172.96!v3soa1core[]
       x-ebay-soa-response-data-format:
       - XML
       x-ebay-soa-service-name:
@@ -33,9 +33,9 @@
       x-ebay-soa-service-version:
       - 1.4.0
       date:
-      - Tue, 26 Jul 2011 08:52:23 GMT
+      - Tue, 26 Jul 2011 09:24:52 GMT
       transfer-encoding:
       - chunked
     body: <?xml version='1.0' encoding='UTF-8'?><getSimilarItemsResponse xmlns="http://www.ebay.com/marketplace/services"><ack>Failure</ack><errorMessage><error><errorId>10</errorId><domain>Marketplace</domain><severity>Error</severity><category>Application</category><message>Invalid
-      item ID. Item does not exist or has ended more than two weeks ago.</message><subdomain>Merchandising</subdomain></error></errorMessage><version>1.4.0</version><timestamp>2011-07-26T08:52:24.660Z</timestamp></getSimilarItemsResponse>
+      item ID. Item does not exist or has ended more than two weeks ago.</message><subdomain>Merchandising</subdomain></error></errorMessage><version>1.4.0</version><timestamp>2011-07-26T09:24:53.444Z</timestamp></getSimilarItemsResponse>
     http_version: '1.1'

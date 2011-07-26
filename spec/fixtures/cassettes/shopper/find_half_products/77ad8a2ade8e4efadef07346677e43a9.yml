@@ -2,7 +2,7 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: http://open.api.ebay.com:80/shopping?APPID=YOUR-APP-ID&CALLNAME=FindHalfProducts&QueryKeywords=harry%20potter&RESPONSEENCODING=XML&SITEID=0&VERSION=717
+    uri: http://open.api.ebay.com:80/shopping?APPID=APP_ID&CALLNAME=FindHalfProducts&QueryKeywords=harry%20potter&RESPONSEENCODING=XML&SITEID=0&VERSION=717
     body: !!null 
     headers: !!null 
   response: !ruby/struct:VCR::Response
@@ -17,7 +17,7 @@
       expires:
       - Sat, 25 Dec 1999 00:00:00 GMT
       last-modified:
-      - Tue, 26 Jul 2011 08:52:25 GMT
+      - Tue, 26 Jul 2011 09:24:53 GMT
       pragma:
       - no-cache
       server:
@@ -27,15 +27,15 @@
       x-ebay-api-pool-name:
       - ___cDRidW9rdDdlaHFg
       x-ebay-api-server-name:
-      - ___dm8ucnA3MyhjZToxNz80Kjc3LTI3KTIzNSkwPDw/Mz02
+      - ___dm8ucnA3MyhjZWU9ZDQzKjc3LTI3KTIzNSkwNzw/Mz02
       x-ebay-esb-guid:
-      - urn:uuid:848800B41B978782A4299850967867947911590619460
+      - urn:uuid:8A763305F9492E55F6296335751345868341058814578
       date:
-      - Tue, 26 Jul 2011 08:52:24 GMT
+      - Tue, 26 Jul 2011 09:24:53 GMT
       transfer-encoding:
       - chunked
     body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <FindHalfProductsResponse
-      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-26T08:52:25.051Z</Timestamp>\n
+      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-26T09:24:53.906Z</Timestamp>\n
       \  <Ack>Success</Ack>\n   <Build>E731_CORE_BUNDLED_13527319_R1</Build>\n   <Version>731</Version>\n
       \  <PageNumber>1</PageNumber>\n   <ApproximatePages>1170</ApproximatePages>\n
       \  <MoreResults>true</MoreResults>\n   <TotalProducts>1170</TotalProducts>\n

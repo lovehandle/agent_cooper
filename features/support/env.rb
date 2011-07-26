@@ -6,7 +6,7 @@ require 'agent_cooper'
 
 module AgentCooperMethods
   def ebay_app_id
-    ENV['EBAY_APP_ID'] ||= "APP_ID"
+    ENV['EBAY_APP_ID'] || "APP_ID"
   end
 
   def cassette_name

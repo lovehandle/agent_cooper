@@ -2,7 +2,7 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: http://open.api.ebay.com:80/shopping?APPID=YOUR-APP-ID&CALLNAME=GetShippingCosts&DestinationCountryCode=US&DestinationPostalCode=98122&ItemID=110089122715&QuantitySold=1&RESPONSEENCODING=XML&SITEID=0&VERSION=717
+    uri: http://open.api.ebay.com:80/shopping?APPID=APP_ID&CALLNAME=GetShippingCosts&DestinationCountryCode=US&DestinationPostalCode=98122&ItemID=110089122715&QuantitySold=1&RESPONSEENCODING=XML&SITEID=0&VERSION=717
     body: !!null 
     headers: !!null 
   response: !ruby/struct:VCR::Response
@@ -17,7 +17,7 @@
       expires:
       - Sat, 25 Dec 1999 00:00:00 GMT
       last-modified:
-      - Tue, 26 Jul 2011 08:52:25 GMT
+      - Tue, 26 Jul 2011 09:24:53 GMT
       pragma:
       - no-cache
       server:
@@ -27,15 +27,15 @@
       x-ebay-api-pool-name:
       - ___cDRidW9rdGZpdWY=
       x-ebay-api-server-name:
-      - ___dW0ucnA3Myg3ZTRgYzViKjc3LTQ3KTczKD4xPz43OzU=
+      - ___dm8ucm83Nyg2MWRiNjQxKjc3LTQyKTA1KDYwMDw/Mz02
       x-ebay-esb-guid:
-      - urn:uuid:466C971CA8733FA1D129473729695656036957910275
+      - urn:uuid:8A763305F9492E55F629633575421605975103109371
       date:
-      - Tue, 26 Jul 2011 08:52:24 GMT
+      - Tue, 26 Jul 2011 09:24:54 GMT
       transfer-encoding:
       - chunked
     body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <GetShippingCostsResponse
-      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-26T08:52:25.317Z</Timestamp>\n
+      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-26T09:24:53.983Z</Timestamp>\n
       \  <Ack>Failure</Ack>\n   <Errors>\n    <ShortMessage>Invalid item ID.</ShortMessage>\n
       \   <LongMessage>Invalid or non-existent item ID.</LongMessage>\n    <ErrorCode>10.12</ErrorCode>\n
       \   <SeverityCode>Error</SeverityCode>\n    <ErrorParameters ParamID=\"0\">\n

@@ -1,7 +1,7 @@
 require 'vcr'
 
 def ebay_app_id
-  ENV['EBAY_APP_ID']
+  ENV['EBAY_APP_ID'] || "APP_ID"
 end
 
 
