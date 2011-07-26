@@ -15,9 +15,9 @@
       server:
       - Apache-Coyote/1.1
       x-ebay-esb-endpointurl:
-      - /Root/ESBFunctions/Services/Ports/7003/profile/search/v1/FindingService/destination_default/address_synapse
+      - /Root/ESBFunctions/Services/Ports/7002/profile/search/v1/FindingService/destination_default/address_synapse
       x-ebay-esb-guid:
-      - urn:uuid:14EB01C54D7CDDC2FA1311501192132
+      - urn:uuid:590FE82E84BA4456DA1311687150497
       x-ebay-soa-locale-list:
       - en-US_US
       x-ebay-soa-message-protocol:
@@ -25,7 +25,7 @@
       x-ebay-soa-operation-name:
       - getSearchKeywordsRecommendation
       x-ebay-soa-request-id:
-      - 131583e6-3d90-a0aa-1376-f206fff65ec4!FindingService!10.10.161.55!v3apifindingcore[!FindingRecommendationService!10.10.161.55!v3apifindingcore[]]
+      - 13165a51-1020-a0aa-1397-e1d7ffd26a3d!FindingService!10.10.161.57!v3apifindingcore[!FindingRecommendationService!10.10.161.57!v3apifindingcore[]]
       x-ebay-soa-response-data-format:
       - XML
       x-ebay-soa-service-name:
@@ -33,9 +33,9 @@
       x-ebay-soa-service-version:
       - 1.11.0
       date:
-      - Sat, 23 Jul 2011 18:25:08 GMT
+      - Tue, 26 Jul 2011 08:52:21 GMT
       transfer-encoding:
       - chunked
     body: <?xml version='1.0' encoding='UTF-8'?><getSearchKeywordsRecommendationResponse
-      xmlns="http://www.ebay.com/marketplace/search/v1/services"><ack>Success</ack><version>1.11.0</version><timestamp>2011-07-23T18:25:09.112Z</timestamp><keywords>accordion</keywords></getSearchKeywordsRecommendationResponse>
+      xmlns="http://www.ebay.com/marketplace/search/v1/services"><ack>Success</ack><version>1.11.0</version><timestamp>2011-07-26T08:52:21.921Z</timestamp><keywords>accordion</keywords></getSearchKeywordsRecommendationResponse>
     http_version: '1.1'

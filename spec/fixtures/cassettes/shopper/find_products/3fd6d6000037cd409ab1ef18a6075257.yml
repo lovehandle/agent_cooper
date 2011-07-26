@@ -17,7 +17,7 @@
       expires:
       - Sat, 25 Dec 1999 00:00:00 GMT
       last-modified:
-      - Sat, 23 Jul 2011 18:25:12 GMT
+      - Tue, 26 Jul 2011 08:52:24 GMT
       pragma:
       - no-cache
       server:
@@ -27,15 +27,15 @@
       x-ebay-api-pool-name:
       - ___cDRidW9rdDdlaHFg
       x-ebay-api-server-name:
-      - ___dW0ucm43Nyg/MzZxcXNiKjc3LTMoMTorPjM5PTY/Mw==
+      - ___dm8ucnA3MyhgMjQyYmRnKjc3LTI3KTIzNCkyNz49OzU+Nw==
       x-ebay-esb-guid:
-      - urn:uuid:0818EFD69DD414CBF6269545847914785511118903125
+      - urn:uuid:848800B41B978782A429985096667259735-659381134
       date:
-      - Sat, 23 Jul 2011 18:25:11 GMT
+      - Tue, 26 Jul 2011 08:52:24 GMT
       transfer-encoding:
       - chunked
     body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <FindProductsResponse
-      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-23T18:25:12.285Z</Timestamp>\n
+      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-26T08:52:24.451Z</Timestamp>\n
       \  <Ack>Success</Ack>\n   <Build>E731_CORE_BUNDLED_13527319_R1</Build>\n   <Version>731</Version>\n
       \  <ApproximatePages>1170</ApproximatePages>\n   <MoreResults>true</MoreResults>\n
       \  <PageNumber>1</PageNumber>\n   <Product>\n    <DomainName>DVDs</DomainName>\n
@@ -45,7 +45,7 @@
       \    <NameValueList>\n      <Name>Format</Name>\n      <Value>DVD</Value>\n
       \    </NameValueList>\n     <NameValueList>\n      <Name>Rating</Name>\n      <Value>PG-13</Value>\n
       \    </NameValueList>\n     <NameValueList>\n      <Name>Leading Role</Name>\n
-      \    </NameValueList>\n    </ItemSpecifics>\n    <ReviewCount>84</ReviewCount>\n
+      \    </NameValueList>\n    </ItemSpecifics>\n    <ReviewCount>87</ReviewCount>\n
       \   <StockPhotoURL>http://i.ebayimg.com/00/$(KGrHqF,!l0E2DwP)(v!BNo16imfYQ~~_6.JPG?set_id=89040003C1</StockPhotoURL>\n
       \   <Title>Harry Potter and the Deathly Hallows: Part I (DVD, 2011)</Title>\n
       \  </Product>\n   <TotalProducts>1170</TotalProducts>\n  </FindProductsResponse>\n "

@@ -1,11 +1,7 @@
 require 'vcr'
 
-def ebay
-  @ebay ||= YAML::load_file(File.dirname(__FILE__) + "/../../spec/fixtures/ebay.yml")
-end
-
 def ebay_app_id
-  ebay['app_id']
+  ENV['EBAY_APP_ID']
 end
 
 
@@ -15,5 +11,5 @@ VCR.config do |c|
     :record             => :none,
     :match_requests_on  => [:host] }
   c.stub_with :webmock
-  c.filter_sensitive_data('YOUR-APP-ID') { ebay_app_id }
+  c.filter_sensitive_data('APP_ID') { ebay_app_id }
 end

@@ -15,9 +15,9 @@
       server:
       - Apache-Coyote/1.1
       x-ebay-esb-endpointurl:
-      - /Root/ESBFunctions/Services/Ports/7003/profile/ns/v1/MerchandisingService/destination_default/address_synapse
+      - /Root/ESBFunctions/Services/Ports/7002/profile/ns/v1/MerchandisingService/destination_default/address_synapse
       x-ebay-esb-guid:
-      - urn:uuid:14EB01C54D7CDDC2FA1311501196128
+      - urn:uuid:DA4DDBFBC1F439A8621311688724450
       x-ebay-soa-locale-list:
       - en-US_US
       x-ebay-soa-message-protocol:
@@ -25,7 +25,7 @@
       x-ebay-soa-operation-name:
       - getMostWatchedItems
       x-ebay-soa-request-id:
-      - 131583e6-d870-a0a3-d821-8521fffe777d!MerchandisingService!10.10.61.130!v3soa1core[]
+      - 13165a51-a9b0-a0a3-d837-f1f7fffc0f3d!MerchandisingService!10.10.61.131!v3soa1core[]
       x-ebay-soa-response-data-format:
       - XML
       x-ebay-soa-service-name:
@@ -33,19 +33,20 @@
       x-ebay-soa-service-version:
       - 1.4.0
       date:
-      - Sat, 23 Jul 2011 18:25:10 GMT
+      - Tue, 26 Jul 2011 08:52:24 GMT
       transfer-encoding:
       - chunked
-    body: <?xml version='1.0' encoding='UTF-8'?><getMostWatchedItemsResponse xmlns="http://www.ebay.com/marketplace/services"><ack>Success</ack><version>1.4.0</version><timestamp>2011-07-23T18:25:11.622Z</timestamp><itemRecommendations><item><itemId>390120901957</itemId><title>Wireless
-      Spy Nanny Mini Micro Camera FULL SYSTEM!</title><viewItemURL>http://cgi.ebay.com/Wireless-Spy-Nanny-Mini-Micro-Camera-FULL-SYSTEM-/390120901957?_trksid=m8&amp;_trkparms=algo%3DMW%26itu%3DUCC%26otn%3D3%26ps%3D50</viewItemURL><globalId>EBAY-US</globalId><timeLeft>P19DT4H43M37S</timeLeft><primaryCategoryId>293</primaryCategoryId><primaryCategoryName>Consumer
+    body: <?xml version='1.0' encoding='UTF-8'?><getMostWatchedItemsResponse xmlns="http://www.ebay.com/marketplace/services"><ack>Success</ack><version>1.4.0</version><timestamp>2011-07-26T08:52:24.441Z</timestamp><itemRecommendations><item><itemId>390120901957</itemId><title>Wireless
+      Spy Nanny Mini Micro Camera FULL SYSTEM!</title><viewItemURL>http://cgi.ebay.com/Wireless-Spy-Nanny-Mini-Micro-Camera-FULL-SYSTEM-/390120901957?_trksid=m8&amp;_trkparms=algo%3DMW%26itu%3DUCC%26otn%3D3%26ps%3D50</viewItemURL><globalId>EBAY-US</globalId><timeLeft>P16DT14H16M24S</timeLeft><primaryCategoryId>293</primaryCategoryId><primaryCategoryName>Consumer
       Electronics</primaryCategoryName><subtitle>NEW 2011 MODEL WITH 4 CHANNEL FREQUENCY
       SELECTOR!!</subtitle><buyItNowPrice currencyId="USD">39.99</buyItNowPrice><country>US</country><imageURL>http://thumbs2.ebaystatic.com/m/mdci5SsHo-pBCzix3IGaamg/80.jpg</imageURL><shippingCost
-      currencyId="USD">0.0</shippingCost><shippingType>Flat</shippingType><watchCount>4333</watchCount></item><item><itemId>280479498575</itemId><title>Sexy
-      Black Corset Embroidered Cap Sleeve Top, S M L XL</title><viewItemURL>http://cgi.ebay.com/Sexy-Black-Corset-Embroidered-Cap-Sleeve-Top-S-M-L-XL-/280479498575?_trksid=m8&amp;_trkparms=algo%3DMW%26itu%3DUCC%26otn%3D3%26ps%3D50</viewItemURL><originalPrice
-      currencyId="USD">26.65</originalPrice><globalId>EBAY-US</globalId><timeLeft>P15DT14H21M52S</timeLeft><primaryCategoryId>11450</primaryCategoryId><primaryCategoryName>Clothing,
-      Shoes &amp; Accessories</primaryCategoryName><buyItNowPrice currencyId="USD">23.99</buyItNowPrice><country>HK</country><imageURL>http://thumbs4.ebaystatic.com/m/mqqbDLi1lyHsd9YFn1n-DEQ/80.jpg</imageURL><shippingCost
-      currencyId="USD">0.0</shippingCost><shippingType>Flat</shippingType><watchCount>4003</watchCount></item><item><itemId>380226410093</itemId><title>NEW
-      1TB USB Mini 2.5" External Portable Hard Drive 1 TB</title><viewItemURL>http://cgi.ebay.com/NEW-1TB-USB-Mini-2-5-External-Portable-Hard-Drive-1-TB-/380226410093?_trksid=m8&amp;_trkparms=algo%3DMW%26itu%3DUCC%26otn%3D3%26ps%3D50</viewItemURL><globalId>EBAY-US</globalId><timeLeft>P21DT2H45M45S</timeLeft><primaryCategoryId>58058</primaryCategoryId><primaryCategoryName>Computers
-      &amp; Networking</primaryCategoryName><subtitle>2 YEAR WARRANTY~BRAND NEW~SPECIAL
-      EXCLUSIVE EBAY OFFER</subtitle><buyItNowPrice currencyId="USD">119.95</buyItNowPrice><country>US</country><imageURL>http://thumbs2.ebaystatic.com/m/mJaLLIkvPVN8XNsfGda6jCQ/80.jpg</imageURL><shippingType>CalculatedDomesticFlatInternational</shippingType><watchCount>3806</watchCount></item></itemRecommendations></getMostWatchedItemsResponse>
+      currencyId="USD">0.0</shippingCost><shippingType>Flat</shippingType><watchCount>4373</watchCount></item><item><itemId>280479498575</itemId><title>Sexy
+      Black Corset Embroidered Cap Sleeve Top, S M L XL</title><viewItemURL>http://cgi.ebay.com/Sexy-Black-Corset-Embroidered-Cap-Sleeve-Top-S-M-L-XL-/280479498575?_trksid=m8&amp;_trkparms=algo%3DMW%26itu%3DUCC%26otn%3D3%26ps%3D50</viewItemURL><globalId>EBAY-US</globalId><timeLeft>P12DT23H54M39S</timeLeft><primaryCategoryId>11450</primaryCategoryId><primaryCategoryName>Clothing,
+      Shoes &amp; Accessories</primaryCategoryName><buyItNowPrice currencyId="USD">26.65</buyItNowPrice><country>HK</country><imageURL>http://thumbs4.ebaystatic.com/m/mqqbDLi1lyHsd9YFn1n-DEQ/80.jpg</imageURL><shippingCost
+      currencyId="USD">0.0</shippingCost><shippingType>Flat</shippingType><watchCount>4036</watchCount></item><item><itemId>120648777962</itemId><title>Blue
+      LED Digital Watch Lava Style mens sports Blue N1 B</title><viewItemURL>http://cgi.ebay.com/Blue-LED-Digital-Watch-Lava-Style-mens-sports-Blue-N1-B-/120648777962?_trksid=m8&amp;_trkparms=algo%3DMW%26itu%3DUCC%26otn%3D3%26ps%3D50</viewItemURL><originalPrice
+      currencyId="USD">6.96</originalPrice><globalId>EBAY-US</globalId><timeLeft>P19DT8H10M59S</timeLeft><primaryCategoryId>281</primaryCategoryId><primaryCategoryName>Jewelry
+      &amp; Watches</primaryCategoryName><subtitle>Brand New + FREE GIFT BOX  !</subtitle><buyItNowPrice
+      currencyId="USD">4.87</buyItNowPrice><country>CN</country><imageURL>http://thumbs3.ebaystatic.com/m/mXGJw5qkqjhYhQihXzx9yqA/80.jpg</imageURL><shippingCost
+      currencyId="USD">9.0</shippingCost><shippingType>NotSpecified</shippingType><watchCount>3849</watchCount></item></itemRecommendations></getMostWatchedItemsResponse>
     http_version: '1.1'

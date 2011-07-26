@@ -17,7 +17,7 @@
       expires:
       - Sat, 25 Dec 1999 00:00:00 GMT
       last-modified:
-      - Sat, 23 Jul 2011 18:25:12 GMT
+      - Tue, 26 Jul 2011 08:52:24 GMT
       pragma:
       - no-cache
       server:
@@ -27,15 +27,15 @@
       x-ebay-api-pool-name:
       - ___cDRidW9rdGZpdWY=
       x-ebay-api-server-name:
-      - ___dW0ucnA3MyhgNWU2MDRmKjc3LTQ3KTc3KDUyMTw/Mz02
+      - ___dm8ucm83Nyg2MWRiNzI2Kjc3LTQyKTA1KDYwMzw/Mz02
       x-ebay-esb-guid:
-      - urn:uuid:6474491A39FA1E55992798996069531006081665340
+      - urn:uuid:466C971CA8733FA1D1294737295999089871972291315
       date:
-      - Sat, 23 Jul 2011 18:25:12 GMT
+      - Tue, 26 Jul 2011 08:52:24 GMT
       transfer-encoding:
       - chunked
     body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <GetItemStatusResponse
-      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-23T18:25:12.274Z</Timestamp>\n
+      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-26T08:52:24.831Z</Timestamp>\n
       \  <Ack>Failure</Ack>\n   <Errors>\n    <ShortMessage>Invalid item ID.</ShortMessage>\n
       \   <LongMessage>Invalid or non-existent item ID.</LongMessage>\n    <ErrorCode>10.12</ErrorCode>\n
       \   <SeverityCode>Error</SeverityCode>\n    <ErrorParameters ParamID=\"0\">\n

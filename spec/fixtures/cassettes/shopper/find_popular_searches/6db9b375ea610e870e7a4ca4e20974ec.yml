@@ -17,7 +17,7 @@
       expires:
       - Sat, 25 Dec 1999 00:00:00 GMT
       last-modified:
-      - Sat, 23 Jul 2011 18:25:12 GMT
+      - Tue, 26 Jul 2011 08:52:25 GMT
       pragma:
       - no-cache
       server:
@@ -27,15 +27,15 @@
       x-ebay-api-pool-name:
       - ___cDRidW9rdDdlaHFg
       x-ebay-api-server-name:
-      - ___dW0ucm83Nyg2MWE8MjQ1Kjc3LTMoNjQ2KDMwPz43OzU=
+      - ___dm8ucnA3MygyMGY0PzdhKjc3LTI3KTIzNSkwMjw/Mz02
       x-ebay-esb-guid:
-      - urn:uuid:5CD0BB9874BFF7D9EB27285028377285391969966676
+      - urn:uuid:7E1A06A58AF644C785300667819494254721936735060
       date:
-      - Sat, 23 Jul 2011 18:25:12 GMT
+      - Tue, 26 Jul 2011 08:52:25 GMT
       transfer-encoding:
       - chunked
     body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <FindPopularSearchesResponse
-      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-23T18:25:12.577Z</Timestamp>\n
+      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-26T08:52:25.672Z</Timestamp>\n
       \  <Ack>Success</Ack>\n   <Build>E731_CORE_BUNDLED_13527319_R1</Build>\n   <Version>731</Version>\n
       \  <PopularSearchResult>\n    <QueryKeywords>dell</QueryKeywords>\n    <AlternativeSearches>dell
       laptop;dell desktop;laptop;dell xps;dell inspiron</AlternativeSearches>\n    <RelatedSearches>hp;dell

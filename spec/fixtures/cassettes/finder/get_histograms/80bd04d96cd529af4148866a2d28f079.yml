@@ -15,9 +15,9 @@
       server:
       - Apache-Coyote/1.1
       x-ebay-esb-endpointurl:
-      - /Root/ESBFunctions/Services/Ports/7003/profile/search/v1/FindingService/destination_default/address_synapse
+      - /Root/ESBFunctions/Services/Ports/7002/profile/search/v1/FindingService/destination_default/address_synapse
       x-ebay-esb-guid:
-      - urn:uuid:E12F691CADD474FC0D1311805078357
+      - urn:uuid:590FE82E84BA4456DA1311687153175
       x-ebay-soa-locale-list:
       - en-US_US
       x-ebay-soa-message-protocol:
@@ -25,7 +25,7 @@
       x-ebay-soa-operation-name:
       - getHistograms
       x-ebay-soa-request-id:
-      - 131583e6-a810-a0aa-1697-f3f7fff6a68e!FindingService!10.10.161.105!v3apifindingcore[!FindItemService!10.10.161.105!v3apifindingcore[]]
+      - 13165a51-7df0-a0aa-1186-6686ffd2b21a!FindingService!10.10.161.24!v3apifindingcore[!FindItemService!10.10.161.24!v3apifindingcore[]]
       x-ebay-soa-response-data-format:
       - XML
       x-ebay-soa-service-name:
@@ -33,14 +33,14 @@
       x-ebay-soa-service-version:
       - 1.11.0
       date:
-      - Sat, 23 Jul 2011 18:25:11 GMT
+      - Tue, 26 Jul 2011 08:52:23 GMT
       transfer-encoding:
       - chunked
-    body: <?xml version='1.0' encoding='UTF-8'?><getHistogramsResponse xmlns="http://www.ebay.com/marketplace/search/v1/services"><ack>Success</ack><version>1.11.0</version><timestamp>2011-07-23T18:25:11.520Z</timestamp><categoryHistogramContainer><categoryHistogram><categoryId>11233</categoryId><categoryName>Music</categoryName><count>6184867</count><childCategoryHistogram><categoryId>307</categoryId><categoryName>CDs</categoryName><count>3156935</count></childCategoryHistogram><childCategoryHistogram><categoryId>306</categoryId><categoryName>Records</categoryName><count>2696354</count></childCategoryHistogram><childCategoryHistogram><categoryId>1600</categoryId><categoryName>Cassettes</categoryName><count>140427</count></childCategoryHistogram><childCategoryHistogram><categoryId>618</categoryId><categoryName>Other
-      Formats</categoryName><count>63490</count></childCategoryHistogram><childCategoryHistogram><categoryId>31608</categoryId><categoryName>Wholesale
-      Lots</categoryName><count>48002</count></childCategoryHistogram><childCategoryHistogram><categoryId>52473</categoryId><categoryName>Accessories</categoryName><count>13361</count></childCategoryHistogram></categoryHistogram></categoryHistogramContainer><conditionHistogramContainer><conditionHistogram><condition><conditionId>6000</conditionId><conditionDisplayName>Acceptable</conditionDisplayName></condition><count>80255</count></conditionHistogram><conditionHistogram><condition><conditionId>5000</conditionId><conditionDisplayName>Good</conditionDisplayName></condition><count>191133</count></conditionHistogram><conditionHistogram><condition><conditionId>4000</conditionId><conditionDisplayName>Very
-      Good</conditionDisplayName></condition><count>769843</count></conditionHistogram><conditionHistogram><condition><conditionId>3000</conditionId><conditionDisplayName>Like
-      New</conditionDisplayName></condition><count>370221</count></conditionHistogram><conditionHistogram><condition><conditionId>2750</conditionId><conditionDisplayName>Like
-      New</conditionDisplayName></condition><count>548412</count></conditionHistogram><conditionHistogram><condition><conditionId>1500</conditionId></condition><count>99</count></conditionHistogram><conditionHistogram><condition><conditionId>1000</conditionId><conditionDisplayName>Brand
-      New</conditionDisplayName></condition><count>1757464</count></conditionHistogram></conditionHistogramContainer></getHistogramsResponse>
+    body: <?xml version='1.0' encoding='UTF-8'?><getHistogramsResponse xmlns="http://www.ebay.com/marketplace/search/v1/services"><ack>Success</ack><version>1.11.0</version><timestamp>2011-07-26T08:52:24.303Z</timestamp><categoryHistogramContainer><categoryHistogram><categoryId>11233</categoryId><categoryName>Music</categoryName><count>6201019</count><childCategoryHistogram><categoryId>307</categoryId><categoryName>CDs</categoryName><count>3162370</count></childCategoryHistogram><childCategoryHistogram><categoryId>306</categoryId><categoryName>Records</categoryName><count>2708710</count></childCategoryHistogram><childCategoryHistogram><categoryId>1600</categoryId><categoryName>Cassettes</categoryName><count>141936</count></childCategoryHistogram><childCategoryHistogram><categoryId>618</categoryId><categoryName>Other
+      Formats</categoryName><count>62220</count></childCategoryHistogram><childCategoryHistogram><categoryId>31608</categoryId><categoryName>Wholesale
+      Lots</categoryName><count>47999</count></childCategoryHistogram><childCategoryHistogram><categoryId>52473</categoryId><categoryName>Accessories</categoryName><count>13252</count></childCategoryHistogram></categoryHistogram></categoryHistogramContainer><conditionHistogramContainer><conditionHistogram><condition><conditionId>6000</conditionId><conditionDisplayName>Acceptable</conditionDisplayName></condition><count>79961</count></conditionHistogram><conditionHistogram><condition><conditionId>5000</conditionId><conditionDisplayName>Good</conditionDisplayName></condition><count>189268</count></conditionHistogram><conditionHistogram><condition><conditionId>4000</conditionId><conditionDisplayName>Very
+      Good</conditionDisplayName></condition><count>787653</count></conditionHistogram><conditionHistogram><condition><conditionId>3000</conditionId><conditionDisplayName>Like
+      New</conditionDisplayName></condition><count>371058</count></conditionHistogram><conditionHistogram><condition><conditionId>2750</conditionId><conditionDisplayName>Like
+      New</conditionDisplayName></condition><count>549146</count></conditionHistogram><conditionHistogram><condition><conditionId>1500</conditionId></condition><count>100</count></conditionHistogram><conditionHistogram><condition><conditionId>1000</conditionId><conditionDisplayName>Brand
+      New</conditionDisplayName></condition><count>1754356</count></conditionHistogram></conditionHistogramContainer></getHistogramsResponse>
     http_version: '1.1'

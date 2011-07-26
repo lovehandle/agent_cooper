@@ -17,7 +17,7 @@
       expires:
       - Sat, 25 Dec 1999 00:00:00 GMT
       last-modified:
-      - Sat, 23 Jul 2011 18:25:12 GMT
+      - Tue, 26 Jul 2011 08:52:25 GMT
       pragma:
       - no-cache
       server:
@@ -27,15 +27,15 @@
       x-ebay-api-pool-name:
       - ___cDRidW9rdDdlaHFg
       x-ebay-api-server-name:
-      - ___dW0ucm43Nyg/MjNyN2NmKjc3LTMoNjo2KDY6Mjw/Mz02
+      - ___dm8ucnA3MyhjZToxNz80Kjc3LTI3KTIzNSkwPDw/Mz02
       x-ebay-esb-guid:
-      - urn:uuid:0818EFD69DD414CBF626954584932357628719059251
+      - urn:uuid:848800B41B978782A4299850967867947911590619460
       date:
-      - Sat, 23 Jul 2011 18:25:11 GMT
+      - Tue, 26 Jul 2011 08:52:24 GMT
       transfer-encoding:
       - chunked
     body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <FindHalfProductsResponse
-      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-23T18:25:12.147Z</Timestamp>\n
+      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-26T08:52:25.051Z</Timestamp>\n
       \  <Ack>Success</Ack>\n   <Build>E731_CORE_BUNDLED_13527319_R1</Build>\n   <Version>731</Version>\n
       \  <PageNumber>1</PageNumber>\n   <ApproximatePages>1170</ApproximatePages>\n
       \  <MoreResults>true</MoreResults>\n   <TotalProducts>1170</TotalProducts>\n
@@ -48,8 +48,8 @@
       \      <Name>Format</Name>\n       <Value>DVD</Value>\n      </NameValueList>\n
       \     <NameValueList>\n       <Name>Rating</Name>\n       <Value>PG-13</Value>\n
       \     </NameValueList>\n      <NameValueList>\n       <Name>Leading Role</Name>\n
-      \     </NameValueList>\n     </ItemSpecifics>\n     <ReviewCount>84</ReviewCount>\n
-      \    <MinPrice currencyID=\"USD\">8.43</MinPrice>\n    </Product>\n   </Products>\n
+      \     </NameValueList>\n     </ItemSpecifics>\n     <ReviewCount>87</ReviewCount>\n
+      \    <MinPrice currencyID=\"USD\">16.97</MinPrice>\n    </Product>\n   </Products>\n
       \  <ProductSearchURL>http://search.half.ebay.com/harry-potter</ProductSearchURL>\n
       \ </FindHalfProductsResponse>\n "
     http_version: '1.1'

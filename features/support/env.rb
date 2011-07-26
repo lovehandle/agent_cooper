@@ -5,12 +5,8 @@ require 'agent_cooper'
 
 
 module AgentCooperMethods
-  def ebay
-    @ebay ||= YAML::load_file(File.dirname(__FILE__) + "/../../spec/fixtures/ebay.yml")
-  end
-
   def ebay_app_id
-    ebay['app_id']
+    ENV['EBAY_APP_ID'] ||= "APP_ID"
   end
 
   def cassette_name

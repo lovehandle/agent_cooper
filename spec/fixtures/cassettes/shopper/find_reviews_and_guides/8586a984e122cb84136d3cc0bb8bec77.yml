@@ -17,7 +17,7 @@
       expires:
       - Sat, 25 Dec 1999 00:00:00 GMT
       last-modified:
-      - Sat, 23 Jul 2011 18:25:12 GMT
+      - Tue, 26 Jul 2011 08:52:26 GMT
       pragma:
       - no-cache
       server:
@@ -27,17 +27,17 @@
       x-ebay-api-pool-name:
       - ___cDRidW9rdDdlaHFg
       x-ebay-api-server-name:
-      - ___dW0ucm83Nyg2MTY0MzIzKjc3LTMoNjQ2KDU0Pz43OzU=
+      - ___dm8ucnA3MygzNTszPjdmKjc3LTI3KTIzNCkxNjY9OzU+Nw==
       x-ebay-esb-guid:
-      - urn:uuid:5CD0BB9874BFF7D9EB2728502858908350760218944
+      - urn:uuid:BF0466A7C28C765E8D125758101975185472021140868
       date:
-      - Sat, 23 Jul 2011 18:25:12 GMT
+      - Tue, 26 Jul 2011 08:52:26 GMT
       transfer-encoding:
       - chunked
     body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <FindReviewsAndGuidesResponse
-      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-23T18:25:12.926Z</Timestamp>\n
+      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-26T08:52:26.321Z</Timestamp>\n
       \  <Ack>Success</Ack>\n   <Build>E731_CORE_BUNDLED_13527319_R1</Build>\n   <Version>731</Version>\n
-      \  <BuyingGuideCount>596</BuyingGuideCount>\n   <ReviewsAndGuidesURL>http://search.reviews.ebay.com/_PC+Laptops+%26+Netbooks_W0QQuqtZgQQucatZ177</ReviewsAndGuidesURL>\n
+      \  <BuyingGuideCount>597</BuyingGuideCount>\n   <ReviewsAndGuidesURL>http://search.reviews.ebay.com/_PC+Laptops+%26+Netbooks_W0QQuqtZgQQucatZ177</ReviewsAndGuidesURL>\n
       \  <PageNumber>1</PageNumber>\n   <TotalPages>120</TotalPages>\n   <BuyingGuideDetails>\n
       \   <BuyingGuide>\n     <Name>Laptops</Name>\n     <URL>http://reviews.ebay.com/Laptops-Buying-Guide_W0QQugidZ10000000000025018</URL>\n
       \    <CategoryID>177</CategoryID>\n     <Title>Laptops Buying Guide</Title>\n
