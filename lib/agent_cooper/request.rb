@@ -35,7 +35,7 @@ module AgentCooper
     def query
       query = default_parameters.merge(parameters)
 
-      query.collect {|k,v| "#{CGI.escape(k.to_s)}=#{CGI.escape(v.to_s)}"} * '&'
+      query.collect {|k,v| "#{CGI.escape(k.to_s)}=#{CGI.escape(v.to_s)}"}.sort * '&'
     end
 
     def parameters
