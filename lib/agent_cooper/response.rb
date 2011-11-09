@@ -12,7 +12,7 @@ module AgentCooper
     end
 
     def to_hash
-      xml.to_hash
+      Hash.from_xml(body)
     end
 
     def code
