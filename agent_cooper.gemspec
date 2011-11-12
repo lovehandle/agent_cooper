@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
 
   development_dependencies = {
     "cucumber" => "~> 1.1.2",
+    "rake"     => "~> 0.9.2",
     "rspec"    => "~> 2.7.0",
     "vcr"      => "~> 1.11.3",
     "webmock"  => "~> 1.7.7"
