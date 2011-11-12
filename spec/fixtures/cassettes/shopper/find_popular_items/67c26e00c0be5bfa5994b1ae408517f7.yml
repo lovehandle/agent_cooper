@@ -1,0 +1,258 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://open.api.ebay.com:80/shopping?APPID=Bookswap-5e09-4740-8ee6-a6b26090fd69&CALLNAME=FindPopularItems&QueryKeywords=harry%20original&RESPONSEENCODING=XML&SITEID=0&VERSION=745
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/xml;charset=utf-8
+      cache-control:
+      - no-cache
+      expires:
+      - Sat, 25 Dec 1999 00:00:00 GMT
+      last-modified:
+      - Sat, 12 Nov 2011 07:58:26 GMT
+      pragma:
+      - no-cache
+      server:
+      - Apache-Coyote/1.1
+      x-ebay-api-build-tag:
+      - E745_CORE_BUNDLED_14025482_R1
+      x-ebay-api-pool-name:
+      - ___cDRidW9rdDdlaHFg
+      x-ebay-api-server-name:
+      - ___dW0ucnAqM2YwMDQxZCgyNSgxLTc2NS00PzM5PTY/Mw==
+      x-ebay-esb-guid:
+      - urn:uuid:19CEF3E19DBAF77BD436924219894874250809632940
+      date:
+      - Sat, 12 Nov 2011 07:58:25 GMT
+      transfer-encoding:
+      - chunked
+    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <FindPopularItemsResponse
+      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-11-12T07:58:26.076Z</Timestamp>\n
+      \  <Ack>Success</Ack>\n   <Build>E745_CORE_BUNDLED_14025482_R1</Build>\n   <Version>745</Version>\n
+      \  <ItemArray>\n    <Item>\n     <ItemID>260886241077</ItemID>\n     <EndTime>2011-11-13T19:29:45.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/MAD-EYE-MOODY-HARRY-POTTER-ORIGINAL-MINIFIG-LEGO-SET-4767-/260886241077</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs2.ebaystatic.com/pict/2608862410778080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>18998</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Games:Construction Toys &amp; Kits:Lego</PrimaryCategoryName>\n     <BidCount>11</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">19.85</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT11H31M19S</TimeLeft>\n
+      \    <Title>MAD-EYE MOODY HARRY POTTER ORIGINAL MINIFIG FROM LEGO SET 4767</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">3.29</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"GBP\">2.07</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>40</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>160676571437</ItemID>\n     <EndTime>2011-11-14T12:53:55.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/ORIGINAL-2001-HARRY-POTTER-LEGO-FORBIDDEN-CORRIDOR-4706-/160676571437</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs2.ebaystatic.com/pict/1606765714378080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>18998</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Games:Construction Toys &amp; Kits:Lego</PrimaryCategoryName>\n     <BidCount>9</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">25.41</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P2DT4H55M29S</TimeLeft>\n
+      \    <Title>ORIGINAL 2001 HARRY POTTER LEGO - THE FORBIDDEN CORRIDOR 4706</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">13.5</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"GBP\">8.5</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>25</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>160676618618</ItemID>\n     <EndTime>2011-11-14T15:17:20.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/ORIGINAL-2002-03-HARRY-POTTER-LEGO-ESCAPE-PRIVET-DRIVE-4728-/160676618618</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/1606766186188080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>18998</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Games:Construction Toys &amp; Kits:Lego</PrimaryCategoryName>\n     <BidCount>4</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">13.53</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P2DT7H18M54S</TimeLeft>\n
+      \    <Title>ORIGINAL 2002/03 HARRY POTTER LEGO - ESCAPE FROM PRIVET DRIVE- 4728</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">13.5</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"GBP\">8.5</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>24</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>260888424446</ItemID>\n     <EndTime>2011-11-14T00:30:41.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Original-Harry-Potter-Lego-Shrieking-Shack-4756-/260888424446</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/2608884244468080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>58727</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Hobbies:Building Toys:LEGO:Sets:Harry Potter</PrimaryCategoryName>\n     <BidCount>9</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">89.0</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT16H32M15S</TimeLeft>\n
+      \    <Title>Original Harry Potter Lego The Shrieking Shack #4756 </Title>\n
+      \    <ShippingCostSummary>\n      <ShippingType>Calculated</ShippingType>\n
+      \    </ShippingCostSummary>\n     <WatchCount>20</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>160676589702</ItemID>\n     <EndTime>2011-11-14T13:57:15.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/ORIGINAL-2001-HARRY-POTTER-LEGO-CHAMBER-WINGED-KEYS-4704-/160676589702</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/1606765897028080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>18998</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Games:Construction Toys &amp; Kits:Lego</PrimaryCategoryName>\n     <BidCount>3</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">3.49</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P2DT5H58M49S</TimeLeft>\n
+      \    <Title>ORIGINAL 2001 HARRY POTTER LEGO - THE CHAMBER OF THE WINGED KEYS
+      - 4704</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">13.5</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"GBP\">8.5</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>20</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>270786806224</ItemID>\n     <EndTime>2011-11-19T21:52:16.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Original-Dirty-Harry-KDs-G-15-Grey-Sunglasses-WPouch-/270786806224</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/2707868062248080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>79720</PrimaryCategoryID>\n     <PrimaryCategoryName>Clothing,
+      Shoes &amp; Accessories:Men&apos;s Accessories:Sunglasses</PrimaryCategoryName>\n
+      \    <BidCount>18</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">9.25</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P7DT13H53M50S</TimeLeft>\n
+      \    <Title>Original Dirty Harry By KDs G-15 Grey Sunglasses WPouch</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">3.95</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"USD\">3.95</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>19</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>260886250844</ItemID>\n     <EndTime>2011-11-13T19:42:58.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/MERMAN-HARRY-POTTER-ORIGINAL-MINIFIG-4762-Rescue-merpeople-/260886250844</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/2608862508448080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>18998</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Games:Construction Toys &amp; Kits:Lego</PrimaryCategoryName>\n     <BidCount>5</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">6.48</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT11H44M32S</TimeLeft>\n
+      \    <Title>MERMAN HARRY POTTER ORIGINAL MINIFIG FROM &apos;4762 Rescue from
+      the merpeople&apos;</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
+      currencyID=\"USD\">3.29</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+      \     <ListedShippingServiceCost currencyID=\"GBP\">2.07</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>16</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>260888422607</ItemID>\n     <EndTime>2011-11-14T00:25:26.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Original-Harry-Potter-Lego-Sirius-Black-Escapes-4753-/260888422607</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/2608884226078080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>58727</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Hobbies:Building Toys:LEGO:Sets:Harry Potter</PrimaryCategoryName>\n     <BidCount>2</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">41.61</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT16H27M</TimeLeft>\n
+      \    <Title>Original Harry Potter Lego Sirius Black Escapes #4753 </Title>\n
+      \    <ShippingCostSummary>\n      <ShippingType>Calculated</ShippingType>\n
+      \    </ShippingCostSummary>\n     <WatchCount>15</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>160676595127</ItemID>\n     <EndTime>2011-11-14T14:09:33.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/ORIGINAL-2001-HARRY-POTTER-LEGO-HAGRIDS-HUT-4707-/160676595127</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/1606765951278080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>18998</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Games:Construction Toys &amp; Kits:Lego</PrimaryCategoryName>\n     <BidCount>6</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">22.25</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P2DT6H11M7S</TimeLeft>\n
+      \    <Title>ORIGINAL 2001 HARRY POTTER LEGO - HAGRID&apos;S HUT - 4707</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">13.5</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"GBP\">8.5</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>15</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>160676599590</ItemID>\n     <EndTime>2011-11-14T14:22:22.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/ORIGINAL-2001-HARRY-POTTER-LEGO-SORTING-HAT-4701-/160676599590</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/1606765995908080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>18998</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Games:Construction Toys &amp; Kits:Lego</PrimaryCategoryName>\n     <BidCount>4</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">5.08</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P2DT6H23M56S</TimeLeft>\n
+      \    <Title>ORIGINAL 2001 HARRY POTTER LEGO - THE SORTING HAT- 4701</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">13.5</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"GBP\">8.5</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>14</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>260886247063</ItemID>\n     <EndTime>2011-11-13T19:37:42.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/HARRY-POTTER-ORIGINAL-MINIFIG-HUNGARIAN-HORNTAIL-DRAGON-EGG-4767-/260886247063</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/2608862470638080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>18998</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Games:Construction Toys &amp; Kits:Lego</PrimaryCategoryName>\n     <BidCount>4</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">4.78</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT11H39M16S</TimeLeft>\n
+      \    <Title>HARRY POTTER ORIGINAL MINIFIG WITH HUNGARIAN HORNTAIL DRAGON EGG
+      FROM 4767</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">3.29</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"GBP\">2.07</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>13</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>260888399256</ItemID>\n     <EndTime>2011-11-13T23:30:15.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Original-Harry-Potter-Legos-4714-4719-4720-4723-/260888399256</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/2608883992568080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>58727</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Hobbies:Building Toys:LEGO:Sets:Harry Potter</PrimaryCategoryName>\n     <BidCount>12</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">53.0</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT15H31M49S</TimeLeft>\n
+      \    <Title>Original Harry Potter Legos #4714, #4719, # 4720 &amp; #4723</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingType>Calculated</ShippingType>\n
+      \    </ShippingCostSummary>\n     <WatchCount>13</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>260888416946</ItemID>\n     <EndTime>2011-11-14T00:11:13.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Original-Harry-Potter-Lego-Chamber-Secrets-4730-/260888416946</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/2608884169468080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>58727</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Hobbies:Building Toys:LEGO:Sets:Harry Potter</PrimaryCategoryName>\n     <BidCount>5</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">76.0</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT16H12M47S</TimeLeft>\n
+      \    <Title>Original Harry Potter Lego Chamber of Secrets #4730</Title>\n     <ShippingCostSummary>\n
+      \     <ShippingType>Calculated</ShippingType>\n     </ShippingCostSummary>\n
+      \    <WatchCount>13</WatchCount>\n    </Item>\n    <Item>\n     <ItemID>160676584079</ItemID>\n
+      \    <EndTime>2011-11-14T13:36:17.000Z</EndTime>\n     <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/ORIGINAL-2001-HARRY-POTTER-LEGO-SNAPES-CLASSROOM-4705-/160676584079</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/1606765840798080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>18998</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Games:Construction Toys &amp; Kits:Lego</PrimaryCategoryName>\n     <BidCount>10</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">7.54</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P2DT5H37M51S</TimeLeft>\n
+      \    <Title>ORIGINAL 2001 HARRY POTTER LEGO - SNAPE&apos;S CLASSROOM - 4705</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">13.5</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"GBP\">8.5</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>11</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>160676610823</ItemID>\n     <EndTime>2011-11-14T14:54:45.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/ORIGINAL-2001-HARRY-POTTER-LEGO-FINAL-CHALLENGE-4702-/160676610823</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/1606766108238080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>18998</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Games:Construction Toys &amp; Kits:Lego</PrimaryCategoryName>\n     <BidCount>5</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">8.74</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P2DT6H56M19S</TimeLeft>\n
+      \    <Title>ORIGINAL 2001 HARRY POTTER LEGO - THE FINAL CHALLENGE- 4702</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">13.5</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"GBP\">8.5</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>11</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>270849198964</ItemID>\n     <EndTime>2011-11-15T17:00:30.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Harry-Potter-Mini-Collection-Series-1-4-4-2003-original-New-Box-/270849198964</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/2708491989648080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>126922</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Hobbies:Action Figures:TV, Movie &amp; Video Games:Harry Potter</PrimaryCategoryName>\n
+      \    <BidCount>1</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">0.99</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P3DT9H2M4S</TimeLeft>\n
+      \    <Title>Harry Potter Mini Collection, Series 1, 4/4, 2003 original New in
+      Box!!</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">4.99</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"USD\">4.99</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>11</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>320791384907</ItemID>\n     <EndTime>2011-11-17T14:59:49.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Harry-Potter-and-Deathly-Hallows-Part-2-DVD-2011-Not-Original-Case-/320791384907</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/3207913849078080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>617</PrimaryCategoryID>\n     <PrimaryCategoryName>DVDs
+      &amp; Movies:DVD, HD DVD &amp; Blu-ray</PrimaryCategoryName>\n     <BidCount>2</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">5.13</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P5DT7H1M23S</TimeLeft>\n
+      \    <Title>Harry Potter and the Deathly Hallows: Part 2 (DVD, 2011) Not In
+      Original Case</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
+      currencyID=\"USD\">3.0</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+      \     <ListedShippingServiceCost currencyID=\"USD\">3.0</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>11</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>260888394666</ItemID>\n     <EndTime>2011-11-13T23:20:11.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Original-Harry-Potter-Lego-Dumbledores-Office-4729-/260888394666</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/2608883946668080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>58727</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Hobbies:Building Toys:LEGO:Sets:Harry Potter</PrimaryCategoryName>\n     <BidCount>1</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">24.99</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P1DT15H21M45S</TimeLeft>\n
+      \    <Title>Original Harry Potter Lego Dumbledore&apos;s Office #4729</Title>\n
+      \    <ShippingCostSummary>\n      <ShippingType>Calculated</ShippingType>\n
+      \    </ShippingCostSummary>\n     <WatchCount>10</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>110771477642</ItemID>\n     <EndTime>2011-11-14T17:32:14.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/1953-CONEY-ISLAND-NY-18-ORIGINAL-COLOR-SLIDE-HARRYS-ARCADE-BOARDWAMOTION-/110771477642</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/1107714776428080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>13878</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectibles:Historical
+      Memorabilia:Fairs, Parks &amp; Architecture:Amusement Parks</PrimaryCategoryName>\n
+      \    <BidCount>4</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">12.62</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P2DT9H33M48S</TimeLeft>\n
+      \    <Title>1953 CONEY ISLAND NY 18 ORIGINAL COLOR SLIDE HARRY&apos;S ARCADE
+      on THE BOARDWAMOTION</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
+      currencyID=\"USD\">1.75</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+      \     <ListedShippingServiceCost currencyID=\"USD\">1.75</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>10</WatchCount>\n    </Item>\n
+      \   <Item>\n     <ItemID>130597228346</ItemID>\n     <EndTime>2011-11-15T19:42:08.000Z</EndTime>\n
+      \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/LEGO-4711-HARRY-POTTER-The-Flying-Lesson-still-original-sealed-box-/130597228346</ViewItemURLForNaturalSearch>\n
+      \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/1305972283468080_1.jpg</GalleryURL>\n
+      \    <PrimaryCategoryID>18998</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+      &amp; Games:Construction Toys &amp; Kits:Lego</PrimaryCategoryName>\n     <BidCount>2</BidCount>\n
+      \    <ConvertedCurrentPrice currencyID=\"USD\">8.24</ConvertedCurrentPrice>\n
+      \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P3DT11H43M42S</TimeLeft>\n
+      \    <Title>LEGO 4711 HARRY POTTER-The Flying Lesson still in original sealed
+      box</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">29.38</ShippingServiceCost>\n
+      \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost currencyID=\"GBP\">18.5</ListedShippingServiceCost>\n
+      \    </ShippingCostSummary>\n     <WatchCount>10</WatchCount>\n    </Item>\n
+      \  </ItemArray>\n  </FindPopularItemsResponse>\n "
+    http_version: '1.1'

@@ -1,53 +1,77 @@
-require 'forwardable'
-require 'httpclient'
-require 'cgi'
-
 module AgentCooper
   class Request
 
-    extend Forwardable
+    include Virtus
 
-    def_delegators :@config, :app_id
+    # config attributes
+    attribute :app_id, String,
+      :default  => Proc.new { AgentCooper::Config.app_id },
+      :writer   => :protected
 
-    ENCODING = 'XML'
+    # request attributes
+    attribute :request_adapter, Object,
+      :default  => Proc.new { HTTPClient.new },
+      :accessor => :protected
 
-    def initialize
-      @config = Config
-    end
+    attribute :query_parameters, Hash,
+      :default  => Proc.new { {} },
+      :accessor => :protected
 
-    def adapter
-      @adapter ||= HTTPClient.new
-    end
+    attribute :default_parameters, Hash,
+      :accessor => :protected
 
+    attribute :host, String,
+      :accessor => :protected
+
+    attribute :path, String,
+      :accessor => :protected
+
+    # @api public
     def get
-      response = adapter.get(url)
-      Response.new(response)
+      Response.new(:response => request_adapter.get(url))
     end
 
+    # @api public
+    def <<(parameters)
+      unless parameters.is_a?(Hash)
+        raise ArgumentError, "+parameters+ must be an instance of Hash"
+      end
+
+      query_parameters.merge!(parameters)
+    end
+
+    # @api public
+    def reset!
+      self.query_parameters = {}
+    end
+
+    # @api public
+    def parameters
+      default_parameters.merge(query_parameters)
+    end
+
+    protected
+
+    # @api private
+    def query
+      parameters.collect { |k,v| "#{escape(k)}=#{escape(v)}" }.sort * '&'
+    end
+
+    # @api private
+    def escape(value)
+      CGI.escape("#{value}")
+    end
+
+    # @api private
     def url
-      URI::HTTP.build(
+      options = {
         :host  => host,
         :path  => path,
         :query => query
-      )
+      }
+
+      URI::HTTP.build(options)
     end
 
-    def query
-      query = default_parameters.merge(parameters)
-
-      query.collect {|k,v| "#{CGI.escape(k.to_s)}=#{CGI.escape(v.to_s)}"}.sort * '&'
-    end
-
-    def parameters
-      @parameters ||= {}
-    end
-
-    def <<(hash)
-      parameters.merge!(hash)
-    end
-
-    def reset!
-      @parameters = {}
-    end
   end
 end

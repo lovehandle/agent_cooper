@@ -1,23 +1,20 @@
 module AgentCooper
   class Finder < Request
 
-    VERSION = '1.9.0'
+    VERSION  = "1.11.0".freeze
+    HOST     = "svcs.ebay.com".freeze
+    PATH     = "/services/search/FindingService/v1".freeze
+    ENCODING = "XML".freeze
 
-    def host
-      'svcs.ebay.com'
-    end
+    def initialize
+      self.host = HOST
+      self.path = PATH
 
-
-    def path
-      '/services/search/FindingService/v1'
-    end
-
-    def default_parameters
-      {
-        'SECURITY-APPNAME' => app_id,
-        'SECURITY-VERSION' => VERSION,
-        'RESPONSE-DATA-FORMAT' => ENCODING,
-        'REST-PAYLOAD' => ''
+      self.default_parameters = {
+        "SECURITY-APPNAME"     => app_id,
+        "SECURITY-VERSION"     => VERSION,
+        "RESPONSE-DATA-FORMAT" => ENCODING,
+        "REST-PAYLOAD"         => ""
       }
     end
 

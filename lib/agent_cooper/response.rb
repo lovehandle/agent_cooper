@@ -1,35 +1,34 @@
-require 'nokogiri'
-
 module AgentCooper
   class Response
 
-    def initialize(response)
-      @response = response
-    end
+    include Virtus
 
+    attribute :response, Object, :accessor => :protected
+
+    # @api public
     def body
       response.body
     end
 
+    # @api public
     def to_hash
-      xml.to_hash
+      AgentCooper::Builder.from_xml(xml)
     end
 
+    # @api public
     def code
       response.code
     end
 
+    # @api public
     def valid?
       code == 200
     end
 
+    # @api public
     def xml
       @xml ||= Nokogiri::XML(body)
     end
-
-    protected
-
-    attr_reader :response
 
   end
 end

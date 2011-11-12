@@ -2,7 +2,7 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: http://svcs.ebay.com:80/MerchandisingService?CONSUMER-ID=APP_ID&OPERATION-NAME=getRelatedCategoryItems&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.4.0&itemId=170192529715
+    uri: http://svcs.ebay.com:80/MerchandisingService?CONSUMER-ID=Bookswap-5e09-4740-8ee6-a6b26090fd69&OPERATION-NAME=getRelatedCategoryItems&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.5.0&itemId=170192529715
     body: !!null 
     headers: !!null 
   response: !ruby/struct:VCR::Response
@@ -17,7 +17,7 @@
       x-ebay-esb-endpointurl:
       - /Root/ESBFunctions/Services/Ports/7003/profile/ns/v1/MerchandisingService/destination_default/address_synapse
       x-ebay-esb-guid:
-      - urn:uuid:9A53F401F29FF634701311688701100
+      - urn:uuid:DB533DA0949BBF40A41321290050773
       x-ebay-soa-locale-list:
       - en-US_US
       x-ebay-soa-message-protocol:
@@ -25,17 +25,17 @@
       x-ebay-soa-operation-name:
       - getRelatedCategoryItems
       x-ebay-soa-request-id:
-      - 13165c2d-9e70-a0e6-9462-0b52fffdb4dc!MerchandisingService!10.14.105.70!v3soa1core[]
+      - 13396c8d-2b40-a0a3-d662-7a72fffbbba1!MerchandisingService!10.10.61.102!v3soa1core[]
       x-ebay-soa-response-data-format:
       - XML
       x-ebay-soa-service-name:
       - ! '{http://www.ebay.com/marketplace/services}MerchandisingService'
       x-ebay-soa-service-version:
-      - 1.4.0
+      - 1.5.0
       date:
-      - Tue, 26 Jul 2011 09:24:52 GMT
+      - Sat, 12 Nov 2011 07:58:22 GMT
       transfer-encoding:
       - chunked
     body: <?xml version='1.0' encoding='UTF-8'?><getRelatedCategoryItemsResponse xmlns="http://www.ebay.com/marketplace/services"><ack>Failure</ack><errorMessage><error><errorId>8</errorId><domain>Marketplace</domain><severity>Error</severity><category>Application</category><message>Please
-      specify a valid itemId.</message><subdomain>MarketplaceCommon</subdomain></error></errorMessage><version>1.4.0</version><timestamp>2011-07-26T09:24:53.910Z</timestamp></getRelatedCategoryItemsResponse>
+      specify a valid itemId.</message><subdomain>MarketplaceCommon</subdomain></error></errorMessage><version>1.5.0</version><timestamp>2011-11-12T07:58:23.459Z</timestamp></getRelatedCategoryItemsResponse>
     http_version: '1.1'

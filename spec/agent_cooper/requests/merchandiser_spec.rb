@@ -1,13 +1,19 @@
 require 'spec_helper'
 
-module AgentCooper
-  describe Merchandiser do
+describe AgentCooper::Merchandiser do
+  it_behaves_like "Request" do
+    let(:service_name) { described_class::SERVICE_NAME }
 
-    subject { Merchandiser.new }
-
-    it "inherits from AgentCooper::Request" do
-      subject.should be_a(Request)
+    let(:expected_default_parameters) do
+      {
+        "CONSUMER-ID"          => app_id,
+        "SERVICE-NAME"         => service_name,
+        "SERVICE-VERSION"      => version,
+        "RESPONSE-DATA-FORMAT" => encoding,
+        "REST-PAYLOAD"         => ""
+      }
     end
 
+    its(:default_parameters) { should eql(expected_default_parameters) }
   end
 end

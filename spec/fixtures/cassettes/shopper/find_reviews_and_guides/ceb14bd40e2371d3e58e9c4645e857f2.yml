@@ -2,7 +2,7 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: http://open.api.ebay.com:80/shopping?APPID=APP_ID&CALLNAME=FindReviewsAndGuides&CategoryID=177&RESPONSEENCODING=XML&SITEID=0&VERSION=717
+    uri: http://open.api.ebay.com:80/shopping?APPID=Bookswap-5e09-4740-8ee6-a6b26090fd69&CALLNAME=FindReviewsAndGuides&CategoryID=177&RESPONSEENCODING=XML&SITEID=0&VERSION=745
     body: !!null 
     headers: !!null 
   response: !ruby/struct:VCR::Response
@@ -17,29 +17,29 @@
       expires:
       - Sat, 25 Dec 1999 00:00:00 GMT
       last-modified:
-      - Tue, 26 Jul 2011 09:24:55 GMT
+      - Sat, 12 Nov 2011 07:58:26 GMT
       pragma:
       - no-cache
       server:
       - Apache-Coyote/1.1
       x-ebay-api-build-tag:
-      - E731_CORE_BUNDLED_13527319_R1
+      - E745_CORE_BUNDLED_14025482_R1
       x-ebay-api-pool-name:
       - ___cDRidW9rdDdlaHFg
       x-ebay-api-server-name:
-      - ___dm8ucnA3MygzZDUzMjFhKjc3LTI3KTIzMikyMTU9OzU+Nw==
+      - ___dW0ucm83Nyhtdm5paH51Kjc3LTMoNjQ2KDQwPz43OzU=
       x-ebay-esb-guid:
-      - urn:uuid:848800B41B978782A4299870465718368761137672793
+      - urn:uuid:62CB515CDAAA1C5553376291529040009361332262564
       date:
-      - Tue, 26 Jul 2011 09:24:55 GMT
+      - Sat, 12 Nov 2011 07:58:25 GMT
       transfer-encoding:
       - chunked
     body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <FindReviewsAndGuidesResponse
-      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-26T09:24:55.175Z</Timestamp>\n
-      \  <Ack>Success</Ack>\n   <Build>E731_CORE_BUNDLED_13527319_R1</Build>\n   <Version>731</Version>\n
-      \  <BuyingGuideCount>597</BuyingGuideCount>\n   <ReviewsAndGuidesURL>http://search.reviews.ebay.com/_PC+Laptops+%26+Netbooks_W0QQuqtZgQQucatZ177</ReviewsAndGuidesURL>\n
-      \  <PageNumber>1</PageNumber>\n   <TotalPages>120</TotalPages>\n   <BuyingGuideDetails>\n
-      \   <BuyingGuide>\n     <Name>Laptops</Name>\n     <URL>http://reviews.ebay.com/Laptops-Buying-Guide_W0QQugidZ10000000000025018</URL>\n
+      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-11-12T07:58:26.317Z</Timestamp>\n
+      \  <Ack>Success</Ack>\n   <Build>E745_CORE_BUNDLED_14025482_R1</Build>\n   <Version>745</Version>\n
+      \  <BuyingGuideCount>620</BuyingGuideCount>\n   <ReviewsAndGuidesURL>http://search.reviews.ebay.com/_PC+Laptops+%26+Netbooks?uqt=g&amp;ucat=177</ReviewsAndGuidesURL>\n
+      \  <PageNumber>1</PageNumber>\n   <TotalPages>124</TotalPages>\n   <BuyingGuideDetails>\n
+      \   <BuyingGuide>\n     <Name>Laptops</Name>\n     <URL>http://reviews.ebay.com/Laptops-Buying-Guide?ugid=10000000000025018</URL>\n
       \    <CategoryID>177</CategoryID>\n     <Title>Laptops Buying Guide</Title>\n
       \    <Text>&lt;html&gt;&lt;a name=&quot;top&quot;&gt;&lt;/a&gt;&lt;head&gt;\n
       \     &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;
@@ -63,7 +63,7 @@
       type=&quot;text/javascript&quot;&gt;eventDispatcher.attachHandlerToElement(&apos;body&apos;,&apos;onload&apos;,new
       jsEvt0());\n\n&lt;/script&gt;&lt;span class=&quot;ebay&quot;&gt;&lt;div id=&quot;gnheader&quot;
       clas...</Text>\n     <CreationTime>2005-10-13T10:14:38.000Z</CreationTime>\n
-      \   </BuyingGuide>\n    <BuyingGuide>\n     <Name>Laptops</Name>\n     <URL>http://reviews.ebay.com/Laptops-Buying-Guide_W0QQugidZ10000000000000932</URL>\n
+      \   </BuyingGuide>\n    <BuyingGuide>\n     <Name>Laptops</Name>\n     <URL>http://reviews.ebay.com/Laptops-Buying-Guide?ugid=10000000000000932</URL>\n
       \    <CategoryID>177</CategoryID>\n     <Title>Laptops Buying Guide</Title>\n
       \    <Text>&lt;html xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&lt;a
       name=&quot;top&quot;&gt;&lt;/a&gt;&lt;head&gt;\n      &lt;meta http-equiv=&quot;Content-Type&quot;
@@ -85,7 +85,7 @@
       class=&quot;ebay&quot;&gt;&lt;form class=&quot;nomargin&quot; method=&quot;get&quot;
       name=&quot;headerSearch&quot; onsubmit=&quot;ebay.oDocument._getControl(&apos;searchHeader&apos;)._...</Text>\n
       \    <CreationTime>2005-09-22T20:41:32.000Z</CreationTime>\n    </BuyingGuide>\n
-      \   <BuyingGuide>\n     <Name>How to buy a noteboo...</Name>\n     <URL>http://reviews.ebay.com/How-to-buy-a-notebook-computer_W0QQugidZ10000000000068196</URL>\n
+      \   <BuyingGuide>\n     <Name>How to buy a noteboo...</Name>\n     <URL>http://reviews.ebay.com/How-to-buy-a-notebook-computer?ugid=10000000000068196</URL>\n
       \    <CategoryID>177</CategoryID>\n     <Title>How to buy a notebook computer.</Title>\n
       \    <Text>(1)&amp;nbsp;&amp;nbsp; &amp;nbsp;Before you buy&amp;nbsp;a computer
       you need to decide what your needs are. The first decision is whether you want
@@ -113,7 +113,7 @@
       not be moving the notebook often, I chose to get a desktop replacement notebook.
       The ability to pick up the whole computer and put i...</Text>\n     <CreationTime>2005-11-20T09:31:23.000Z</CreationTime>\n
       \    <UserID>danielnyc</UserID>\n    </BuyingGuide>\n    <BuyingGuide>\n     <Name>Simple
-      Laptop Buying...</Name>\n     <URL>http://reviews.ebay.com/Simple-Laptop-Buying-Numbers-Aren-apos-t-Everything_W0QQugidZ10000000000790441</URL>\n
+      Laptop Buying...</Name>\n     <URL>http://reviews.ebay.com/Simple-Laptop-Buying-Numbers-Aren-apos-t-Everything?ugid=10000000000790441</URL>\n
       \    <CategoryID>177</CategoryID>\n     <Title>Simple Laptop Buying: Numbers
       Aren&apos;t Everything</Title>\n     <Text>I started out looking for a laptop
       for school: I gave myself a budget and said to myself, &quot;Buy the best laptop
@@ -142,7 +142,7 @@
       gives me more options (but see below in the &quot;advanced stuff&quot;).&lt;br&gt;&lt;br&gt;-
       Centrino: This is a common label emphasize...</Text>\n     <CreationTime>2006-03-12T03:06:34.000Z</CreationTime>\n
       \    <UserID>oprya001</UserID>\n    </BuyingGuide>\n    <BuyingGuide>\n     <Name>Best
-      Laptops 2006 - ...</Name>\n     <URL>http://reviews.ebay.com/Best-Laptops-2006-Buying-Guide_W0QQugidZ10000000001420898</URL>\n
+      Laptops 2006 - ...</Name>\n     <URL>http://reviews.ebay.com/Best-Laptops-2006-Buying-Guide?ugid=10000000001420898</URL>\n
       \    <CategoryID>177</CategoryID>\n     <Title>Best Laptops 2006 - Buying Guide</Title>\n
       \    <Text>&lt;h2 style=&quot;margin-left: 40px;&quot;&gt;Best Laptops of 2006&lt;br&gt;&lt;/h2&gt;Of
       course, everyone is entitled to bias when it comes to picking their laptop.
@@ -169,6 +169,6 @@
       are many brands to begin with, most of them offer similar specs.&lt;br&gt;&lt;br&gt;Most
       popular laptop brands are (in no particular order): Dell, Apple, Lenovo (IBM
       Thinkpad), HP, Fujitsu, Sony, Gateway, Alienware, Acer, and ...</Text>\n     <CreationTime>2006-07-20T20:33:38.000Z</CreationTime>\n
-      \    <UserID>aquacs</UserID>\n    </BuyingGuide>\n    <BuyingGuideHub>http://search.reviews.ebay.com/_PC-Laptops-Netbooks_W0QQucatZ177QQuqtZg</BuyingGuideHub>\n
+      \    <UserID>aquacs</UserID>\n    </BuyingGuide>\n    <BuyingGuideHub>http://search.reviews.ebay.com/?ucat=177&amp;uqt=g</BuyingGuideHub>\n
       \  </BuyingGuideDetails>\n  </FindReviewsAndGuidesResponse>\n "
     http_version: '1.1'

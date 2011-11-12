@@ -18,7 +18,7 @@ Feature: Ebay Finder
         | findItemsByKeywords | harry potter phoenix |
      When I tape the "finder" request as: "find_items_by_keywords"
      Then the response code should be "200"
-      And the response should have 100 "item" nodes
+      And the response should have 99 "item" nodes
 
   Scenario: findItemsByCategory
     Given the following parameters:

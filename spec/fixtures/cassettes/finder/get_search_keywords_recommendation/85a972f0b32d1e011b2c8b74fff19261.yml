@@ -2,7 +2,7 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: http://svcs.ebay.com:80/services/search/FindingService/v1?OPERATION-NAME=getSearchKeywordsRecommendation&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SECURITY-APPNAME=APP_ID&SECURITY-VERSION=1.9.0&keywords=acordian
+    uri: http://svcs.ebay.com:80/services/search/FindingService/v1?OPERATION-NAME=getSearchKeywordsRecommendation&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SECURITY-APPNAME=Bookswap-5e09-4740-8ee6-a6b26090fd69&SECURITY-VERSION=1.11.0&keywords=acordian
     body: !!null 
     headers: !!null 
   response: !ruby/struct:VCR::Response
@@ -17,7 +17,7 @@
       x-ebay-esb-endpointurl:
       - /Root/ESBFunctions/Services/Ports/7002/profile/search/v1/FindingService/destination_default/address_synapse
       x-ebay-esb-guid:
-      - urn:uuid:5E189F029CB4D4D96F1311689269978
+      - urn:uuid:0CACEDE86EA20290111321289532228
       x-ebay-soa-locale-list:
       - en-US_US
       x-ebay-soa-message-protocol:
@@ -25,7 +25,7 @@
       x-ebay-soa-operation-name:
       - getSearchKeywordsRecommendation
       x-ebay-soa-request-id:
-      - 13165c2c-b950-a026-b276-4116ff8d5205!FindingService!10.2.107.39!v3apifindingcore[!FindingRecommendationService!10.2.107.39!v3apifindingcore[]]
+      - 13396c8a-dc00-a0aa-16c0-fda0ffea2067!FindingService!10.10.161.108!v3apifindingcore[!FindingRecommendationService!10.10.161.108!v3apifindingcore[]]
       x-ebay-soa-response-data-format:
       - XML
       x-ebay-soa-service-name:
@@ -33,9 +33,9 @@
       x-ebay-soa-service-version:
       - 1.11.0
       date:
-      - Tue, 26 Jul 2011 09:24:49 GMT
+      - Sat, 12 Nov 2011 07:58:14 GMT
       transfer-encoding:
       - chunked
     body: <?xml version='1.0' encoding='UTF-8'?><getSearchKeywordsRecommendationResponse
-      xmlns="http://www.ebay.com/marketplace/search/v1/services"><ack>Success</ack><version>1.11.0</version><timestamp>2011-07-26T09:24:50.213Z</timestamp><keywords>accordion</keywords></getSearchKeywordsRecommendationResponse>
+      xmlns="http://www.ebay.com/marketplace/search/v1/services"><ack>Success</ack><version>1.11.0</version><timestamp>2011-11-12T07:58:13.968Z</timestamp><keywords>accordion</keywords></getSearchKeywordsRecommendationResponse>
     http_version: '1.1'

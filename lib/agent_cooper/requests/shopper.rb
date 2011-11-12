@@ -1,23 +1,23 @@
 module AgentCooper
   class Shopper < Request
 
-    VERSION = '717'
+    VERSION      = "745".freeze
+    HOST         = "open.api.ebay.com".freeze
+    PATH         = "/shopping".freeze
+    SITE_ID      = 0.freeze
+    ENCODING     = "XML".freeze
 
-    def host
-      'open.api.ebay.com'
+    def initialize
+      self.host = HOST
+      self.path = PATH
+
+      self.default_parameters = {
+        "APPID"            => app_id,
+        "RESPONSEENCODING" => ENCODING,
+        "VERSION"          => VERSION,
+        "SITEID"           => SITE_ID
+       }
     end
 
-    def path
-      '/shopping'
-    end
-
-    def default_parameters
-      {
-        'APPID' => app_id,
-        'RESPONSEENCODING' => ENCODING,
-        'VERSION' => VERSION,
-        'SITEID' => 0
-      }
-    end
   end
 end

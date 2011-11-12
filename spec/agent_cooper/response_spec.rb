@@ -1,57 +1,25 @@
 require 'spec_helper'
 
-module AgentCooper
-  describe Response do
+describe AgentCooper::Response do
 
-    let(:response) { '<root><item></item></root>' }
+  subject { described_class.new(:response => response) }
 
-    subject { Response.new(response) }
+  let(:body) { "<root><foo>bar</foo></root>" }
+  let(:code) { 200 }
 
-    before(:each) do
-      response.stub(:body).and_return(response)
-    end
+  let(:response) { mock(:response, :body => body, :code => code) }
 
-    describe "#body" do
-      it "delegates to response#code" do
-        response.should_receive(:body)
-        subject.body
-      end
-    end
+  its(:body)    { should eql(body) }
+  its(:code)    { should eql(code) }
 
-    describe "#to_hash" do
-      it "converts the xml to a hash" do
-        subject.to_hash.should == { "item"=> {} }
-      end
-    end
+  its(:to_hash) { should eql({"foo" => "bar"}) }
 
-    describe "#code" do
-      it "delegate to response#code" do
-        response.should_receive(:code)
-        subject.code
-      end
-    end
+  its(:xml)     { should be_a(Nokogiri::XML::Document) }
+  its(:valid?)  { should be_true }
 
-    describe "#valid?" do
-      context "#code returns '200'" do
-        before(:each) do
-          subject.stub(:code).and_return(200)
-        end
-
-        it "returns true" do
-          subject.valid?.should be_true
-        end
-      end
-
-      context "#code does not return '200'" do
-        before(:each) do
-          subject.stub(:code).and_return(500)
-        end
-
-        it "returns false" do
-          subject.valid?.should be_false
-        end
-      end
-    end
-
+  context "when code != 200" do
+    let(:code) { 400 }
+    its(:valid?) { should be_false }
   end
+
 end

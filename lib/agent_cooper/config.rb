@@ -3,8 +3,13 @@ module AgentCooper
     class << self
       attr_accessor :app_id
 
+      # @api public
       def configure(&block)
-        yield self
+        unless block_given?
+          raise ArgumentError, "No block given"
+        end
+
+        yield self if block_given?
       end
     end
   end

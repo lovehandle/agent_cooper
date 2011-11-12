@@ -1,25 +1,24 @@
 module AgentCooper
   class Merchandiser < Request
 
-    SERVICE_NAME = 'MerchandisingService'
-    VERSION = '1.4.0'
+    VERSION      = "1.5.0".freeze
+    HOST         = "svcs.ebay.com".freeze
+    SERVICE_NAME = "MerchandisingService".freeze
+    PATH         = "/MerchandisingService".freeze
+    ENCODING     = "XML".freeze
 
-    def host
-      'svcs.ebay.com'
-    end
+    def initialize
+      self.host = HOST
+      self.path = PATH
 
-    def path
-      '/MerchandisingService'
-    end
-
-    def default_parameters
-      {
-        'CONSUMER-ID' => app_id,
-        'SERVICE-NAME' => SERVICE_NAME,
-        'SERVICE-VERSION' => VERSION,
-        'RESPONSE-DATA-FORMAT' => ENCODING,
-        'REST-PAYLOAD' => ''
+      self.default_parameters = {
+        "CONSUMER-ID"          => app_id,
+        "SERVICE-NAME"         => SERVICE_NAME,
+        "SERVICE-VERSION"      => VERSION,
+        "RESPONSE-DATA-FORMAT" => ENCODING,
+        "REST-PAYLOAD"         => ""
       }
     end
+
   end
 end

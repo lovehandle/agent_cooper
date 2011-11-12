@@ -2,7 +2,7 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: http://open.api.ebay.com:80/shopping?APPID=APP_ID&CALLNAME=GetItemStatus&ItemID=110089122715&RESPONSEENCODING=XML&SITEID=0&VERSION=717
+    uri: http://open.api.ebay.com:80/shopping?APPID=Bookswap-5e09-4740-8ee6-a6b26090fd69&CALLNAME=GetShippingCosts&DestinationCountryCode=US&DestinationPostalCode=98122&ItemID=110089122715&QuantitySold=1&RESPONSEENCODING=XML&SITEID=0&VERSION=745
     body: !!null 
     headers: !!null 
   response: !ruby/struct:VCR::Response
@@ -17,29 +17,29 @@
       expires:
       - Sat, 25 Dec 1999 00:00:00 GMT
       last-modified:
-      - Tue, 26 Jul 2011 09:24:54 GMT
+      - Sat, 12 Nov 2011 07:58:24 GMT
       pragma:
       - no-cache
       server:
       - Apache-Coyote/1.1
       x-ebay-api-build-tag:
-      - E731_CORE_BUNDLED_13527319_R1
+      - E745_CORE_BUNDLED_14011937_R1
       x-ebay-api-pool-name:
       - ___cDRidW9rdGZpdWY=
       x-ebay-api-server-name:
-      - ___dWsucnA3MyhnYzs9Y2MzKjc3LTw2KTIzMCk1PTw/Mz02
+      - ___dm8ucm83Nyg2MWRiNzM7Kjc3LTQyKTA1KD4xPz43OzU=
       x-ebay-esb-guid:
-      - urn:uuid:848800B41B978782A429987045834768509348186164
+      - urn:uuid:62CB515CDAAA1C5553376291517569272681626728057
       date:
-      - Tue, 26 Jul 2011 09:24:54 GMT
+      - Sat, 12 Nov 2011 07:58:24 GMT
       transfer-encoding:
       - chunked
-    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <GetItemStatusResponse
-      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-07-26T09:24:54.080Z</Timestamp>\n
+    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <GetShippingCostsResponse
+      xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-11-12T07:58:24.840Z</Timestamp>\n
       \  <Ack>Failure</Ack>\n   <Errors>\n    <ShortMessage>Invalid item ID.</ShortMessage>\n
       \   <LongMessage>Invalid or non-existent item ID.</LongMessage>\n    <ErrorCode>10.12</ErrorCode>\n
       \   <SeverityCode>Error</SeverityCode>\n    <ErrorParameters ParamID=\"0\">\n
       \    <Value>110089122715</Value>\n    </ErrorParameters>\n    <ErrorClassification>RequestError</ErrorClassification>\n
-      \  </Errors>\n   <Build>E731_CORE_BUNDLED_13527319_R1</Build>\n   <Version>731</Version>\n
-      \ </GetItemStatusResponse>\n "
+      \  </Errors>\n   <Build>E745_CORE_BUNDLED_14011937_R1</Build>\n   <Version>745</Version>\n
+      \ </GetShippingCostsResponse>\n "
     http_version: '1.1'

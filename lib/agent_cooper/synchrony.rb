@@ -1,31 +1,44 @@
-require 'agent_cooper'
 require 'em-synchrony'
 require 'em-synchrony/em-http'
 
 module AgentCooper
 
   class Request
-    def adapter
-      @adapter ||= EM::HttpRequest
-    end
 
+    # request attributes
+    attribute :request_adapter, Object,
+      :default  => Proc.new { EM::HttpRequest },
+      :accessor => :protected
+
+    # @api public
     def aget(&block)
-      http = adapter.new(url).aget
-      http.callback { block.call(Response.new(http)) }
-      http.errback  { block.call(Response.new(http)) }
+      http = new_adapter.aget
+      http.callback { block.call(Response.new(:response => http)) }
+      http.errback  { block.call(Response.new(:respose  => http)) }
     end
 
+    # @api public
     def get
-      http = adapter.new(url).get
-      Response.new(http)
+      http = new_adapter.get
+      Response.new(:response => http)
     end
+
+    private
+
+    # @api private
+    def new_adapter
+      request_adapter.new(url)
+    end
+
   end
 
   class Response
+    # @api public
     def body
       response.response
     end
 
+    # @api public
     def code
       response.response_header.status
     end
