@@ -10,6 +10,8 @@ It supports the following eBay APIs are supported:
   - [Shopping API](http://developer.ebay.com/products/shopping/)
   - [Merchandising API](http://developer.ebay.com/products/merchandising/)
 
+![Agent Cooper](https://github.com/rclosner/agent_cooper/raw/master/agent_cooper.jpg)
+
 Usage
 -----
 Set up.
