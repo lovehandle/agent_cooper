@@ -12,7 +12,7 @@ module AgentCooper
 
     # @api public
     def to_hash
-      AgentCooper::Builder.from_xml(xml)
+      xml.to_hash
     end
 
     # @api public

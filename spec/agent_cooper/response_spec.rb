@@ -12,7 +12,7 @@ describe AgentCooper::Response do
   its(:body)    { should eql(body) }
   its(:code)    { should eql(code) }
 
-  its(:to_hash) { should eql({"foo" => "bar"}) }
+  its(:to_hash) { should eql({"root" => {"foo" => "bar"}}) }
 
   its(:xml)     { should be_a(Nokogiri::XML::Document) }
   its(:valid?)  { should be_true }
