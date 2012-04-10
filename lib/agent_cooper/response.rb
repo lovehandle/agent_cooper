@@ -11,8 +11,8 @@ module AgentCooper
     end
 
     # @api public
-    def to_hash
-      xml.to_hash
+    def to_hash(options = {})
+      AgentCooper::Utils::Hash.from_xml(xml, options)
     end
 
     # @api public

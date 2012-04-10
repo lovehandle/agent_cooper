@@ -14,6 +14,12 @@ describe AgentCooper::Response do
 
   its(:to_hash) { should eql({"root" => {"foo" => "bar"}}) }
 
+  context "when options are passed" do
+    specify "preserve_attributes" do
+      subject.to_hash(:preserve_attributes => true).should eql({"root" => {"foo" => {"__content__" => "bar"}}})
+    end
+  end
+
   its(:xml)     { should be_a(Nokogiri::XML::Document) }
   its(:valid?)  { should be_true }
 

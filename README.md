@@ -55,6 +55,14 @@ Return a hash:
     returns: {'getSearchKeywordsRecommendationResponse' => {'xmnls' => 'http://www.ebay.com/marketplace/search/v1/services', 'ack' => 'Success', 'version' => '1.9.0', 'keywords' => 'harry potter'}}
 ```
 
+If you need to preserve XML attributes
+
+```ruby
+    response.to_hash(:preserve_attributes => true)
+
+    returns: {'CurrentPrice' => {'__content__' => '154.99', 'CurrencyID' => 'EUR' }}
+```
+
 Or parse a response with Nokogiri:
 
 ```ruby
@@ -64,6 +72,3 @@ Or parse a response with Nokogiri:
 
     response.xml.xpath("//Item")
 ```
-----
-
-Based on hakanensari's [amazon_product](http://github.com/hakanensari/amazon_product).

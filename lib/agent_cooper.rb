@@ -11,7 +11,7 @@ end
 
 require 'agent_cooper/config'
 require 'agent_cooper/response'
-require 'agent_cooper/utils/nokogiri_hash'
+require 'agent_cooper/utils/hash'
 
 require 'agent_cooper/request'
 require 'agent_cooper/requests/finder'
