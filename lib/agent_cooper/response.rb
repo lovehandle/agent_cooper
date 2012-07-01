@@ -1,9 +1,9 @@
 module AgentCooper
   class Response
 
-    include Virtus
-
-    attribute :response, Object, :accessor => :protected
+    def initialize(attributes)
+      @response = attributes.fetch(:response)
+    end
 
     # @api public
     def body
@@ -29,6 +29,10 @@ module AgentCooper
     def xml
       @xml ||= Nokogiri::XML(body)
     end
+
+    protected
+
+    attr_reader :response
 
   end
 end
