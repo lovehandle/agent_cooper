@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "agent_cooper"
 
   runtime_dependencies = {
+    "eggnog"     => "~> 0.0.2",
     "httpclient" => "~> 2.2.3",
     "nokogiri"   => "~> 1.5.5",
     "virtus"     => "~> 0.5.1"

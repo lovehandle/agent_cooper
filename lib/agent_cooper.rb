@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'eggnog'
 require 'httpclient'
 require 'virtus'
 require 'cgi'
@@ -11,7 +12,6 @@ end
 
 require 'agent_cooper/config'
 require 'agent_cooper/response'
-require 'agent_cooper/utils/hash'
 
 require 'agent_cooper/request'
 require 'agent_cooper/requests/finder'

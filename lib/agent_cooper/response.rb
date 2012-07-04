@@ -11,13 +11,13 @@ module AgentCooper
     end
 
     # @api public
-    def to_hash(options = {})
-      AgentCooper::Utils::Hash.from_xml(xml, options)
+    def code
+      response.code
     end
 
     # @api public
-    def code
-      response.code
+    def to_hash(options = {})
+      xml.to_hash(options)
     end
 
     # @api public
