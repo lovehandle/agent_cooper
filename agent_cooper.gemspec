@@ -16,9 +16,9 @@ Gem::Specification.new do |s|
 
   runtime_dependencies = {
     "eggnog"     => "~> 0.0.2",
-    "httpclient" => "~> 2.2.3",
-    "nokogiri"   => "~> 1.5.5",
-    "virtus"     => "~> 0.5.1"
+    "httpclient" => "~> 2.3.3",
+    "nokogiri"   => "~> 1.5.6",
+    "virtus"     => "~> 0.5.4"
   }
 
   runtime_dependencies.each {|lib, version| s.add_runtime_dependency(lib, version) }
