@@ -1,5 +1,5 @@
 require 'nokogiri'
-require 'eggnog'
+require 'multi_xml'
 require 'httpclient'
 require 'virtus'
 require 'cgi'

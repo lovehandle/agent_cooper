@@ -4,7 +4,7 @@ describe AgentCooper::Response do
 
   subject { described_class.new(:response => response) }
 
-  let(:body) { "<root><foo baz="">Some Text</foo></root>" }
+  let(:body) { "<root><foo baz='blah'>Some Text</foo></root>" }
   let(:code) { 200 }
 
   let(:response) { mock(:response, :body => body, :code => code) }
