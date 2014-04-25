@@ -1,7 +1,11 @@
 Agent Cooper
 ======
 
-[![travis](https://secure.travis-ci.org/rclosner/agent_cooper.png)](http://travis-ci.org/rclosner/agent_cooper)
+[![Gem Version](https://badge.fury.io/rb/agent_cooper.svg)](http://badge.fury.io/rb/agent_cooper)
+[![Build Status](https://travis-ci.org/rclosner/agent_cooper.svg?branch=master)](https://travis-ci.org/rclosner/agent_cooper)
+[![Dependency Status](https://gemnasium.com/rclosner/agent_cooper.svg)](https://gemnasium.com/rclosner/agent_cooper)
+[![Code Climate](https://codeclimate.com/github/rclosner/agent_cooper.png)](https://codeclimate.com/github/rclosner/agent_cooper)
+[![Coverage Status](https://coveralls.io/repos/rclosner/agent_cooper/badge.png)](https://coveralls.io/r/rclosner/agent_cooper)
 
 
 <img src="https://github.com/rclosner/agent_cooper/raw/master/agent_cooper.jpg" width="200px">
