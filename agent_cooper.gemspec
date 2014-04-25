@@ -14,24 +14,16 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "agent_cooper"
 
-  runtime_dependencies = {
-    "multi_xml"  => "~> 0.5.3",
-    "httpclient" => "~> 2.3.3",
-    "nokogiri"   => "~> 1.5.6",
-    "virtus"     => "~> 0.5.4"
-  }
+  s.add_runtime_dependency "multi_xml", "~> 0.5.3"
+  s.add_runtime_dependency "httpclient", "~> 2.3.3"
+  s.add_runtime_dependency "nokogiri", "~> 1.5.6"
+  s.add_runtime_dependency "virtus", "~> 0.5.4"
 
-  runtime_dependencies.each {|lib, version| s.add_runtime_dependency(lib, version) }
-
-  development_dependencies = {
-    "cucumber" => "~> 1.1.2",
-    "rake"     => "~> 0.9.2",
-    "rspec"    => "~> 2.7.0",
-    "vcr"      => "~> 1.11.3",
-    "webmock"  => "~> 1.7.7"
-  }
-
-  development_dependencies.each {|lib, version| s.add_development_dependency(lib, version) }
+  s.add_development_dependency "cucumber", "~> 1.2.2"
+  s.add_development_dependency "rake", "~> 0.9.2"
+  s.add_development_dependency "rspec", "~> 2.7.0"
+  s.add_development_dependency "vcr", "~> 1.11.3"
+  s.add_development_dependency "webmock", "~> 1.7.7"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
