@@ -18,11 +18,12 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "httpclient", "~> 2.3.3"
   s.add_runtime_dependency "virtus", "~> 0.5.4"
 
-  s.add_development_dependency "cucumber", "~> 1.2.2"
-  s.add_development_dependency "rake", "~> 0.9.2"
-  s.add_development_dependency "rspec", "~> 2.7.0"
-  s.add_development_dependency "vcr", "~> 1.11.3"
-  s.add_development_dependency "webmock", "~> 1.7.7"
+  s.add_development_dependency "cucumber"
+  s.add_development_dependency "rake"
+  s.add_development_dependency "pry"
+  s.add_development_dependency "rspec"
+  s.add_development_dependency "vcr"
+  s.add_development_dependency "webmock"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
