@@ -48,10 +48,6 @@ module AgentCooper
 
     protected
 
-    # @api private
-    def escape(value)
-      CGI.escape("#{value}")
-    end
 
     # @api private
     def url

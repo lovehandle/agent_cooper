@@ -1,7 +1,6 @@
 require 'multi_xml'
 require 'excon'
 require 'virtus'
-require 'cgi'
 
 require 'agent_cooper/config'
 require 'agent_cooper/requests/finder'
