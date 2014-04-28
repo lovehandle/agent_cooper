@@ -66,13 +66,3 @@ If you need to preserve XML attributes
 
     returns: {'CurrentPrice' => {'__content__' => '154.99', 'CurrencyID' => 'EUR' }}
 ```
-
-Or parse a response with Nokogiri:
-
-```ruby
-    response.xml.css("Item > Title").each do |title|
-      some business value
-    end
-
-    response.xml.xpath("//Item")
-```
