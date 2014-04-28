@@ -1,26 +1,6 @@
 module AgentCooper
   class Request
-
-    include Virtus
-
-    # config attributes
-    attribute :app_id, String,
-      :default  => Proc.new { AgentCooper::Config.app_id },
-      :writer   => :protected
-
-    # request attributes
-    attribute :query_parameters, Hash,
-      :default  => Proc.new { {} },
-      :accessor => :protected
-
-    attribute :default_parameters, Hash,
-      :accessor => :protected
-
-    attribute :host, String,
-      :accessor => :protected
-
-    attribute :path, String,
-      :accessor => :protected
+    attr_reader :default_parameters, :host, :path
 
     # @api public
     def <<(parameters)
@@ -46,8 +26,17 @@ module AgentCooper
       default_parameters.merge(query_parameters)
     end
 
+    def app_id
+      AgentCooper::Config.app_id
+    end
+
+    def query_parameters
+      @query_parameters ||= {}
+    end
+
     protected
 
+    attr_writer :app_id, :default_parameters, :host, :path
 
     # @api private
     def url

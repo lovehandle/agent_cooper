@@ -15,7 +15,6 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "agent_cooper"
 
   s.add_runtime_dependency "multi_xml", "~> 0.5.3"
-  s.add_runtime_dependency "virtus", "~> 0.5.4"
   s.add_runtime_dependency 'excon', '>= 0.22.1'
 
   s.add_development_dependency "cucumber"
