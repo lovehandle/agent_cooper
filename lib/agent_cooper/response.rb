@@ -16,7 +16,7 @@ module AgentCooper
     end
 
     # @api public
-    def to_hash(options = {})
+    def to_hash
       MultiXml.parse(body)
     end
 
