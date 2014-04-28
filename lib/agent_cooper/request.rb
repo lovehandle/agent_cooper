@@ -9,10 +9,6 @@ module AgentCooper
       :writer   => :protected
 
     # request attributes
-    attribute :request_adapter, Object,
-      :default  => Proc.new { HTTPClient.new },
-      :accessor => :protected
-
     attribute :query_parameters, Hash,
       :default  => Proc.new { {} },
       :accessor => :protected
@@ -27,17 +23,17 @@ module AgentCooper
       :accessor => :protected
 
     # @api public
-    def get
-      Response.new(:response => request_adapter.get(url))
-    end
-
-    # @api public
     def <<(parameters)
       unless parameters.is_a?(Hash)
         raise ArgumentError, "+parameters+ must be an instance of Hash"
       end
 
       query_parameters.merge!(parameters)
+    end
+
+    # @api public
+    def get
+      Parser.new(Excon.get(url.to_s, query: parameters))
     end
 
     # @api public
@@ -53,11 +49,6 @@ module AgentCooper
     protected
 
     # @api private
-    def query
-      parameters.collect { |k,v| "#{escape(k)}=#{escape(v)}" }.sort * '&'
-    end
-
-    # @api private
     def escape(value)
       CGI.escape("#{value}")
     end
@@ -66,8 +57,7 @@ module AgentCooper
     def url
       options = {
         :host  => host,
-        :path  => path,
-        :query => query
+        :path  => path
       }
 
       URI::HTTP.build(options)

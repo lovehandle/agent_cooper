@@ -10,8 +10,8 @@ When /^I tape the "([^"]*)" request as: "([^"]*)"$/ do |service, operation|
   end
 end
 
-Then /^the response code should be "([^"]*)"$/ do |code|
-  @response.code.should == code.to_i
+Then /^the response status should be "([^"]*)"$/ do |code|
+  @response.status.should == code.to_i
 end
 
 Then /^the response should have "([^"]*)"$/ do |key|
