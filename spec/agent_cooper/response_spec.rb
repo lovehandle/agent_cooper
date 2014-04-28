@@ -12,7 +12,6 @@ describe AgentCooper::Response do
   its(:body)    { should eql(body) }
   its(:code)    { should eql(code) }
   its(:to_hash) { should be_a(Hash)}
-  its(:xml)     { should be_a(Nokogiri::XML::Document) }
   its(:valid?)  { should be_true }
 
   context "when code != 200" do

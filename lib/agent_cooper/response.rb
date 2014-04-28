@@ -25,11 +25,6 @@ module AgentCooper
       code == 200
     end
 
-    # @api public
-    def xml
-      @xml ||= Nokogiri::XML(body)
-    end
-
     protected
 
     attr_reader :response

@@ -1,4 +1,3 @@
-require 'nokogiri'
 require 'multi_xml'
 require 'httpclient'
 require 'virtus'
