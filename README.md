@@ -11,58 +11,84 @@ Agent Cooper
 <img src="https://github.com/rclosner/agent_cooper/raw/master/agent_cooper.jpg" width="200px">
 
 
-Agent Cooper is a minimalist, Nokogiri-based Ruby wrapper to the [eBay Web Services API](http://developer.ebay.com/).
+AgentCooper is a minimal Ruby wrapper to the [eBay Web Services API](http://developer.ebay.com/).
 
+The following eBay APIs are supported:
+- [Finding API](http://developer.ebay.com/products/finding/)
+- [Shopping API](http://developer.ebay.com/products/shopping/)
+- [Merchandising API](http://developer.ebay.com/products/merchandising/)
 
-It supports the following eBay APIs:
-  - [Finding API](http://developer.ebay.com/products/finding/)
-  - [Shopping API](http://developer.ebay.com/products/shopping/)
-  - [Merchandising API](http://developer.ebay.com/products/merchandising/)
+## Installation
 
-Usage
------
-Set up.
+Add this line to your application's Gemfile:
 
 ```ruby
-    AgentCooper.configure do |config|
-      config.app_id = "YOUR_EBAY_APP_ID"
-    end
+  gem "agent_cooper"
 ```
 
-Initialize a request
+  And then execute:
 
-```ruby
-    request = AgentCooper::Finder.new
-    request = AgentCooper::Shopper.new
-    request = AgentCooper::Merchandiser.new
 ```
-Build request params.
-
-```ruby
-    request << {
-      'OPERATION-NAME' => 'getSearchKeywordsRecommendation',
-      'KEYWORDS'       => 'arry potter'
-    }
+  $ bundle install
 ```
 
-Get a response.
+Or install it yourself as:
+
+```
+  $ gem install agent_cooper
+```
+
+## Usage
+
+First, set the app id to your eBay app id:
 
 ```ruby
-    response = request.get
+  AgentCooper.configure do |config|
+    config.app_id = "YOUR_EBAY_APP_ID"
+  end
+```
+
+Initialize a request without parameters:
+
+```ruby
+  AgentCooper::Finder.new
+```
+
+Initialize a request with parameters:
+
+```ruby
+  AgentCooper::Shopper.new(parameters: { "KEY" => "value" })
+```
+
+Add parameters after initialization:
+
+```ruby
+  request = AgentCooper::Shopper.new
+  request << {
+    'OPERATION-NAME' => 'getSearchKeywordsRecommendation',
+    'KEYWORDS'       => 'arry potter'
+  }
+```
+
+Perform a request:
+
+```ruby
+  request.get
+  #=> #<AgentCooper::Response:0x007ffd5c2ca040 @response="...">
 ```
 
 Return a hash:
 
 ```ruby
-    response.to_hash
-
-    returns: {'getSearchKeywordsRecommendationResponse' => {'xmnls' => 'http://www.ebay.com/marketplace/search/v1/services', 'ack' => 'Success', 'version' => '1.9.0', 'keywords' => 'harry potter'}}
+  response = request.get
+  response.to_hash
+  #=> {'getSearchKeywordsRecommendationResponse' => {'xmnls' => 'http://www.ebay.com/marketplace/search/v1/services', 'ack' => 'Success', 'version' => '1.9.0', 'keywords' => 'harry potter'}}
 ```
 
-If you need to preserve XML attributes
+## Contributing
 
-```ruby
-    response.to_hash(:preserve_attributes => true)
-
-    returns: {'CurrentPrice' => {'__content__' => '154.99', 'CurrencyID' => 'EUR' }}
-```
+1. Fork it ( http://github.com/rclosner/agent_cooper/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
