@@ -2,7 +2,8 @@ require 'spec_helper'
 
 describe AgentCooper::Finder do
   it_behaves_like "Request" do
-    let(:expected_default_parameters) do
+
+    let(:defaults) do
       {
         "SECURITY-APPNAME"     => app_id,
         "SECURITY-VERSION"     => version,
@@ -11,6 +12,7 @@ describe AgentCooper::Finder do
       }
     end
 
-    its(:default_parameters) { should eql(expected_default_parameters) }
+    its(:defaults) { should eql(defaults) }
+
   end
 end

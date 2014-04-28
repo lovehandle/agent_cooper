@@ -4,7 +4,7 @@ describe AgentCooper::Merchandiser do
   it_behaves_like "Request" do
     let(:service_name) { described_class::SERVICE_NAME }
 
-    let(:expected_default_parameters) do
+    let(:defaults) do
       {
         "CONSUMER-ID"          => app_id,
         "SERVICE-NAME"         => service_name,
@@ -14,6 +14,6 @@ describe AgentCooper::Merchandiser do
       }
     end
 
-    its(:default_parameters) { should eql(expected_default_parameters) }
+    its(:defaults) { should eql(defaults) }
   end
 end

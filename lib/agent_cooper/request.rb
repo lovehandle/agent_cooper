@@ -1,77 +1,72 @@
 module AgentCooper
-  class Request
+  module Request
 
-    include Virtus
+    # INCLUSIONS
 
-    # config attributes
-    attribute :app_id, String,
-      :default  => Proc.new { AgentCooper::Config.app_id },
-      :writer   => :protected
+    include Virtus.module
 
-    # request attributes
-    attribute :request_adapter, Object,
-      :default  => Proc.new { HTTPClient.new },
-      :accessor => :protected
+    # ATTRIBUTES
 
-    attribute :query_parameters, Hash,
-      :default  => Proc.new { {} },
-      :accessor => :protected
+    attribute :request_adapter, Object, default: lambda {|*args| HTTPClient.new }
+    attribute :parameters, Hash, default: {} 
+    attribute :host, String, default: nil
+    attribute :path, String, default: nil
 
-    attribute :default_parameters, Hash,
-      :accessor => :protected
+    def query_parameters
+      warn "[DEPRECATION] `query_parameters` is deprecated. Please use `parameters` instead."
+      parameters
+    end
 
-    attribute :host, String,
-      :accessor => :protected
+    def query_parameters=(params)
+      warn "[DEPRECATION] `query_parameters=` is deprecated. Please use `parameters=` instead."
+      self.parameters = params
+    end
 
-    attribute :path, String,
-      :accessor => :protected
+    def default_parameters
+      warn "[DEPRECATION] `default_parameters` is deprecated. Please use `defaults` instead."
+      defaults
+    end
 
-    # @api public
+    def default_parameters=(params)
+      warn "[DEPRECATION] `default_parameters=` is deprecated. Please use `defaults=` instead."
+      self.defaults = params
+    end
+
+    # INSTANCE METHODS
+
     def get
-      Response.new(:response => request_adapter.get(url))
+      Response.new(response: request_adapter.get(url))
     end
 
-    # @api public
-    def <<(parameters)
-      unless parameters.is_a?(Hash)
-        raise ArgumentError, "+parameters+ must be an instance of Hash"
+    def <<(params)
+      if params.is_a?(Hash)
+        parameters.merge!(params)
+      else
+        raise ArgumentError, "`params` must be an instance of Hash"
       end
-
-      query_parameters.merge!(parameters)
     end
 
-    # @api public
     def reset!
-      self.query_parameters = {}
+      self.parameters = {}
     end
 
-    # @api public
-    def parameters
-      default_parameters.merge(query_parameters)
+    def defaults
+      self.class::DEFAULTS.call
     end
 
-    protected
+    private :defaults
 
-    # @api private
     def query
-      parameters.collect { |k,v| "#{escape(k)}=#{escape(v)}" }.sort * '&'
+      defaults.merge(parameters).collect {|k,v| "#{ CGI.escape(k.to_s) }=#{ CGI.escape(v.to_s) }" }.sort * '&'
     end
 
-    # @api private
-    def escape(value)
-      CGI.escape("#{value}")
-    end
+    private :query
 
-    # @api private
     def url
-      options = {
-        :host  => host,
-        :path  => path,
-        :query => query
-      }
-
-      URI::HTTP.build(options)
+      URI::HTTP.build(host: host, path: path, query: query)
     end
+
+    private :url
 
   end
 end

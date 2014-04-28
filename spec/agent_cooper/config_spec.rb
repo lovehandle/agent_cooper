@@ -21,16 +21,4 @@ describe AgentCooper::Config do
     end
   end
 
-  describe ".configure" do
-    it "yields an AgentCooper::Config" do
-      subject.configure do |obj|
-        obj.should eql(described_class)
-      end
-    end
-
-    context "when no block is given" do
-      it { should raise_error }
-    end
-  end
-
 end

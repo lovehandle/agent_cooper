@@ -1,7 +1,7 @@
 shared_examples_for "Request" do
 
-  before do
-    AgentCooper::Config.stub(:app_id).and_return(app_id)
+  before(:each) do
+    AgentCooper::Config.app_id = app_id
   end
 
   let(:app_id)   { "12345ABCDE" }
@@ -11,17 +11,16 @@ shared_examples_for "Request" do
   let(:encoding) { described_class::ENCODING }
   let(:version)  { described_class::VERSION }
 
-  its(:app_id)  { should eql(app_id) }
   its(:host)    { should eql(host) }
   its(:path)    { should eql(path) }
 
-  its(:query_parameters) { should eql({}) }
+  its(:parameters) { should eql({}) }
   its(:request_adapter)  { should be_a(HTTPClient) }
 
   describe "#reset!" do
     it "sets the request parameters to a blank hash" do
-      subject.should_receive(:query_parameters=).with({})
       subject.reset!
+      subject.parameters.should == {}
     end
   end
 
@@ -42,10 +41,10 @@ shared_examples_for "Request" do
   end
 
   describe "#get" do
-    let(:request_adapter) { mock(HTTPClient) }
+    let(:request_adapter) { double(HTTPClient) }
     let(:url) { "http://dummy.com/1234" }
 
-    let(:response) { mock(:response) }
+    let(:response) { double(:response) }
 
     before do
       subject.stub(:request_adapter).and_return(request_adapter)
@@ -64,4 +63,5 @@ shared_examples_for "Request" do
       subject.get
     end
   end
+
 end

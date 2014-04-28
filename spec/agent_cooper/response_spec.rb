@@ -7,12 +7,11 @@ describe AgentCooper::Response do
   let(:body) { "<root><foo baz='blah'>Some Text</foo></root>" }
   let(:code) { 200 }
 
-  let(:response) { mock(:response, :body => body, :code => code) }
+  let(:response) { double(:response, :body => body, :code => code) }
 
   its(:body)    { should eql(body) }
   its(:code)    { should eql(code) }
   its(:to_hash) { should be_a(Hash)}
-  its(:xml)     { should be_a(Nokogiri::XML::Document) }
   its(:valid?)  { should be_true }
 
   context "when code != 200" do

@@ -1,13 +1,14 @@
-require 'nokogiri'
 require 'multi_xml'
 require 'httpclient'
 require 'virtus'
 require 'cgi'
 
 module AgentCooper
+
   def self.configure(&block)
-    Config.configure(&block)
+    yield Config if block_given?
   end
+
 end
 
 require 'agent_cooper/config'

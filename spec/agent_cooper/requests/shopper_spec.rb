@@ -2,9 +2,10 @@ require 'spec_helper'
 
 describe AgentCooper::Shopper do
   it_behaves_like "Request" do
+
     let(:site_id) { described_class::SITE_ID }
 
-    let(:expected_default_parameters) do
+    let(:defaults) do
       {
         "APPID"            => app_id,
         "RESPONSEENCODING" => encoding,
@@ -13,6 +14,7 @@ describe AgentCooper::Shopper do
       }
     end
 
-    its(:default_parameters) { should eql(expected_default_parameters) }
+    its(:defaults) { should eql(defaults) }
+
   end
 end

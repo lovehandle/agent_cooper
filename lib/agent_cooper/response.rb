@@ -5,29 +5,20 @@ module AgentCooper
       @response = attributes.fetch(:response)
     end
 
-    # @api public
     def body
       response.body
     end
 
-    # @api public
     def code
       response.code
     end
 
-    # @api public
-    def to_hash(options = {})
+    def to_hash
       MultiXml.parse(body)
     end
 
-    # @api public
     def valid?
       code == 200
-    end
-
-    # @api public
-    def xml
-      @xml ||= Nokogiri::XML(body)
     end
 
     protected
