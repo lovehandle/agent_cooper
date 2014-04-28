@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://open.api.ebay.com/shopping?APPID=APP_ID&CALLNAME=FindHalfProducts&QueryKeywords=harry%20potter&RESPONSEENCODING=XML&SITEID=0&VERSION=745
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/xml;charset=utf-8
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Sat, 25 Dec 1999 00:00:00 GMT
+      Last-Modified:
+      - Sat, 12 Nov 2011 07:58:24 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Api-Build-Tag:
+      - E745_CORE_BUNDLED_14025482_R1
+      X-Ebay-Api-Pool-Name:
+      - ___cDRidW9rdDdlaHFg
+      X-Ebay-Api-Server-Name:
+      - ___dW0ucm43Nyg/MjNyN2N7Kjc3LTMoNjo2KDY6Njw/Mz02
+      X-Ebay-Esb-Guid:
+      - urn:uuid:62CB515CDAAA1C5553376291510847098841327158253
+      Date:
+      - Sat, 12 Nov 2011 07:58:23 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <FindHalfProductsResponse
+        xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-11-12T07:58:24.481Z</Timestamp>\n
+        \  <Ack>Success</Ack>\n   <Build>E745_CORE_BUNDLED_14025482_R1</Build>\n   <Version>745</Version>\n
+        \  <PageNumber>1</PageNumber>\n   <ApproximatePages>1250</ApproximatePages>\n
+        \  <MoreResults>true</MoreResults>\n   <TotalProducts>1250</TotalProducts>\n
+        \  <Products>\n    <Product>\n     <Title>Harry Potter and the Deathly Hallows:
+        Part II (DVD, 2011)</Title>\n     <DetailsURL>http://syicatalogs.ebay.com/ws/eBayISAPI.dll?PageSyiProductDetails&amp;IncludeAttributes=1&amp;ShowAttributesTable=1&amp;ProductMementoString=118656:2:1049:4276817045:390427655:3f5acce195ccfcf94a20bffcb51bf332:1:1:1:5000000672452</DetailsURL>\n
+        \    <StockPhotoURL>http://i.ebayimg.com/00/$(KGrHqMOKooE6eVU7UV4BOuWWY5i!g~~_6.JPG?set_id=89040003C1</StockPhotoURL>\n
+        \    <DisplayStockPhotos>true</DisplayStockPhotos>\n     <ItemCount>0</ItemCount>\n
+        \    <ProductID type=\"Reference\">110288225</ProductID>\n     <ProductID
+        type=\"UPC\">883929140459</ProductID>\n     <DomainName>DVDs</DomainName>\n
+        \    <ItemSpecifics>\n      <NameValueList>\n       <Name>Format</Name>\n
+        \      <Value>DVD</Value>\n      </NameValueList>\n      <NameValueList>\n
+        \      <Name>Rating</Name>\n       <Value>PG-13</Value>\n      </NameValueList>\n
+        \     <NameValueList>\n       <Name>Leading Role</Name>\n      </NameValueList>\n
+        \    </ItemSpecifics>\n     <ReviewCount>0</ReviewCount>\n     <MinPrice currencyID=\"USD\">9.5</MinPrice>\n
+        \   </Product>\n   </Products>\n   <ProductSearchURL>http://search.half.ebay.com/harry-potter</ProductSearchURL>\n
+        \ </FindHalfProductsResponse>\n "
+    http_version: '1.1'
+  recorded_at: Mon, 28 Apr 2014 10:41:26 GMT
+recorded_with: VCR 2.9.0

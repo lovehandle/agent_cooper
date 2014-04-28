@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://open.api.ebay.com/shopping?APPID=APP_ID&CALLNAME=GetUserProfile&RESPONSEENCODING=XML&SITEID=0&UserID=TESTUSER_magicalbookseller&VERSION=745
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.3.4.1, ruby 2.1.1 (2014-02-24))
+      Accept:
+      - "*/*"
+      Date:
+      - Mon, 28 Apr 2014 14:53:47 GMT
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/xml;charset=utf-8
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Sat, 25 Dec 1999 00:00:00 GMT
+      Guid:
+      - 145a8d3d-d230-a623-2955-d5e5fe34a5c4
+      Last-Modified:
+      - Mon, 28 Apr 2014 14:53:48 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Api-Build-Tag:
+      - E869_CORE_APILW_16784697_R1
+      X-Ebay-Api-Pool-Name:
+      - ___cDRidW9rdGZpdWY=
+      X-Ebay-Api-Server-Name:
+      - ___dm97PWQ3MGYrPzE8ZSgyNSgzMSs0NDErNzUyPz43OzU=
+      X-Ebay-Request-Id:
+      - 145a8d3d-d230-a623-2955-d5e5fe34a5c4!shopping!10.98.50.149!esbshopping[]
+      Date:
+      - Mon, 28 Apr 2014 14:53:47 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <GetUserProfileResponse
+        xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2014-04-28T14:53:48.203Z</Timestamp>\n
+        \  <Ack>Failure</Ack>\n   <Errors>\n    <ShortMessage>Application ID invalid.</ShortMessage>\n
+        \   <LongMessage>Application ID invalid.</LongMessage>\n    <ErrorCode>1.20</ErrorCode>\n
+        \   <SeverityCode>Error</SeverityCode>\n    <ErrorClassification>RequestError</ErrorClassification>\n
+        \  </Errors>\n   <Build>E869_CORE_APILW_16784697_R1</Build>\n   <Version>869</Version>\n
+        \ </GetUserProfileResponse>\n "
+    http_version: 
+  recorded_at: Mon, 28 Apr 2014 14:53:48 GMT
+recorded_with: VCR 2.9.0

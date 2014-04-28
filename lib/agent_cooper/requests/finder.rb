@@ -1,3 +1,5 @@
+require 'agent_cooper/request'
+
 module AgentCooper
   class Finder < Request
 

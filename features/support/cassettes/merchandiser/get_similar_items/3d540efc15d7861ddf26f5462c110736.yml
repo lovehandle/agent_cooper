@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://svcs.ebay.com/MerchandisingService?CONSUMER-ID=APP_ID&OPERATION-NAME=getSimilarItems&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.5.0&itemId=280254552262
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Esb-Endpointurl:
+      - "/Root/ESBFunctions/Services/Ports/7002/profile/ns/v1/MerchandisingService/destination_default/address_synapse"
+      X-Ebay-Esb-Guid:
+      - urn:uuid:0CACEDE86EA20290111321289543959
+      X-Ebay-Soa-Locale-List:
+      - en-US_US
+      X-Ebay-Soa-Message-Protocol:
+      - NONE
+      X-Ebay-Soa-Operation-Name:
+      - getSimilarItems
+      X-Ebay-Soa-Request-Id:
+      - 13396c8d-3650-a0a3-d7b1-e241fffb6a3b!MerchandisingService!10.10.61.123!v3soa1core[]
+      X-Ebay-Soa-Response-Data-Format:
+      - XML
+      X-Ebay-Soa-Service-Name:
+      - "{http://www.ebay.com/marketplace/services}MerchandisingService"
+      X-Ebay-Soa-Service-Version:
+      - 1.5.0
+      Date:
+      - Sat, 12 Nov 2011 07:58:23 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0' encoding='UTF-8'?><getSimilarItemsResponse xmlns="http://www.ebay.com/marketplace/services"><ack>Failure</ack><errorMessage><error><errorId>10</errorId><domain>Marketplace</domain><severity>Error</severity><category>Application</category><message>Invalid
+        item ID. Item does not exist or has ended more than two weeks ago.</message><subdomain>Merchandising</subdomain></error></errorMessage><version>1.5.0</version><timestamp>2011-11-12T07:58:23.667Z</timestamp></getSimilarItemsResponse>
+    http_version: '1.1'
+  recorded_at: Mon, 28 Apr 2014 10:41:26 GMT
+recorded_with: VCR 2.9.0

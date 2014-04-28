@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://open.api.ebay.com/shopping?APPID=APP_ID&CALLNAME=GetItemStatus&ItemID=110089122715&RESPONSEENCODING=XML&SITEID=0&VERSION=745
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/xml;charset=utf-8
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Sat, 25 Dec 1999 00:00:00 GMT
+      Last-Modified:
+      - Sat, 12 Nov 2011 07:58:24 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Api-Build-Tag:
+      - E745_CORE_BUNDLED_14011937_R1
+      X-Ebay-Api-Pool-Name:
+      - ___cDRidW9rdGZpdWY=
+      X-Ebay-Api-Server-Name:
+      - ___dWsucnA3MyhgNDdhZDI1Kjc3LTw2KTIzPik1PDw/Mz02
+      X-Ebay-Esb-Guid:
+      - urn:uuid:22667A74B6C5FB748436593776008238219-578238108
+      Date:
+      - Sat, 12 Nov 2011 07:58:24 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <GetItemStatusResponse
+        xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2011-11-12T07:58:24.871Z</Timestamp>\n
+        \  <Ack>Failure</Ack>\n   <Errors>\n    <ShortMessage>Invalid item ID.</ShortMessage>\n
+        \   <LongMessage>Invalid or non-existent item ID.</LongMessage>\n    <ErrorCode>10.12</ErrorCode>\n
+        \   <SeverityCode>Error</SeverityCode>\n    <ErrorParameters ParamID=\"0\">\n
+        \    <Value>110089122715</Value>\n    </ErrorParameters>\n    <ErrorClassification>RequestError</ErrorClassification>\n
+        \  </Errors>\n   <Build>E745_CORE_BUNDLED_14011937_R1</Build>\n   <Version>745</Version>\n
+        \ </GetItemStatusResponse>\n "
+    http_version: '1.1'
+  recorded_at: Mon, 28 Apr 2014 10:41:26 GMT
+recorded_with: VCR 2.9.0

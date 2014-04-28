@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://svcs.ebay.com/MerchandisingService?CONSUMER-ID=APP_ID&OPERATION-NAME=getTopSellingProducts&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.5.0&maxResults=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Esb-Endpointurl:
+      - "/Root/ESBFunctions/Services/Ports/7002/profile/ns/v1/MerchandisingService/destination_default/address_synapse"
+      X-Ebay-Esb-Guid:
+      - urn:uuid:51B4C749795F677E581321289948792
+      X-Ebay-Soa-Locale-List:
+      - en-US_US
+      X-Ebay-Soa-Message-Protocol:
+      - NONE
+      X-Ebay-Soa-Operation-Name:
+      - getTopSellingProducts
+      X-Ebay-Soa-Request-Id:
+      - 13396c8d-44f0-a0a3-d787-0577fffb8479!MerchandisingService!10.10.61.120!v3soa1core[]
+      X-Ebay-Soa-Response-Data-Format:
+      - XML
+      X-Ebay-Soa-Service-Name:
+      - "{http://www.ebay.com/marketplace/services}MerchandisingService"
+      X-Ebay-Soa-Service-Version:
+      - 1.5.0
+      Date:
+      - Sat, 12 Nov 2011 07:58:23 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '<?xml version=''1.0'' encoding=''UTF-8''?><getTopSellingProductsResponse
+        xmlns="http://www.ebay.com/marketplace/services"><ack>Success</ack><version>1.5.0</version><timestamp>2011-11-12T07:58:23.979Z</timestamp><productRecommendations><product><productId
+        type="Reference">109464467</productId><title>Cars 2 (DVD, 2011)</title><productURL>http://www.ebay.com/ctg/109464467?_pcatid=1&amp;_tab=2&amp;_trksid=m108&amp;_trkparms=algo%3DMETSP%26otn%3D3%26pmod%3D0%26ps%3D51</productURL><catalogName>US
+        Muze Movies</catalogName><imageURL>http://i.ebayimg.com/00/$(KGrHqUOKp!E5(4bOqlBBOW6nYDZU!~~_0.JPG?set_id=89040003C1</imageURL><reviewCount>5</reviewCount><priceRangeMin
+        currencyId="USD">6.5</priceRangeMin><priceRangeMax currencyId="USD">39.95</priceRangeMax></product><product><productId
+        type="Reference">110288225</productId><title>Harry Potter and the Deathly
+        Hallows: Part II (DVD, 2011)</title><productURL>http://www.ebay.com/ctg/110288225?_pcatid=1&amp;_tab=2&amp;_trksid=m108&amp;_trkparms=algo%3DMETSP%26otn%3D3%26pmod%3D0%26ps%3D51</productURL><catalogName>US
+        Muze Movies</catalogName><imageURL>http://i.ebayimg.com/00/$(KGrHqMOKooE6eVU7UV4BOuWWY5i!g~~_0.JPG?set_id=89040003C1</imageURL><reviewCount>0</reviewCount><priceRangeMin
+        currencyId="USD">8.0</priceRangeMin><priceRangeMax currencyId="USD">44.95</priceRangeMax></product><product><productId
+        type="Reference">73228850</productId><title>Polaroid SX-70 Film Camera</title><productURL>http://www.ebay.com/ctg/73228850?_pcatid=51&amp;_tab=2&amp;_trksid=m108&amp;_trkparms=algo%3DMETSP%26otn%3D3%26pmod%3D0%26ps%3D51</productURL><catalogName>ePD
+        US SDC Film Cameras</catalogName><imageURL>http://i.ebayimg.com/12/!!d6R-JQ!WM~$(KGrHqIOKkYEsmmRrF)sBLOQdMt3k!~~_0.JPG?set_id=89040003C1</imageURL><reviewCount>89</reviewCount><priceRangeMin
+        currencyId="USD">35.0</priceRangeMin><priceRangeMax currencyId="USD">800.0</priceRangeMax></product></productRecommendations></getTopSellingProductsResponse>'
+    http_version: '1.1'
+  recorded_at: Mon, 28 Apr 2014 10:41:26 GMT
+recorded_with: VCR 2.9.0

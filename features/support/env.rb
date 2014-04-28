@@ -1,16 +1,23 @@
-require 'rubygems'
-require 'bundler/setup'
 require 'digest/md5'
 require 'agent_cooper'
 
-
 module AgentCooperMethods
   def ebay_app_id
-    ENV['EBAY_APP_ID'] || "APP_ID"
+    ENV['EBAY_APP_ID'] || 'APP_ID'
   end
 
   def cassette_name
-    Digest::MD5.hexdigest(@request.parameters.to_json)
+    params = @request.parameters.dup
+    params.delete('SECURITY_APPNAME')
+
+    Digest::MD5.hexdigest(params.to_json)
+  end
+
+  def seek(hsh, key)
+    hsh.each.find do |k, v|
+      return v if k == key
+      seek(v, key) if v.is_a?(Hash)
+    end
   end
 end
 

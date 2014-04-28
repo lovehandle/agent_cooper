@@ -29,7 +29,9 @@ describe AgentCooper::Config do
     end
 
     context "when no block is given" do
-      it { should raise_error }
+      it "raises an error" do
+        expect { described_class.configure }.to raise_error
+      end
     end
   end
 

@@ -10,7 +10,7 @@ Feature: Ebay Finder
         | getSearchKeywordsRecommendation | acordian |
      When I tape the "finder" request as: "get_search_keywords_recommendation"
      Then the response code should be "200"
-      And the response should have 1 "keywords" nodes
+      And the response should have "keywords"
 
   Scenario: findItemsByKeywords
     Given the following parameters:

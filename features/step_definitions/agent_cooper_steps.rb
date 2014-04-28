@@ -14,6 +14,10 @@ Then /^the response code should be "([^"]*)"$/ do |code|
   @response.code.should == code.to_i
 end
 
+Then /^the response should have "([^"]*)"$/ do |key|
+  @response.to_hash.has_key?(key)
+end
+
 Then /^the response should have (\d+) "([^"]*)" nodes$/ do |count, node|
-  @response.xml.css(node).count.should == count.to_i
+  seek(@response.to_hash, node).count == count.to_i
 end

@@ -42,10 +42,10 @@ shared_examples_for "Request" do
   end
 
   describe "#get" do
-    let(:request_adapter) { mock(HTTPClient) }
+    let(:request_adapter) { double(HTTPClient) }
     let(:url) { "http://dummy.com/1234" }
 
-    let(:response) { mock(:response) }
+    let(:response) { double(:response) }
 
     before do
       subject.stub(:request_adapter).and_return(request_adapter)

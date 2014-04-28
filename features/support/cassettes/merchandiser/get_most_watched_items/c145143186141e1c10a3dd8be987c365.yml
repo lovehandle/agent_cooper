@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://svcs.ebay.com/MerchandisingService?CONSUMER-ID=APP_ID&OPERATION-NAME=getMostWatchedItems&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.5.0&maxResults=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Esb-Endpointurl:
+      - "/Root/ESBFunctions/Services/Ports/7003/profile/ns/v1/MerchandisingService/destination_default/address_synapse"
+      X-Ebay-Esb-Guid:
+      - urn:uuid:23B81121389D4895A51321289369843
+      X-Ebay-Soa-Locale-List:
+      - en-US_US
+      X-Ebay-Soa-Message-Protocol:
+      - NONE
+      X-Ebay-Soa-Operation-Name:
+      - getMostWatchedItems
+      X-Ebay-Soa-Request-Id:
+      - 13396c8d-4250-a0a3-d7d5-4575fffb1e87!MerchandisingService!10.10.61.125!v3soa1core[]
+      X-Ebay-Soa-Response-Data-Format:
+      - XML
+      X-Ebay-Soa-Service-Name:
+      - "{http://www.ebay.com/marketplace/services}MerchandisingService"
+      X-Ebay-Soa-Service-Version:
+      - 1.5.0
+      Date:
+      - Sat, 12 Nov 2011 07:58:22 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0' encoding='UTF-8'?><getMostWatchedItemsResponse xmlns="http://www.ebay.com/marketplace/services"><ack>Success</ack><version>1.5.0</version><timestamp>2011-11-12T07:58:23.828Z</timestamp><itemRecommendations><item><itemId>390120901957</itemId><title>Wireless
+        Spy Nanny Mini Micro Camera FULL SYSTEM!</title><viewItemURL>http://www.ebay.com/itm/Wireless-Spy-Nanny-Mini-Micro-Camera-FULL-SYSTEM-/390120901957?_trksid=m8&amp;_trkparms=algo%3DMW%26itu%3DUCC%26otn%3D3%26ps%3D50</viewItemURL><globalId>EBAY-US</globalId><timeLeft>P27DT15H10M25S</timeLeft><primaryCategoryId>293</primaryCategoryId><primaryCategoryName>Consumer
+        Electronics</primaryCategoryName><subtitle>NEW 2011 MODEL WITH 4 CHANNEL FREQUENCY
+        SELECTOR!!</subtitle><buyItNowPrice currencyId="USD">39.99</buyItNowPrice><country>US</country><imageURL>http://thumbs2.ebaystatic.com/m/mdci5SsHo-pBCzix3IGaamg/80.jpg</imageURL><shippingCost
+        currencyId="USD">0.0</shippingCost><shippingType>Flat</shippingType><watchCount>5344</watchCount></item><item><itemId>270838312605</itemId><title>Xbox
+        LIVE 12-Month Gold Membership Subscription Card</title><viewItemURL>http://www.ebay.com/itm/Xbox-LIVE-12-Month-Gold-Membership-Subscription-Card-/270838312605?_trksid=m8&amp;_trkparms=algo%3DMW%26itu%3DUCC%26otn%3D3%26ps%3D50</viewItemURL><globalId>EBAY-US</globalId><timeLeft>P8DT14H36M4S</timeLeft><primaryCategoryId>1249</primaryCategoryId><primaryCategoryName>Video
+        Games</primaryCategoryName><buyItNowPrice currencyId="USD">49.99</buyItNowPrice><country>US</country><imageURL>http://thumbs2.ebaystatic.com/m/mf7ZPtAHK9TrFJpGfzlCEJA/80.jpg</imageURL><shippingCost
+        currencyId="USD">0.0</shippingCost><shippingType>Flat</shippingType><watchCount>4175</watchCount></item><item><itemId>290586406311</itemId><title>New
+        MID M80006 Google Android 8" Touch Tablet PC Silver</title><viewItemURL>http://www.ebay.com/itm/New-MID-M80006-Google-Android-8-Touch-Tablet-PC-Silver-/290586406311?_trksid=m8&amp;_trkparms=algo%3DMW%26itu%3DUCC%26otn%3D3%26ps%3D50</viewItemURL><globalId>EBAY-US</globalId><timeLeft>P26DT7H18M32S</timeLeft><primaryCategoryId>58058</primaryCategoryId><primaryCategoryName>Computers
+        &amp; Networking</primaryCategoryName><subtitle>Free Shipping~180° Swivel
+        Display~w/Warranty,FAST SHIP!</subtitle><buyItNowPrice currencyId="USD">102.95</buyItNowPrice><country>US</country><imageURL>http://thumbs4.ebaystatic.com/m/myYcjVoevH59-utbeWiZxtw/80.jpg</imageURL><shippingCost
+        currencyId="USD">0.0</shippingCost><shippingType>Flat</shippingType><watchCount>3287</watchCount></item></itemRecommendations></getMostWatchedItemsResponse>
+    http_version: '1.1'
+  recorded_at: Mon, 28 Apr 2014 10:41:26 GMT
+recorded_with: VCR 2.9.0
