@@ -23,7 +23,7 @@ module AgentCooper
     end
 
     def app_id
-      AgentCooper::Config.app_id
+      Config.app_id
     end
 
     def query_parameters
@@ -32,7 +32,7 @@ module AgentCooper
 
     protected
 
-    attr_writer :app_id, :default_parameters, :host, :path
+    attr_writer :default_parameters, :host, :path
 
     # @api private
     def url
