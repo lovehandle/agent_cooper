@@ -5,11 +5,7 @@ module AgentCooper
 
       # @api public
       def configure(&block)
-        if block_given?
-          yield self
-        else
-          raise ArgumentError, 'No block given'
-        end
+        yield self
       end
     end
   end
