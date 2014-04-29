@@ -4,10 +4,6 @@ module AgentCooper
 
     # @api public
     def <<(parameters)
-      unless parameters.is_a?(Hash)
-        raise ArgumentError, "+parameters+ must be an instance of Hash"
-      end
-
       query_parameters.merge!(parameters)
     end
 
