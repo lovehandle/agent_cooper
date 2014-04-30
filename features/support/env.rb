@@ -2,7 +2,7 @@ require 'rubygems'
 require 'bundler/setup'
 require 'digest/md5'
 require 'agent_cooper'
-
+require 'pry'
 
 module AgentCooperMethods
   def ebay_app_id

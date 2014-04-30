@@ -15,10 +15,11 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "agent_cooper"
 
   s.add_runtime_dependency "multi_xml", "~> 0.5.5"
-  s.add_runtime_dependency "httpclient", "~> 2.3.4"
+  s.add_runtime_dependency "excon", ">= 0.22.1"
   s.add_runtime_dependency "virtus", "~> 1.0.2"
 
   s.add_development_dependency "cucumber", "~> 1.3.14"
+  s.add_development_dependency "pry", "~> 0.9.12"
   s.add_development_dependency "rake", "~> 10.3.1"
   s.add_development_dependency "rspec", "~> 2.14.1"
   s.add_development_dependency "vcr", "~> 2.9.0"

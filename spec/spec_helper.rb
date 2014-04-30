@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'rspec'
+require 'pry'
 
 require File.expand_path('../../lib/agent_cooper',       __FILE__)
 require File.expand_path('../support/shared/request.rb', __FILE__)
