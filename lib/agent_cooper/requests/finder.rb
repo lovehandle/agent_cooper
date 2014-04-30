@@ -7,7 +7,7 @@ module AgentCooper
 
     # CONSTANTS
 
-    VERSION  = "1.11.0".freeze
+    VERSION  = "1.12.0".freeze
     HOST     = "svcs.ebay.com".freeze
     PATH     = "/services/search/FindingService/v1".freeze
     ENCODING = "XML".freeze
@@ -18,7 +18,7 @@ module AgentCooper
         "SECURITY-VERSION"     => VERSION,
         "RESPONSE-DATA-FORMAT" => ENCODING,
         "REST-PAYLOAD"         => ""
-      } 
+      }
 
     }.freeze
 

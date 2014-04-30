@@ -7,7 +7,7 @@ module AgentCooper
 
     # CONSTANTS
 
-    VERSION      = "745".freeze
+    VERSION      = "799".freeze
     HOST         = "open.api.ebay.com".freeze
     PATH         = "/shopping".freeze
     SITE_ID      = 0.freeze
@@ -19,7 +19,7 @@ module AgentCooper
         "RESPONSEENCODING" => ENCODING,
         "VERSION"          => VERSION,
         "SITEID"           => SITE_ID
-      }  
+      }
 
     }.freeze
 
