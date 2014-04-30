@@ -7,7 +7,7 @@ describe AgentCooper::Response do
   let(:body) { "<root><foo baz='blah'>Some Text</foo></root>" }
   let(:code) { 200 }
 
-  let(:response) { double(:response, :body => body, :code => code) }
+  let(:response) { double(:response, :body => body, :status => code) }
 
   its(:body)    { should eql(body) }
   its(:code)    { should eql(code) }

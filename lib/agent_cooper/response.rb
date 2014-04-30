@@ -10,7 +10,7 @@ module AgentCooper
     end
 
     def code
-      response.code
+      response.status
     end
 
     def to_hash

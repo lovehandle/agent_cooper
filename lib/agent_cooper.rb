@@ -1,7 +1,6 @@
 require 'multi_xml'
-require 'httpclient'
+require 'excon'
 require 'virtus'
-require 'cgi'
 
 module AgentCooper
 

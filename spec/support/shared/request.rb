@@ -15,7 +15,7 @@ shared_examples_for "Request" do
   its(:path)    { should eql(path) }
 
   its(:parameters) { should eql({}) }
-  its(:request_adapter)  { should be_a(HTTPClient) }
+  its(:request_adapter)  { should eq(Excon) }
 
   describe "#reset!" do
     it "sets the request parameters to a blank hash" do
@@ -41,26 +41,16 @@ shared_examples_for "Request" do
   end
 
   describe "#get" do
-    let(:request_adapter) { double(HTTPClient) }
-    let(:url) { "http://dummy.com/1234" }
-
-    let(:response) { double(:response) }
-
     before do
-      subject.stub(:request_adapter).and_return(request_adapter)
-      subject.stub(:url).and_return(url)
-
-      request_adapter.stub(:get).with(url).and_return(response)
+      Excon.stub({}, {})
     end
 
-    it "gets a request" do
-      request_adapter.should_receive(:get).with(url)
-      subject.get
+    after do
+      Excon.stubs.clear
     end
 
-    it "initializes a new Response" do
-      AgentCooper::Response.should_receive(:new).with(:response => response)
-      subject.get
+    it "gets a Response" do
+      expect(subject.get(mock: true)).to be_an AgentCooper::Response
     end
   end
 

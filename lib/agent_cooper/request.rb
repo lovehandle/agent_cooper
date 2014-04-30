@@ -7,8 +7,8 @@ module AgentCooper
 
     # ATTRIBUTES
 
-    attribute :request_adapter, Object, default: lambda {|*args| HTTPClient.new }
-    attribute :parameters, Hash, default: {} 
+    attribute :request_adapter, Object, default: lambda {|*| Excon }
+    attribute :parameters, Hash, default: {}
     attribute :host, String, default: nil
     attribute :path, String, default: nil
 
@@ -34,8 +34,8 @@ module AgentCooper
 
     # INSTANCE METHODS
 
-    def get
-      Response.new(response: request_adapter.get(url))
+    def get(opts = {})
+      Response.new(response: request_adapter.get(url.to_s, opts.merge(query: defaults.merge(parameters))))
     end
 
     def <<(params)
@@ -56,14 +56,8 @@ module AgentCooper
 
     private :defaults
 
-    def query
-      defaults.merge(parameters).collect {|k,v| "#{ CGI.escape(k.to_s) }=#{ CGI.escape(v.to_s) }" }.sort * '&'
-    end
-
-    private :query
-
     def url
-      URI::HTTP.build(host: host, path: path, query: query)
+      URI::HTTP.build(host: host, path: path)
     end
 
     private :url
