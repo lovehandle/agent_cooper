@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://svcs.ebay.com/MerchandisingService?CONSUMER-ID=APP_ID&OPERATION-NAME=getRelatedCategoryItems&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.5.0&itemId=170192529715
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.33.0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Esb-Endpointurl:
+      - "/Root/ESBFunctions/Services/Ports/7003/profile/ns/v1/MerchandisingService/destination_default/address_synapse"
+      X-Ebay-Esb-Guid:
+      - urn:uuid:757D67BF2EAEB56E561400818275629
+      X-Ebay-Soa-Locale-List:
+      - en-US_US
+      X-Ebay-Soa-Message-Protocol:
+      - NONE
+      X-Ebay-Soa-Operation-Name:
+      - getRelatedCategoryItems
+      X-Ebay-Soa-Request-Id:
+      - 145b2214-6a10-a2ae-a527-8987fc7ff185!MerchandisingService!10.42.234.82!v3soa1core[]
+      X-Ebay-Soa-Response-Data-Format:
+      - XML
+      X-Ebay-Soa-Service-Metrics:
+      - '50209739'
+      X-Ebay-Soa-Service-Name:
+      - "{http://www.ebay.com/marketplace/services}MerchandisingService"
+      X-Ebay-Soa-Service-Version:
+      - 1.5.0
+      Date:
+      - Wed, 30 Apr 2014 10:14:55 GMT
+      Transfer-Encoding:
+      - ''
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0' encoding='UTF-8'?><getRelatedCategoryItemsResponse
+        xmlns="http://www.ebay.com/marketplace/services"><ack>Failure</ack><errorMessage><error><errorId>8</errorId><domain>Marketplace</domain><severity>Error</severity><category>Application</category><message>Please
+        specify a valid itemId.</message><subdomain>MarketplaceCommon</subdomain></error></errorMessage><version>1.5.0</version><timestamp>2014-04-30T10:14:56.464Z</timestamp></getRelatedCategoryItemsResponse>
+    http_version: 
+  recorded_at: Wed, 30 Apr 2014 10:14:56 GMT
+recorded_with: VCR 2.9.0

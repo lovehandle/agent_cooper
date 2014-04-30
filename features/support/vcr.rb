@@ -5,11 +5,12 @@ def ebay_app_id
 end
 
 
-VCR.config do |c|
-  c.cassette_library_dir     = File.dirname(__FILE__) + '/../../spec/fixtures/cassettes'
+VCR.configure do |c|
+  c.cassette_library_dir = File.dirname(__FILE__) + '/cassettes'
   c.default_cassette_options = {
     :record             => :none,
     :match_requests_on  => [:host] }
-  c.stub_with :webmock
+  c.hook_into :excon
+  c.before_record { |http| http.ignore! if http.response.status.code >= 400 }
   c.filter_sensitive_data('APP_ID') { ebay_app_id }
 end

@@ -15,5 +15,5 @@ Then /^the response code should be "([^"]*)"$/ do |code|
 end
 
 Then /^the response should have (\d+) "([^"]*)" nodes$/ do |count, node|
-  @response.xml.css(node).count.should == count.to_i
+  seek_in_hash(@response.to_hash, node).count == count.to_i
 end

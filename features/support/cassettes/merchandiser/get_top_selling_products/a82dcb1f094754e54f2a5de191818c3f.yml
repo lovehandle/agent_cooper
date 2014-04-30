@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://svcs.ebay.com/MerchandisingService?CONSUMER-ID=APP_ID&OPERATION-NAME=getTopSellingProducts&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.5.0&maxResults=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.33.0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Esb-Endpointurl:
+      - "/Root/ESBFunctions/Services/Ports/7002/profile/ns/v1/MerchandisingService/destination_default/address_synapse"
+      X-Ebay-Esb-Guid:
+      - urn:uuid:119B93213066BDE4821401112813931
+      X-Ebay-Soa-Locale-List:
+      - en-US_US
+      X-Ebay-Soa-Message-Protocol:
+      - NONE
+      X-Ebay-Soa-Operation-Name:
+      - getTopSellingProducts
+      X-Ebay-Soa-Request-Id:
+      - 145b2214-a260-a5ef-2585-9ff5fdfe1d3b!MerchandisingService!10.94.242.88!v3soa1core[]
+      X-Ebay-Soa-Response-Data-Format:
+      - XML
+      X-Ebay-Soa-Service-Metrics:
+      - '12094014'
+      X-Ebay-Soa-Service-Name:
+      - "{http://www.ebay.com/marketplace/services}MerchandisingService"
+      X-Ebay-Soa-Service-Version:
+      - 1.5.0
+      Date:
+      - Wed, 30 Apr 2014 10:14:56 GMT
+      Transfer-Encoding:
+      - ''
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0' encoding='UTF-8'?><getTopSellingProductsResponse
+        xmlns="http://www.ebay.com/marketplace/services"><ack>Success</ack><version>1.5.0</version><timestamp>2014-04-30T10:14:57.334Z</timestamp><productRecommendations><product><productId
+        type="Reference">175995345</productId><title>Frozen [Original Motion Picture
+        Soundtrack] [Deluxe Edition] by Christophe Beck (CD, Nov-2013, 2 Discs, Walt
+        Disney)</title><productURL>http://www.ebay.com/ctg/175995345?_pcatid=3&amp;_tab=2&amp;_trksid=m108&amp;_trkparms=algo%3DMETSP%26otn%3D3%26pmod%3D0%26ps%3D51</productURL><catalogName>US
+        Muze Music</catalogName><imageURL>http://i.ebayimg.com/00/s/NDUwWDUxMA==/z/~6EAAOxyUI1TGsTf/$_0.JPG?set_id=89040003C1</imageURL><reviewCount>4</reviewCount></product><product><productId
+        type="Reference">176018469</productId><title>Frozen [Original Motion Picture
+        Soundtrack] by Christophe Beck (CD, Nov-2013, Walt Disney)</title><productURL>http://www.ebay.com/ctg/176018469?_pcatid=3&amp;_tab=2&amp;_trksid=m108&amp;_trkparms=algo%3DMETSP%26otn%3D3%26pmod%3D0%26ps%3D51</productURL><catalogName>US
+        Muze Music</catalogName><imageURL>http://i.ebayimg.com/00/s/NDUwWDQ0Nw==/z/f50AAOxyrM5TGRCk/$_0.JPG?set_id=89040003C1</imageURL><reviewCount>3</reviewCount></product><product><productId
+        type="Reference">3463351</productId><title>The Very Best of Prince by Prince
+        (CD, Jul-2001, Warner Bros.)</title><productURL>http://www.ebay.com/ctg/3463351?_pcatid=3&amp;_tab=2&amp;_trksid=m108&amp;_trkparms=algo%3DMETSP%26otn%3D3%26pmod%3D0%26ps%3D51</productURL><catalogName>US
+        Muze Music</catalogName><imageURL>http://i.ebayimg.com/11/!!eDDmNgCGM~$(KGrHqQOKpkE0VI1KNiEBNSFJCz+5w~~_0.JPG?set_id=89040003C1</imageURL><reviewCount>29</reviewCount></product></productRecommendations></getTopSellingProductsResponse>
+    http_version: 
+  recorded_at: Wed, 30 Apr 2014 10:14:57 GMT
+recorded_with: VCR 2.9.0

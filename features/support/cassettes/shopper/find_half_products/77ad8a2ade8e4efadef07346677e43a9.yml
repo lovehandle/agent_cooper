@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://open.api.ebay.com/shopping?APPID=APP_ID&CALLNAME=FindHalfProducts&QueryKeywords=harry%20potter&RESPONSEENCODING=XML&SITEID=0&VERSION=799
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.33.0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - text/xml;charset=utf-8
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Sat, 25 Dec 1999 00:00:00 GMT
+      Guid:
+      - 145b2280-7f20-a623-2955-d5e5f8ebe44f
+      Last-Modified:
+      - Wed, 30 Apr 2014 10:22:19 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Api-Build-Tag:
+      - E849_CORE_APILW2_16526615_R1
+      X-Ebay-Api-Pool-Name:
+      - ___cDRidW9rdDdlaHFg
+      X-Ebay-Api-Server-Name:
+      - ___dm97MmQ3MmYrNDM2YigyNSg/Nys0NzcrNzcyPz43OzU=
+      X-Ebay-Request-Id:
+      - 145b2280-7f20-a623-2955-d5e5f8ebe44f!shopping!10.98.50.149!esbshopping[]
+      Date:
+      - Wed, 30 Apr 2014 10:22:18 GMT
+      Transfer-Encoding:
+      - ''
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <FindHalfProductsResponse
+        xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2014-04-30T10:22:19.197Z</Timestamp>\n
+        \  <Ack>Success</Ack>\n   <Build>E849_CORE_APILW2_16526615_R1</Build>\n   <Version>849</Version>\n
+        \  <PageNumber>1</PageNumber>\n   <ApproximatePages>2535</ApproximatePages>\n
+        \  <MoreResults>true</MoreResults>\n   <TotalProducts>2535</TotalProducts>\n
+        \  <Products>\n    <Product>\n     <Title>Harry Potter: Complete 8-Film Collection
+        (DVD, 2011, 8-Disc Set)</Title>\n     <DetailsURL>http://syicatalogs.ebay.com/ws/eBayISAPI.dll?PageSyiProductDetails&amp;IncludeAttributes=1&amp;ShowAttributesTable=1&amp;ProductMementoString=123216:2:1049:4276619924:596298774:2a43b1285e1bac4a2d043cc1eb58f3df:1:1:1:5000000672733</DetailsURL>\n
+        \    <StockPhotoURL>http://i.ebayimg.com/00/$(KGrHqV,!g0E6ZCwQ)wpBOuWbUNB,g~~_6.JPG?set_id=89040003C1</StockPhotoURL>\n
+        \    <DisplayStockPhotos>true</DisplayStockPhotos>\n     <ItemCount>0</ItemCount>\n
+        \    <ProductID type=\"Reference\">110258144</ProductID>\n     <ProductID
+        type=\"UPC\">883929182879</ProductID>\n     <DomainName>DVDs</DomainName>\n
+        \    <ItemSpecifics>\n      <NameValueList>\n       <Name>Movie Rating</Name>\n
+        \      <Value>PG-13 (MPAA)</Value>\n      </NameValueList>\n      <NameValueList>\n
+        \      <Name>Genre</Name>\n       <Value>Childrens</Value>\n      </NameValueList>\n
+        \     <NameValueList>\n       <Name>Format</Name>\n       <Value>DVD</Value>\n
+        \     </NameValueList>\n      <NameValueList>\n       <Name>Work Name</Name>\n
+        \      <Value>Harry Potter: Complete 8-Film Collection</Value>\n      </NameValueList>\n
+        \    </ItemSpecifics>\n     <ReviewCount>345</ReviewCount>\n     <MinPrice
+        currencyID=\"USD\">14.99</MinPrice>\n    </Product>\n   </Products>\n   <ProductSearchURL>http://search.half.ebay.com/harry-potter</ProductSearchURL>\n
+        \ </FindHalfProductsResponse>\n "
+    http_version: 
+  recorded_at: Wed, 30 Apr 2014 10:22:19 GMT
+recorded_with: VCR 2.9.0

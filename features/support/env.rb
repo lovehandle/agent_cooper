@@ -10,7 +10,19 @@ module AgentCooperMethods
   end
 
   def cassette_name
-    Digest::MD5.hexdigest(@request.parameters.to_json)
+    # Remove token so VCR doesn't generate a new cassette with a different (or
+    # mock) key
+    params = @request.parameters.dup
+    %w(SECURITY_APPNAME CONSUMER-ID APPID).each { |param| params.delete(param) }
+
+    Digest::MD5.hexdigest(params.to_json)
+  end
+
+  def seek_in_hash(hsh, key)
+    hsh.each.find do |k, v|
+      return v if k == key
+      seek_in_hash(v, key) if v.is_a?(Hash)
+    end
   end
 end
 

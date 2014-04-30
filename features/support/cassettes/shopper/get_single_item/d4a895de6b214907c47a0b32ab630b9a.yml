@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://open.api.ebay.com/shopping?APPID=APP_ID&CALLNAME=GetSingleItem&ItemID=110089122715&RESPONSEENCODING=XML&SITEID=0&VERSION=799
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.33.0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - text/xml;charset=utf-8
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Sat, 25 Dec 1999 00:00:00 GMT
+      Last-Modified:
+      - Wed, 30 Apr 2014 10:22:19 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Api-Build-Tag:
+      - E869_CORE_APILW_16784697_R1
+      X-Ebay-Api-Pool-Name:
+      - ___cDRidW9rdGZpdWY=
+      X-Ebay-Api-Server-Name:
+      - ___dm97MmQ3MmYrYTBhPygyNSg/Nys3NDcrNzQ1Pz43OzU=
+      X-Ebay-Esb-Guid:
+      - urn:uuid:EE3E34959155C8C9006059458122114853299933974
+      Date:
+      - Wed, 30 Apr 2014 10:22:18 GMT
+      Transfer-Encoding:
+      - ''
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <GetSingleItemResponse
+        xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2014-04-30T10:22:19.571Z</Timestamp>\n
+        \  <Ack>Failure</Ack>\n   <Errors>\n    <ShortMessage>Invalid item ID.</ShortMessage>\n
+        \   <LongMessage>Invalid or non-existent item ID.</LongMessage>\n    <ErrorCode>10.12</ErrorCode>\n
+        \   <SeverityCode>Error</SeverityCode>\n    <ErrorClassification>RequestError</ErrorClassification>\n
+        \  </Errors>\n   <Build>E869_CORE_APILW_16784697_R1</Build>\n   <Version>869</Version>\n
+        \ </GetSingleItemResponse>\n "
+    http_version: 
+  recorded_at: Wed, 30 Apr 2014 10:22:19 GMT
+recorded_with: VCR 2.9.0

@@ -1,0 +1,278 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://open.api.ebay.com/shopping?APPID=APP_ID&CALLNAME=FindPopularItems&QueryKeywords=harry%20original&RESPONSEENCODING=XML&SITEID=0&VERSION=799
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.33.0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - text/xml;charset=utf-8
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Sat, 25 Dec 1999 00:00:00 GMT
+      Last-Modified:
+      - Wed, 30 Apr 2014 10:22:22 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Api-Build-Tag:
+      - E849_CORE_APILW2_16526615_R1
+      X-Ebay-Api-Pool-Name:
+      - ___cDRidW9rdDdlaHFg
+      X-Ebay-Api-Server-Name:
+      - ___ZW9nNGQ3MWYrNTsxMygyNSg+OysyNS02NT07NT43
+      X-Ebay-Esb-Guid:
+      - urn:uuid:urn:uuid:E9E446C18E3BE28B7E6056773527028417-71728874
+      Date:
+      - Wed, 30 Apr 2014 10:22:21 GMT
+      Transfer-Encoding:
+      - ''
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <FindPopularItemsResponse
+        xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2014-04-30T10:22:22.035Z</Timestamp>\n
+        \  <Ack>Success</Ack>\n   <Build>E849_CORE_APILW2_16526615_R1</Build>\n   <Version>849</Version>\n
+        \  <ItemArray>\n    <Item>\n     <ItemID>281318981705</ItemID>\n     <EndTime>2014-05-04T23:04:17.000Z</EndTime>\n
+        \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/EXCEPTIONAL-1920s-Original-Photo-HARRY-HOUDINI-Master-Magician-SAWBENCH-BLADES-/281318981705</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs2.ebaystatic.com/pict/2813189817058080_1.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>197</PrimaryCategoryID>\n     <PrimaryCategoryName>Entertainment
+        Memorabilia:Movie Memorabilia:Other</PrimaryCategoryName>\n     <BidCount>2</BidCount>\n
+        \    <ConvertedCurrentPrice currencyID=\"USD\">1.25</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P4DT12H41M55S</TimeLeft>\n
+        \    <Title>EXCEPTIONAL 1920&apos;s Original Photo HARRY HOUDINI Master Magician
+        SAWBENCH BLADES</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
+        currencyID=\"USD\">5.12</ShippingServiceCost>\n      <ShippingType>Calculated</ShippingType>\n
+        \     <ListedShippingServiceCost currencyID=\"USD\">5.12</ListedShippingServiceCost>\n
+        \    </ShippingCostSummary>\n     <WatchCount>27</WatchCount>\n    </Item>\n
+        \   <Item>\n     <ItemID>310941869489</ItemID>\n     <EndTime>2014-05-04T02:00:25.000Z</EndTime>\n
+        \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/100-Original-Ladys-Harry-Winston-18k-solid-gold-diamond-bezel-/310941869489</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs2.ebaystatic.com/pict/3109418694898080_1.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>31387</PrimaryCategoryID>\n     <PrimaryCategoryName>Jewelry
+        &amp; Watches:Watches:Wristwatches</PrimaryCategoryName>\n     <BidCount>42</BidCount>\n
+        \    <ConvertedCurrentPrice currencyID=\"USD\">678.89</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P3DT15H38M3S</TimeLeft>\n
+        \    <Title>100% Original Lady&apos;s Harry Winston 18k solid gold with diamond
+        bezel</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">39.99</ShippingServiceCost>\n
+        \     <ShippingType>FlatDomesticCalculatedInternational</ShippingType>\n      <ListedShippingServiceCost
+        currencyID=\"USD\">39.99</ListedShippingServiceCost>\n     </ShippingCostSummary>\n
+        \    <WatchCount>26</WatchCount>\n    </Item>\n    <Item>\n     <ItemID>251514473907</ItemID>\n
+        \    <EndTime>2014-05-04T23:05:21.000Z</EndTime>\n     <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/RARE-1923-Original-Photo-HARRY-HOUDINI-Escape-Artist-HUNG-STRAITJACKET-/251514473907</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/2515144739078080_1.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>197</PrimaryCategoryID>\n     <PrimaryCategoryName>Entertainment
+        Memorabilia:Movie Memorabilia:Other</PrimaryCategoryName>\n     <BidCount>14</BidCount>\n
+        \    <ConvertedCurrentPrice currencyID=\"USD\">77.99</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P4DT12H42M59S</TimeLeft>\n
+        \    <Title>RARE 1923 Original Photo HARRY HOUDINI Escape Artist HUNG from
+        STRAITJACKET !</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
+        currencyID=\"USD\">5.12</ShippingServiceCost>\n      <ShippingType>Calculated</ShippingType>\n
+        \     <ListedShippingServiceCost currencyID=\"USD\">5.12</ListedShippingServiceCost>\n
+        \    </ShippingCostSummary>\n     <WatchCount>25</WatchCount>\n    </Item>\n
+        \   <Item>\n     <ItemID>380891094682</ItemID>\n     <EndTime>2014-04-30T23:02:17.000Z</EndTime>\n
+        \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/1960s-STRACO-HAPPY-HARRY-HYSTERICAL-ROBOT-ORIGINAL-BOX-BATTERY-OPERATED-/380891094682</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/3808910946828080_1.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>2662</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+        &amp; Hobbies:Robots, Monsters &amp; Space Toys:Robots:Pre-1970:Other</PrimaryCategoryName>\n
+        \    <BidCount>5</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">26.0</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>PT12H39M55S</TimeLeft>\n
+        \    <Title>1960&apos;s STRACO  HAPPY HARRY THE HYSTERICAL ROBOT/ ORIGINAL
+        BOX, BATTERY OPERATED</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
+        currencyID=\"USD\">12.99</ShippingServiceCost>\n      <ShippingType>FlatDomesticCalculatedInternational</ShippingType>\n
+        \     <ListedShippingServiceCost currencyID=\"USD\">12.99</ListedShippingServiceCost>\n
+        \    </ShippingCostSummary>\n     <WatchCount>18</WatchCount>\n    </Item>\n
+        \   <Item>\n     <ItemID>171309415384</ItemID>\n     <EndTime>2014-04-30T16:57:33.000Z</EndTime>\n
+        \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Arthur-Price-England-Harry-Potter-Pewter-Figurine-Hermione-original-box-/171309415384</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/1713094153848080_1.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>29798</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectables:Fantasy/
+        Myth/ Magic:Harry Potter</PrimaryCategoryName>\n     <BidCount>3</BidCount>\n
+        \    <ConvertedCurrentPrice currencyID=\"USD\">2.09</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>PT6H35M11S</TimeLeft>\n
+        \    <Title>Arthur Price of England Harry Potter Pewter Figurine of Hermione
+        in original box</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
+        currencyID=\"USD\">11.79</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+        \     <ListedShippingServiceCost currencyID=\"GBP\">7.0</ListedShippingServiceCost>\n
+        \    </ShippingCostSummary>\n     <WatchCount>12</WatchCount>\n    </Item>\n
+        \   <Item>\n     <ItemID>171309417988</ItemID>\n     <EndTime>2014-04-30T17:01:49.000Z</EndTime>\n
+        \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Arthur-Price-England-Harry-Potter-Pewter-Norbert-Dragon-original-box-/171309417988</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/1713094179888080_1.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>29798</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectables:Fantasy/
+        Myth/ Magic:Harry Potter</PrimaryCategoryName>\n     <BidCount>5</BidCount>\n
+        \    <ConvertedCurrentPrice currencyID=\"USD\">6.76</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>PT6H39M27S</TimeLeft>\n
+        \    <Title>Arthur Price of England Harry Potter Pewter Norbert the Dragon,
+        \ in original box</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
+        currencyID=\"USD\">11.79</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+        \     <ListedShippingServiceCost currencyID=\"GBP\">7.0</ListedShippingServiceCost>\n
+        \    </ShippingCostSummary>\n     <WatchCount>11</WatchCount>\n    </Item>\n
+        \   <Item>\n     <ItemID>260901099084</ItemID>\n     <EndTime>2014-05-11T23:57:05.000Z</EndTime>\n
+        \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/HARRY-POTTER-AND-DEATHLY-HALLOWS-PART-2-ORIGINAL-MOVIE-POSTER-27X40-/260901099084</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/2609010990848080_2.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>61104</PrimaryCategoryID>\n     <PrimaryCategoryName>Entertainment
+        Memorabilia:Movie Memorabilia:Posters:Originals-United States:2000-Now</PrimaryCategoryName>\n
+        \    <BidCount>6</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">49.99</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P11DT13H34M43S</TimeLeft>\n
+        \    <Title>HARRY POTTER AND THE DEATHLY HALLOWS: PART 2 ORIGINAL MOVIE POSTER
+        27X40</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">5.99</ShippingServiceCost>\n
+        \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost
+        currencyID=\"USD\">5.99</ListedShippingServiceCost>\n     </ShippingCostSummary>\n
+        \    <WatchCount>10</WatchCount>\n    </Item>\n    <Item>\n     <ItemID>181390728004</ItemID>\n
+        \    <EndTime>2014-04-30T16:59:46.000Z</EndTime>\n     <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Arthur-Price-England-Harry-Potter-Pewter-Ron-Weasley-original-box-/181390728004</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/1813907280048080_1.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>29798</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectables:Fantasy/
+        Myth/ Magic:Harry Potter</PrimaryCategoryName>\n     <BidCount>1</BidCount>\n
+        \    <ConvertedCurrentPrice currencyID=\"USD\">1.67</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>PT6H37M24S</TimeLeft>\n
+        \    <Title>Arthur Price of England Harry Potter Pewter Ron Weasley in original
+        box</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">11.79</ShippingServiceCost>\n
+        \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost
+        currencyID=\"GBP\">7.0</ListedShippingServiceCost>\n     </ShippingCostSummary>\n
+        \    <WatchCount>9</WatchCount>\n    </Item>\n    <Item>\n     <ItemID>151223308892</ItemID>\n
+        \    <EndTime>2014-05-02T20:45:20.000Z</EndTime>\n     <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/HARRY-POTTER-SORCERERS-STONE-DVD-MOVIE-POSTER-1-Sided-ORIGINAL-27x40-/151223308892</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/1512233088928080_1.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>61104</PrimaryCategoryID>\n     <PrimaryCategoryName>Entertainment
+        Memorabilia:Movie Memorabilia:Posters:Originals-United States:2000-Now</PrimaryCategoryName>\n
+        \    <BidCount>2</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">17.0</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P2DT10H22M58S</TimeLeft>\n
+        \    <Title>HARRY POTTER SORCERERS STONE DVD MOVIE POSTER 1 Sided ORIGINAL
+        27x40</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">7.5</ShippingServiceCost>\n
+        \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost
+        currencyID=\"USD\">7.5</ListedShippingServiceCost>\n     </ShippingCostSummary>\n
+        \    <WatchCount>9</WatchCount>\n    </Item>\n    <Item>\n     <ItemID>230554268969</ItemID>\n
+        \    <EndTime>2014-05-06T16:32:00.000Z</EndTime>\n     <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/DIRTY-HARRY-NINTENDO-GAME-SYSTEM-ORIGINAL-NES-HQ-/230554268969</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs2.ebaystatic.com/pict/2305542689698080_4.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>139973</PrimaryCategoryID>\n     <PrimaryCategoryName>Video
+        Games &amp; Consoles:Video Games</PrimaryCategoryName>\n     <BidCount>20</BidCount>\n
+        \    <ConvertedCurrentPrice currencyID=\"USD\">8.75</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P6DT6H9M38S</TimeLeft>\n
+        \    <Title>DIRTY HARRY NINTENDO GAME SYSTEM ORIGINAL NES HQ</Title>\n     <ShippingCostSummary>\n
+        \     <ShippingServiceCost currencyID=\"USD\">0.0</ShippingServiceCost>\n
+        \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost
+        currencyID=\"USD\">0.0</ListedShippingServiceCost>\n     </ShippingCostSummary>\n
+        \    <WatchCount>9</WatchCount>\n    </Item>\n    <Item>\n     <ItemID>281322987466</ItemID>\n
+        \    <EndTime>2014-05-07T00:51:21.000Z</EndTime>\n     <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Confederate-General-Harry-T-Hays-ORIGINAL-Civil-War-CDV-/281322987466</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>Chinese</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/2813229874668080_1.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>36039</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectibles:Militaria:Civil
+        War (1861-65):Original Period Items:Photographs</PrimaryCategoryName>\n     <BidCount>1</BidCount>\n
+        \    <ConvertedCurrentPrice currencyID=\"USD\">59.99</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P6DT14H28M59S</TimeLeft>\n
+        \    <Title>Confederate General Harry T Hays ORIGINAL Civil War CDV!!</Title>\n
+        \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">2.49</ShippingServiceCost>\n
+        \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost
+        currencyID=\"USD\">2.49</ListedShippingServiceCost>\n     </ShippingCostSummary>\n
+        \    <WatchCount>8</WatchCount>\n    </Item>\n    <Item>\n     <ItemID>370413076504</ItemID>\n
+        \    <EndTime>2014-05-07T02:53:24.000Z</EndTime>\n     <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Original-Harry-Blackstone-Magic-Show-Program-/370413076504</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/3704130765048080_4.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>86938</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectibles:Fantasy,
+        Mythical &amp; Magic:Magic:Magician Memorabilia, Ephemera</PrimaryCategoryName>\n
+        \    <BidCount>5</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">20.0</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P6DT16H31M2S</TimeLeft>\n
+        \    <Title>Original Harry Blackstone Magic Show Program </Title>\n     <ShippingCostSummary>\n
+        \     <ShippingServiceCost currencyID=\"USD\">5.0</ShippingServiceCost>\n
+        \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost
+        currencyID=\"USD\">5.0</ListedShippingServiceCost>\n     </ShippingCostSummary>\n
+        \    <WatchCount>8</WatchCount>\n    </Item>\n    <Item>\n     <ItemID>121179089862</ItemID>\n
+        \    <EndTime>2014-05-17T10:32:29.000Z</EndTime>\n     <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Harry-Bunce-original-fox-hunting-print-The-Colonel-Ltd-artist-signed-edition-/121179089862</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/1211790898628080_1.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>360</PrimaryCategoryID>\n     <PrimaryCategoryName>Art:Art
+        from Dealers &amp; Resellers:Prints</PrimaryCategoryName>\n     <BidCount>1</BidCount>\n
+        \    <ConvertedCurrentPrice currencyID=\"USD\">100.0</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P17DT10M7S</TimeLeft>\n
+        \    <Title>Harry Bunce original fox hunting print &apos;The Colonel&apos;.
+        Ltd artist signed edition.</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
+        currencyID=\"USD\">0.0</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+        \     <ListedShippingServiceCost currencyID=\"USD\">0.0</ListedShippingServiceCost>\n
+        \    </ShippingCostSummary>\n     <WatchCount>8</WatchCount>\n    </Item>\n
+        \   <Item>\n     <ItemID>180747748964</ItemID>\n     <EndTime>2014-05-18T03:39:38.000Z</EndTime>\n
+        \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/HARRY-POTTER-STAMP-SET-THREE-ORIGINAL-MIB-RARE-CHOICE-/180747748964</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs1.ebaystatic.com/pict/1807477489648080_3.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>58727</PrimaryCategoryID>\n     <PrimaryCategoryName>Toys
+        &amp; Hobbies:Building Toys:LEGO:Sets:Harry Potter</PrimaryCategoryName>\n
+        \    <BidCount>1</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">9.99</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P17DT17H17M16S</TimeLeft>\n
+        \    <Title>HARRY POTTER STAMP SET OF THREE ORIGINAL MIB RARE CHOICE</Title>\n
+        \    <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">2.4</ShippingServiceCost>\n
+        \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost
+        currencyID=\"USD\">2.4</ListedShippingServiceCost>\n     </ShippingCostSummary>\n
+        \    <WatchCount>8</WatchCount>\n    </Item>\n    <Item>\n     <ItemID>281155171114</ItemID>\n
+        \    <EndTime>2014-05-19T08:10:57.000Z</EndTime>\n     <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/RARE-Signed-Original-Bronze-DOBBY-Figure-Sculpture-Harry-Potter-Collector-Statue-/281155171114</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/2811551711148080_2.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>553</PrimaryCategoryID>\n     <PrimaryCategoryName>Art:Art
+        from Dealers &amp; Resellers:Sculpture &amp; Carvings</PrimaryCategoryName>\n
+        \    <BidCount>2</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">149.0</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P18DT21H48M35S</TimeLeft>\n
+        \    <Title>RARE Signed Original Bronze DOBBY Figure Sculpture Harry Potter
+        Collector Statue</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
+        currencyID=\"USD\">19.95</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+        \     <ListedShippingServiceCost currencyID=\"USD\">19.95</ListedShippingServiceCost>\n
+        \    </ShippingCostSummary>\n     <WatchCount>8</WatchCount>\n    </Item>\n
+        \   <Item>\n     <ItemID>360689056807</ItemID>\n     <EndTime>2014-05-29T04:47:43.000Z</EndTime>\n
+        \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/NEW-Introduction-Original-Isshinryu-Karate-System-Smith-Harry-/360689056807</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs4.ebaystatic.com/pict/3606890568078080_1.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>378</PrimaryCategoryID>\n     <PrimaryCategoryName>Books:Nonfiction</PrimaryCategoryName>\n
+        \    <BidCount>5</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">16.81</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P28DT18H25M21S</TimeLeft>\n
+        \    <Title>NEW Introduction to the Original Isshinryu Karate System - Smith,
+        Harry</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">3.1</ShippingServiceCost>\n
+        \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost
+        currencyID=\"USD\">3.1</ListedShippingServiceCost>\n     </ShippingCostSummary>\n
+        \    <WatchCount>8</WatchCount>\n    </Item>\n    <Item>\n     <ItemID>131108120469</ItemID>\n
+        \    <EndTime>2014-05-03T08:38:11.000Z</EndTime>\n     <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Chapin-Harry-Original-Album-Series-CD-New-/131108120469</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs2.ebaystatic.com/pict/1311081204698080_1.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>176984</PrimaryCategoryID>\n     <PrimaryCategoryName>Music:CDs</PrimaryCategoryName>\n
+        \    <BidCount>3</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">19.15</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P2DT22H15M49S</TimeLeft>\n
+        \    <Title>Chapin,Harry - Original Album Series [CD New]</Title>\n     <ShippingCostSummary>\n
+        \     <ShippingServiceCost currencyID=\"USD\">0.0</ShippingServiceCost>\n
+        \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost
+        currencyID=\"USD\">0.0</ListedShippingServiceCost>\n     </ShippingCostSummary>\n
+        \    <WatchCount>7</WatchCount>\n    </Item>\n    <Item>\n     <ItemID>131157720453</ItemID>\n
+        \    <EndTime>2014-05-03T14:53:47.000Z</EndTime>\n     <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Inspired-Luna-Lovegoods-Original-Magic-Wand-Harry-Potter-Wooden-Acorn-Oak-/131157720453</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs2.ebaystatic.com/pict/1311577204538080_1.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>29798</PrimaryCategoryID>\n     <PrimaryCategoryName>Collectables:Fantasy/
+        Myth/ Magic:Harry Potter</PrimaryCategoryName>\n     <BidCount>4</BidCount>\n
+        \    <ConvertedCurrentPrice currencyID=\"USD\">25.25</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P3DT4H31M25S</TimeLeft>\n
+        \    <Title>Inspired by Luna Lovegood&apos;s Original Magic Wand Harry Potter
+        Wooden Acorn Oak</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
+        currencyID=\"USD\">8.24</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+        \     <ListedShippingServiceCost currencyID=\"GBP\">4.89</ListedShippingServiceCost>\n
+        \    </ShippingCostSummary>\n     <WatchCount>7</WatchCount>\n    </Item>\n
+        \   <Item>\n     <ItemID>271425606026</ItemID>\n     <EndTime>2014-05-13T23:40:40.000Z</EndTime>\n
+        \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/Original-Dirty-Harry-KDs-G15-Grey-Smoke-Lens-Sunglasses-Motorcycle-Pouch-/271425606026</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/2714256060268080_1.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>79720</PrimaryCategoryID>\n     <PrimaryCategoryName>Clothing,
+        Shoes &amp; Accessories:Men&apos;s Accessories:Sunglasses &amp; Fashion Eyewear:Sunglasses</PrimaryCategoryName>\n
+        \    <BidCount>12</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">8.36</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P13DT13H18M18S</TimeLeft>\n
+        \    <Title>Original Dirty Harry By KDs G15 Grey Smoke Lens Sunglasses Motorcycle
+        With Pouch</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost
+        currencyID=\"USD\">3.95</ShippingServiceCost>\n      <ShippingType>Flat</ShippingType>\n
+        \     <ListedShippingServiceCost currencyID=\"USD\">3.95</ListedShippingServiceCost>\n
+        \    </ShippingCostSummary>\n     <WatchCount>7</WatchCount>\n    </Item>\n
+        \   <Item>\n     <ItemID>161154699990</ItemID>\n     <EndTime>2014-05-18T17:26:44.000Z</EndTime>\n
+        \    <ViewItemURLForNaturalSearch>http://www.ebay.com/itm/HARRY-POTTER-SORCERERS-STONE-MOVIE-POSTER-1-Sided-ORIGINAL-OWL-27x40-/161154699990</ViewItemURLForNaturalSearch>\n
+        \    <ListingType>FixedPriceItem</ListingType>\n     <GalleryURL>http://thumbs3.ebaystatic.com/pict/1611546999908080_1.jpg</GalleryURL>\n
+        \    <PrimaryCategoryID>61104</PrimaryCategoryID>\n     <PrimaryCategoryName>Entertainment
+        Memorabilia:Movie Memorabilia:Posters:Originals-United States:2000-Now</PrimaryCategoryName>\n
+        \    <BidCount>3</BidCount>\n     <ConvertedCurrentPrice currencyID=\"USD\">19.5</ConvertedCurrentPrice>\n
+        \    <ListingStatus>Active</ListingStatus>\n     <TimeLeft>P18DT7H4M22S</TimeLeft>\n
+        \    <Title>HARRY POTTER SORCERERS STONE MOVIE POSTER 1 Sided ORIGINAL OWL
+        27x40</Title>\n     <ShippingCostSummary>\n      <ShippingServiceCost currencyID=\"USD\">7.5</ShippingServiceCost>\n
+        \     <ShippingType>Flat</ShippingType>\n      <ListedShippingServiceCost
+        currencyID=\"USD\">7.5</ListedShippingServiceCost>\n     </ShippingCostSummary>\n
+        \    <WatchCount>7</WatchCount>\n    </Item>\n   </ItemArray>\n  </FindPopularItemsResponse>\n "
+    http_version: 
+  recorded_at: Wed, 30 Apr 2014 10:22:22 GMT
+recorded_with: VCR 2.9.0

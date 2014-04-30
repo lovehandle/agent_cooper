@@ -1,0 +1,186 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://open.api.ebay.com/shopping?APPID=APP_ID&CALLNAME=FindReviewsAndGuides&CategoryID=177&RESPONSEENCODING=XML&SITEID=0&VERSION=799
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.33.0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - text/xml;charset=utf-8
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Sat, 25 Dec 1999 00:00:00 GMT
+      Last-Modified:
+      - Wed, 30 Apr 2014 10:22:23 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Api-Build-Tag:
+      - E849_CORE_APILW2_16526615_R1
+      X-Ebay-Api-Pool-Name:
+      - ___cDRidW9rdDdlaHFg
+      X-Ebay-Api-Server-Name:
+      - ___dWtgMWQ3MGYrPzsyPigyNSgyMCs3NDcrNzA0Pz43OzU=
+      X-Ebay-Esb-Guid:
+      - urn:uuid:2C6FC6E4BA8115F4C260514820972797881990776823
+      Date:
+      - Wed, 30 Apr 2014 10:22:22 GMT
+      Transfer-Encoding:
+      - ''
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <FindReviewsAndGuidesResponse
+        xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2014-04-30T10:22:23.253Z</Timestamp>\n
+        \  <Ack>Success</Ack>\n   <Build>E849_CORE_APILW2_16526615_R1</Build>\n   <Version>849</Version>\n
+        \  <BuyingGuideCount>762</BuyingGuideCount>\n   <ReviewsAndGuidesURL>http://search.reviews.ebay.com/_PC+Laptops+%26+Netbooks?uqt=g&amp;ucat=177</ReviewsAndGuidesURL>\n
+        \  <PageNumber>1</PageNumber>\n   <TotalPages>153</TotalPages>\n   <BuyingGuideDetails>\n
+        \   <BuyingGuide>\n     <Name>How to Buy a Used La...</Name>\n     <URL>http://reviews.ebay.com/How-to-Buy-a-Used-Laptop?ugid=10000000177629477</URL>\n
+        \    <CategoryID>177</CategoryID>\n     <Title>How to Buy a Used Laptop</Title>\n
+        \    <Text>&lt;img alt=&quot;How to Buy a Used Laptop&quot; class=&quot;ctlgImg&quot;
+        height=&quot;257&quot; src=&quot;http://i.ebayimg.com/00/$T2eC16JHJHUFFfj0nceYBRY0mTGBj!~~_35.JPG&quot;
+        title=&quot;How to Buy a Used Laptop&quot; width=&quot;257&quot; /&gt;\n&lt;div&gt;\n&lt;p&gt;In
+        today&amp;rsquo;s world, everyone is expected to have a method of getting
+        online. It seems the first contact information required these days is an email
+        address instead of a mailing address. For that reason, many buyers look for
+        a laptop to provide them with quick and portable online access. However, a
+        &lt;a href=&quot;http://www.ebay.com/bhp/gtx-680&quot;&gt;laptop&lt;/a&gt;
+        can be quite pricey, especially if you want the latest technology. However,
+        a more affordable option is to buy a used laptop. There is a huge number of
+        &lt;a href=&quot;http://www.ebay.com/bhp/dell-laptop&quot;&gt;used laptop&lt;/a&gt;
+        available, which makes finding a satisfactory model easy. However, with so
+        many choices, a buyer can become overwhelmed.&lt;br /&gt;\nFor more info on
+        laptops, watch this video:&lt;br /&gt;\n&lt;br /&gt;\n&lt;iframe allowfullscreen=&quot;&quot;
+        frameborder=&quot;0&quot; height=&quot;300&quot; src=&quot;http://www.youtube.com/embed/PlnfdSbyxCc?rel=0&amp;amp;wmode=transparent&quot;
+        width=&quot;400&quot; wmode=&quot;Opaque&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;\n\n&lt;h2&gt;&lt;br
+        /&gt;\nKnow the Terminology&lt;/h2&gt;\n\n&lt;p&gt;When a buyer makes the
+        decision to purchase a &lt;a href=&quot;http://www.ebay.com/bhp/sony-vaio-laptop&quot;&gt;used
+        laptop&lt;/a&gt;, it is important to know some of the terminology included
+        in descriptions. Without an understanding of this terminology, the buyer may
+        not know just what it is that they are purchasing. Below are some terms that
+        are often found in the descriptions for a used laptop.&lt;/p&gt;\n\n&lt;h3&gt;Refurbished&lt;/h3&gt;\n\n&lt;p&gt;There
+        is a difference between a &lt;a href=&quot;http://www.ebay.com/sch/i.html?_nkw=refurbished+laptop&amp;amp;_sacat=0&amp;amp;_odk...</Text>\n
+        \    <CreationTime>2013-08-21T02:07:48.000Z</CreationTime>\n     <UserID>ebaybuyingguides</UserID>\n
+        \   </BuyingGuide>\n    <BuyingGuide>\n     <Name>How to Buy a Used Ma...</Name>\n
+        \    <URL>http://reviews.ebay.com/How-to-Buy-a-Used-MacBook-Pro?ugid=10000000177629478</URL>\n
+        \    <CategoryID>177</CategoryID>\n     <Title>How to Buy a Used MacBook Pro</Title>\n
+        \    <Text>&lt;img alt=&quot;How to Buy a Used MacBook Pro&quot; class=&quot;ctlgImg&quot;
+        src=&quot;http://i.ebayimg.com/00/$T2eC16RHJIQE9qUHsjdPBRY0mUIHtw~~_35.JPG&quot;
+        title=&quot;How to Buy a Used MacBook Pro&quot; /&gt;\n&lt;div&gt;\n&lt;p&gt;It
+        is no secret that new technology is expensive and ever-changing. Every day
+        it seems there is a new cell phone or new computer hitting the market. However,
+        the latest gadgets are so expensive it can leave the buyer with reeling head
+        and empty pocketbook. A more economical option is to look for an item that
+        was previously owned. For example, a used MacBook Pro could be just the right
+        choice for a buyer who wants a great product at an affordable price. The MacBook
+        Pro has been around a very long time, so older models can be purchased for
+        next to nothing, while buying a used late model &lt;a href=&quot;http://www.ebay.com/sch/i.html?_trksid=p5197.m570.l1313&amp;amp;_nkw=MacBook+Pro&amp;amp;_sacat=0&quot;&gt;MacBook
+        Pro&lt;/a&gt; offers buyers buyer access to the latest technology for a lower
+        price.&lt;/p&gt;\n\n&lt;p&gt;The following sections help buyers select and
+        purchase a used MacBook Pro.&lt;br /&gt;\n&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;Refurbished
+        or Used?&lt;/h2&gt;\n\n&lt;p&gt;The buyer must first determine whether to
+        buy a used or refurbished model. There is a big difference between a &lt;a
+        href=&quot;http://www.ebay.com/sch/i.html?_odkw=15-inch+macbook+pro&amp;amp;_osacat=0&amp;amp;_trksid=p2045573.m570.l1313&amp;amp;_nkw=used+MacBook+Pro&amp;amp;_sacat=0&quot;&gt;used
+        MacBook Pro&lt;/a&gt; and a &lt;a href=&quot;http://www.ebay.com/sch/i.html?_sacat=0&amp;amp;_nkw=refurbished+macbook+Pro&amp;amp;_nkwusc=refurbishedMacBook+Pro&amp;amp;_rdc=1&quot;&gt;refurbished&lt;/a&gt;
+        one. &amp;quot;Used&amp;quot; means that the computer was previously owned
+        by a private owner or business. &amp;quot;Refurbished,&amp;quot; on the other
+        hand, means that the laptop was damaged or stopped working at some point.
+        It had to be repaired and revamped befor...</Text>\n     <CreationTime>2013-08-21T02:07:48.000Z</CreationTime>\n
+        \    <UserID>ebaybuyingguides</UserID>\n    </BuyingGuide>\n    <BuyingGuide>\n
+        \    <Name>How to Buy a Laptop ...</Name>\n     <URL>http://reviews.ebay.com/How-to-Buy-a-Laptop-on-a-Tight-Budget?ugid=10000000177629461</URL>\n
+        \    <CategoryID>177</CategoryID>\n     <Title>How to Buy a Laptop on a Tight
+        Budget</Title>\n     <Text>&lt;img alt=&quot;How to Buy a Laptop on a Tight
+        Budget&quot; class=&quot;ctlgImg&quot; src=&quot;http://i.ebayimg.com/00/$T2eC16hHJHUFFfRN+OMoBRY0nZHjWg~~_35.JPG&quot;
+        title=&quot;How to Buy a Laptop on a Tight Budget&quot; /&gt;\n&lt;div&gt;\n&lt;p&gt;Shopping
+        for a laptop can be an overwhelming experience and even more so when shopping
+        on a tight budget. Cutting the budget too much could mean missing out on features
+        and components that will be needed, but at the same time buying a laptop that
+        has too many features can cause the shopper to spend more than needed. Shoppers
+        can buy laptops on a low budget without sacrificing quality and features by
+        first determining how the laptop will be used. They will need to be able to
+        identify the components and features essential to their needs. Once they&amp;rsquo;ve
+        determined their computer needs, shoppers can explore the various options
+        for buying a computer at the lowest possible price. Whether looking for a
+        new, used, or refurbished computer, shoppers can find a laptop that meets
+        their needs on eBay.&lt;br /&gt;\n&lt;br /&gt;\nCheck out this video for more
+        info on buying a laptop:&lt;br /&gt;\n&lt;br /&gt;\n&lt;iframe allowfullscreen=&quot;&quot;
+        frameborder=&quot;0&quot; height=&quot;300&quot; src=&quot;http://www.youtube.com/embed/PlnfdSbyxCc?rel=0&amp;amp;wmode=transparent&quot;
+        width=&quot;400&quot; wmode=&quot;Opaque&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;\n\n&lt;h2&gt;Determine
+        How the Laptop Will Be Used&lt;/h2&gt;\n\n&lt;p&gt;No matter how big or small
+        the budget is, buyers need to first determine how they will be using their
+        laptops and what they will be using their laptops for. Having a tight budget
+        does not mean that shoppers have to settle for a laptop that is too heavy
+        to carry, too small to use, or lacks key features that they need or want.
+        While finding a laptop that has the best of everything will be difficult to
+        do on a tight budget, it is still possible to find deals on laptops that have
+        all the features that will be ...</Text>\n     <CreationTime>2013-08-21T02:07:36.000Z</CreationTime>\n
+        \    <UserID>ebaybuyingguides</UserID>\n    </BuyingGuide>\n    <BuyingGuide>\n
+        \    <Name>When It Comes to Lap...</Name>\n     <URL>http://reviews.ebay.com/When-It-Comes-to-Laptop-Size-Is-Bigger-Always-Better?ugid=10000000177629716</URL>\n
+        \    <CategoryID>177</CategoryID>\n     <Title>When It Comes to Laptop Size,
+        Is Bigger Always Better?</Title>\n     <Text>&lt;img alt=&quot;When It Comes
+        to Laptop Size, Is Bigger Always Better?&quot; class=&quot;ctlgImg&quot; src=&quot;http://i.ebayimg.com/00/$T2eC16ZHJH8E9qSEWy20BRY0owFH+w~~_35.JPG&quot;
+        title=&quot;When It Comes to Laptop Size, Is Bigger Always Better?&quot; /&gt;\n&lt;div&gt;\n&lt;p&gt;Choosing
+        a &lt;a href=&quot;http://www.ebay.com/sch/Laptops-Netbooks-/175672/i.html&quot;&gt;laptop
+        computer&lt;/a&gt; can be a tougher decision than deciding on a desktop unit.
+        While it is always possible to change components out on a desktop computer,
+        on a laptop, what one buys is pretty much what one is stuck with. &lt;a href=&quot;http://www.ebay.com/sch/Hard-Drives-HDD-SSD-NAS-/158830/i.html?_dmpt=US_Internal_Hard_Disk_Drives&amp;amp;Form%2520Factor=2%252E5%2522&amp;amp;rt=nc&quot;&gt;Hard
+        drives&lt;/a&gt; can be replaced, and more &lt;a href=&quot;http://www.ebay.com/sch/Memory-RAM-/170083/i.html&quot;&gt;memory&lt;/a&gt;
+        can be added, but other than peripherals, most laptop components are not customizable.
+        Most significantly, a laptop&amp;rsquo;s monitor size, microprocessor, and
+        keyboard cannot be changed.&lt;/p&gt;\n\n&lt;p&gt;While keyboard functionality
+        is relatively consistent, the &amp;quot;feel&amp;quot; of one laptop keyboard
+        to the next can vary quite a bit. Screen size affects the overall size and
+        weight of the laptop: the larger the screen, the larger the computer needs
+        to be to hold it. This makes a laptop with a 17-inch screen considerably larger
+        and heavier than one with a 12-inch screen.&lt;/p&gt;\n\n&lt;p&gt;For many
+        people, weight is a major factor when buying a laptop. Having to lug around
+        a monster with a 17-inch screen can make one feel like they are carrying their
+        desktop computer everywhere they go. Large laptops are also less comfortable
+        to work with in tight places, such as airplane tray tables.&lt;/p&gt;\n\n&lt;p&gt;Thus,
+        other than the microprocessor itself, screen size is often the biggest determining
+        factor in choosing a laptop. While some people focus on m...</Text>\n     <CreationTime>2013-08-21T02:10:53.000Z</CreationTime>\n
+        \    <UserID>ebaybuyingguides</UserID>\n    </BuyingGuide>\n    <BuyingGuide>\n
+        \    <Name>What to Look for in ...</Name>\n     <URL>http://reviews.ebay.com/What-to-Look-for-in-a-Laptop-Bundle?ugid=10000000177629707</URL>\n
+        \    <CategoryID>177</CategoryID>\n     <Title>What to Look for in a Laptop
+        Bundle</Title>\n     <Text>&lt;img alt=&quot;What to Look for in a Laptop
+        Bundle&quot; class=&quot;ctlgImg&quot; src=&quot;http://i.ebayimg.com/00/$T2eC16FHJIIE9qTYI4ChBRY0o0gH-Q~~_35.JPG&quot;
+        title=&quot;What to Look for in a Laptop Bundle&quot; /&gt;\n&lt;div&gt;\n&lt;p&gt;As
+        we begin to move towards a future that is rich in technological advancements,
+        having the right technology can make all the difference. In particular, the
+        right computer can be a lifesaver when it comes to making life easier. A laptop
+        seems to be the tool of choice, as people of all ages and backgrounds are
+        clamoring for these devices. Laptops do so much, yet weigh so little. They
+        are fast, sleek, and perform all of the same functions of a desktop computer
+        if not more. Best of all, laptops take up hardly any space anymore. There
+        is a seemingly endless supply of laptops on the market, as every year laptop
+        manufacturers release their latest and greatest models with all of the accessories
+        needed to get the user up and running in no time at all.&lt;/p&gt;\n\n&lt;p&gt;This
+        guide will provide a deeper look into the world of laptops to help even the
+        newest of users make a sound decision that will ultimately lead to the purchase
+        of a new quality laptop. With so many options available on the market today,
+        it is great to have the benefit of a company like eBay to provide potential
+        customers with the very best selection in laptop bundles. Trying to find the
+        laptop that best suits the customer can be a difficult task, especially if
+        shoppers are limited to the selection of one single store. With &lt;a href=&quot;http://www.ebay.com/&quot;&gt;eBay,&lt;/a&gt;
+        customers can rest assured that they will be able to browse and select from
+        almost all laptop brands available.&lt;br /&gt;\nNeed more info on buying
+        the right laptop? Check out this video:&lt;br /&gt;\n&lt;iframe allowfullscreen=&quot;&quot;
+        frameborder=&quot;0&quot; height=&quot;300&quot; src=&quot;http://www.youtube.com/embed/PlnfdSbyxCc?rel=0&amp;amp;wmode=transparent&quot;
+        width=...</Text>\n     <CreationTime>2013-08-21T02:10:47.000Z</CreationTime>\n
+        \    <UserID>ebaybuyingguides</UserID>\n    </BuyingGuide>\n    <BuyingGuideHub>http://search.reviews.ebay.com/?ucat=177&amp;uqt=g</BuyingGuideHub>\n
+        \  </BuyingGuideDetails>\n  </FindReviewsAndGuidesResponse>\n "
+    http_version: 
+  recorded_at: Wed, 30 Apr 2014 10:22:23 GMT
+recorded_with: VCR 2.9.0

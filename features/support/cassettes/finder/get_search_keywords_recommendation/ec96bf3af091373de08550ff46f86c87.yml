@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=getSearchKeywordsRecommendation&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SECURITY-APPNAME=APP_ID&SECURITY-VERSION=1.12.0&keywords=acordian
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.33.0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Esb-Endpointurl:
+      - "/Root/ESBFunctions/Services/Ports/7003/profile/search/v1/FindingService/destination_default/address_synapse"
+      X-Ebay-Esb-Guid:
+      - urn:uuid:E9B230955C478ED6861399641130715
+      X-Ebay-Soa-Locale-List:
+      - en-US_US
+      X-Ebay-Soa-Message-Protocol:
+      - NONE
+      X-Ebay-Soa-Operation-Name:
+      - getSearchKeywordsRecommendation
+      X-Ebay-Soa-Request-Id:
+      - 145b220e-b790-a0a9-e864-a0f4ffefeaf9!FindingService!10.10.158.134!v3apifindingcore[!FindingRecommendationService!10.10.158.134!v3apifindingcore[]]
+      X-Ebay-Soa-Response-Data-Format:
+      - XML
+      X-Ebay-Soa-Service-Metrics:
+      - '64919447'
+      X-Ebay-Soa-Service-Name:
+      - "{http://www.ebay.com/marketplace/search/v1/services}FindingService"
+      X-Ebay-Soa-Service-Version:
+      - 1.12.0
+      Date:
+      - Wed, 30 Apr 2014 10:14:32 GMT
+      Transfer-Encoding:
+      - ''
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0' encoding='UTF-8'?><getSearchKeywordsRecommendationResponse
+        xmlns="http://www.ebay.com/marketplace/search/v1/services"><ack>Success</ack><version>1.12.0</version><timestamp>2014-04-30T10:14:33.159Z</timestamp><keywords>accordion</keywords></getSearchKeywordsRecommendationResponse>
+    http_version: 
+  recorded_at: Wed, 30 Apr 2014 10:14:33 GMT
+recorded_with: VCR 2.9.0

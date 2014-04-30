@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://open.api.ebay.com/shopping?APPID=APP_ID&CALLNAME=GetItemStatus&ItemID=110089122715&RESPONSEENCODING=XML&SITEID=0&VERSION=799
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.33.0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - text/xml;charset=utf-8
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Sat, 25 Dec 1999 00:00:00 GMT
+      Guid:
+      - 145b2280-b2a0-a622-a843-4133f6fb288c
+      Last-Modified:
+      - Wed, 30 Apr 2014 10:22:19 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Api-Build-Tag:
+      - E869_CORE_APILW_16784697_R1
+      X-Ebay-Api-Pool-Name:
+      - ___cDRidW9rdGZpdWY=
+      X-Ebay-Api-Server-Name:
+      - ___dm8ucnAqMD02YTZgMigyNSgwMis3MDsrNDY7Pz43OzU=
+      X-Ebay-Request-Id:
+      - 145b2280-b2a0-a622-a843-4133f6fb288c!shopping!10.98.42.132!esbshopping[]
+      Date:
+      - Wed, 30 Apr 2014 10:22:19 GMT
+      Transfer-Encoding:
+      - ''
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n  <GetItemStatusResponse
+        xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2014-04-30T10:22:19.747Z</Timestamp>\n
+        \  <Ack>Failure</Ack>\n   <Errors>\n    <ShortMessage>Invalid item ID.</ShortMessage>\n
+        \   <LongMessage>Invalid or non-existent item ID.</LongMessage>\n    <ErrorCode>10.12</ErrorCode>\n
+        \   <SeverityCode>Error</SeverityCode>\n    <ErrorParameters ParamID=\"0\">\n
+        \    <Value>110089122715</Value>\n    </ErrorParameters>\n    <ErrorClassification>RequestError</ErrorClassification>\n
+        \  </Errors>\n   <Build>E869_CORE_APILW_16784697_R1</Build>\n   <Version>869</Version>\n
+        \ </GetItemStatusResponse>\n "
+    http_version: 
+  recorded_at: Wed, 30 Apr 2014 10:22:20 GMT
+recorded_with: VCR 2.9.0

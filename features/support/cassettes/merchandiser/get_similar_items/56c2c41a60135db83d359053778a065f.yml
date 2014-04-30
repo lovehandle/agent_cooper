@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://svcs.ebay.com/MerchandisingService?CONSUMER-ID=APP_ID&OPERATION-NAME=getSimilarItems&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.5.0&itemId=280254552262
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.33.0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Esb-Endpointurl:
+      - "/Root/ESBFunctions/Services/Ports/7002/profile/ns/v1/MerchandisingService/destination_default/address_synapse"
+      X-Ebay-Esb-Guid:
+      - urn:uuid:1FA9D334CAA31189AA1400818608843
+      X-Ebay-Soa-Locale-List:
+      - en-US_US
+      X-Ebay-Soa-Message-Protocol:
+      - NONE
+      X-Ebay-Soa-Operation-Name:
+      - getSimilarItems
+      X-Ebay-Soa-Request-Id:
+      - 145b2214-87f0-a621-c546-bed6fe7c8267!MerchandisingService!10.98.28.84!v3soa1core[]
+      X-Ebay-Soa-Response-Data-Format:
+      - XML
+      X-Ebay-Soa-Service-Metrics:
+      - '95383394'
+      X-Ebay-Soa-Service-Name:
+      - "{http://www.ebay.com/marketplace/services}MerchandisingService"
+      X-Ebay-Soa-Service-Version:
+      - 1.5.0
+      Date:
+      - Wed, 30 Apr 2014 10:14:56 GMT
+      Transfer-Encoding:
+      - ''
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0' encoding='UTF-8'?><getSimilarItemsResponse xmlns="http://www.ebay.com/marketplace/services"><ack>Failure</ack><errorMessage><error><errorId>10</errorId><domain>Marketplace</domain><severity>Error</severity><category>Application</category><message>Invalid
+        item ID. Item does not exist or has ended more than two weeks ago.</message><subdomain>Merchandising</subdomain></error></errorMessage><version>1.5.0</version><timestamp>2014-04-30T10:14:56.989Z</timestamp></getSimilarItemsResponse>
+    http_version: 
+  recorded_at: Wed, 30 Apr 2014 10:14:57 GMT
+recorded_with: VCR 2.9.0

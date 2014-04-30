@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://svcs.ebay.com/MerchandisingService?CONSUMER-ID=APP_ID&OPERATION-NAME=getMostWatchedItems&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SERVICE-NAME=MerchandisingService&SERVICE-VERSION=1.5.0&maxResults=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.33.0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Esb-Endpointurl:
+      - "/Root/ESBFunctions/Services/Ports/7002/profile/ns/v1/MerchandisingService/destination_default/address_synapse"
+      X-Ebay-Esb-Guid:
+      - urn:uuid:45792E3ED2DCB6FA3A1399640936114
+      X-Ebay-Soa-Locale-List:
+      - en-US_US
+      X-Ebay-Soa-Message-Protocol:
+      - NONE
+      X-Ebay-Soa-Operation-Name:
+      - getMostWatchedItems
+      X-Ebay-Soa-Request-Id:
+      - 145b2214-4de0-a566-06f2-8e02fc78f7a6!MerchandisingService!10.86.96.111!v3soa1core[]
+      X-Ebay-Soa-Response-Data-Format:
+      - XML
+      X-Ebay-Soa-Service-Metrics:
+      - '34911512'
+      X-Ebay-Soa-Service-Name:
+      - "{http://www.ebay.com/marketplace/services}MerchandisingService"
+      X-Ebay-Soa-Service-Version:
+      - 1.5.0
+      Date:
+      - Wed, 30 Apr 2014 10:14:55 GMT
+      Transfer-Encoding:
+      - ''
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0' encoding='UTF-8'?><getMostWatchedItemsResponse xmlns="http://www.ebay.com/marketplace/services"><ack>Success</ack><version>1.5.0</version><timestamp>2014-04-30T10:14:55.997Z</timestamp><itemRecommendations><item><itemId>230941040324</itemId><title>10.1"
+        Google Android 4.03 Tablet PC 8GB 1GB DDR3 HDMI Bundle 10" Keyboard</title><viewItemURL>http://www.ebay.com/itm/10-1-Google-Android-4-03-Tablet-PC-8GB-1GB-DDR3-HDMI-Bundle-10-Keyboard-/230941040324?_trksid=m8&amp;_trkparms=algo%3DMW%26itu%3DUCC%26otn%3D3%26ps%3D50</viewItemURL><globalId>EBAY-US</globalId><timeLeft>P29DT14H14M38S</timeLeft><primaryCategoryId>58058</primaryCategoryId><primaryCategoryName>Computers/Tablets
+        &amp; Networking</primaryCategoryName><subtitle>iRulu Brand, Capacitive, HDMI,
+        Ethernet Port, Promotion</subtitle><buyItNowPrice currencyId="USD">99.99</buyItNowPrice><country>US</country><imageURL>http://thumbs1.ebaystatic.com/m/mmYUa5s9B_XqrqFr97AEj1A/80.jpg</imageURL><shippingType>FlatDomesticCalculatedInternational</shippingType><watchCount>31316</watchCount></item><item><itemId>231002425923</itemId><title>8GB
+        iRulu 7" Android 4.0 Tablet PC Cortex A8 Dual Cameras w/ Keyboard&amp;Earphone</title><viewItemURL>http://www.ebay.com/itm/8GB-iRulu-7-Android-4-0-Tablet-PC-Cortex-A8-Dual-Cameras-w-Keyboard-Earphone-/231002425923?_trksid=m8&amp;_trkparms=algo%3DMW%26itu%3DUCC%26otn%3D3%26ps%3D50</viewItemURL><globalId>EBAY-US</globalId><timeLeft>P14DT20H45M43S</timeLeft><primaryCategoryId>58058</primaryCategoryId><primaryCategoryName>Computers/Tablets
+        &amp; Networking</primaryCategoryName><buyItNowPrice currencyId="USD">53.98</buyItNowPrice><country>US</country><imageURL>http://thumbs4.ebaystatic.com/m/mqiyZHuGfE7WSeQbr_HnS6A/80.jpg</imageURL><shippingType>FlatDomesticCalculatedInternational</shippingType><watchCount>19933</watchCount></item><item><itemId>170848931666</itemId><title>HTC
+        Droid Incredible Verizon Wireless Wifi 8.0 MP Camera 8GB Android Cell Phone</title><viewItemURL>http://www.ebay.com/itm/HTC-Droid-Incredible-Verizon-Wireless-Wifi-8-0-MP-Camera-8GB-Android-Cell-Phone-/170848931666?_trksid=m8&amp;_trkparms=algo%3DMW%26itu%3DUCC%26otn%3D3%26ps%3D50</viewItemURL><globalId>EBAY-US</globalId><timeLeft>P15DT6H52M37S</timeLeft><primaryCategoryId>15032</primaryCategoryId><primaryCategoryName>Cell
+        Phones &amp; Accessories</primaryCategoryName><subtitle>Free Shipping * No
+        Contract Required * $50 Free Extras</subtitle><buyItNowPrice currencyId="USD">54.95</buyItNowPrice><country>US</country><imageURL>http://thumbs3.ebaystatic.com/m/mS221Gb-K5tNcBwhxq2iIJQ/80.jpg</imageURL><shippingCost
+        currencyId="USD">0.0</shippingCost><shippingType>Flat</shippingType><watchCount>16756</watchCount><discountPriceInfo><originalRetailPrice
+        currencyId="USD">500.0</originalRetailPrice><pricingTreatment>STP</pricingTreatment><soldOnEbay>false</soldOnEbay><soldOffEbay>false</soldOffEbay></discountPriceInfo></item></itemRecommendations></getMostWatchedItemsResponse>
+    http_version: 
+  recorded_at: Wed, 30 Apr 2014 10:14:56 GMT
+recorded_with: VCR 2.9.0

@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=getHistograms&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD=&SECURITY-APPNAME=APP_ID&SECURITY-VERSION=1.12.0&categoryId=11233
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.33.0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Server:
+      - Apache-Coyote/1.1
+      X-Ebay-Esb-Endpointurl:
+      - "/Root/ESBFunctions/Services/Ports/7002/profile/search/v1/FindingService/destination_default/address_synapse"
+      X-Ebay-Esb-Guid:
+      - urn:uuid:499F388F2AD4CBCAEC1400817543549
+      X-Ebay-Soa-Locale-List:
+      - en-US_US
+      X-Ebay-Soa-Message-Protocol:
+      - NONE
+      X-Ebay-Soa-Operation-Name:
+      - getHistograms
+      X-Ebay-Soa-Request-Id:
+      - 145b2213-cbd0-a0a2-2ce7-b547ffede688!FindingService!10.10.34.206!v3apifindingcore[!FindItemServiceNextGen!10.10.34.206!v3apifindingcore[]]
+      X-Ebay-Soa-Response-Data-Format:
+      - XML
+      X-Ebay-Soa-Service-Metrics:
+      - '872128715'
+      X-Ebay-Soa-Service-Name:
+      - "{http://www.ebay.com/marketplace/search/v1/services}FindingService"
+      X-Ebay-Soa-Service-Version:
+      - 1.12.0
+      Date:
+      - Wed, 30 Apr 2014 10:14:54 GMT
+      Transfer-Encoding:
+      - ''
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0' encoding='UTF-8'?><getHistogramsResponse xmlns="http://www.ebay.com/marketplace/search/v1/services"><ack>Success</ack><version>1.12.0</version><timestamp>2014-04-30T10:14:54.760Z</timestamp><categoryHistogramContainer><categoryHistogram><categoryId>11233</categoryId><categoryName>Music</categoryName><count>6455420</count><childCategoryHistogram><categoryId>176985</categoryId><categoryName>Records</categoryName><count>3109095</count></childCategoryHistogram><childCategoryHistogram><categoryId>176984</categoryId><categoryName>CDs</categoryName><count>2744359</count></childCategoryHistogram><childCategoryHistogram><categoryId>31608</categoryId><categoryName>Wholesale
+        Lots</categoryName><count>244531</count></childCategoryHistogram><childCategoryHistogram><categoryId>176983</categoryId><categoryName>Cassettes</categoryName><count>150942</count></childCategoryHistogram><childCategoryHistogram><categoryId>618</categoryId><categoryName>Other
+        Formats</categoryName><count>46040</count></childCategoryHistogram><childCategoryHistogram><categoryId>52473</categoryId><categoryName>Storage
+        &amp; Media Accessories</categoryName><count>11603</count></childCategoryHistogram></categoryHistogram></categoryHistogramContainer><conditionHistogramContainer><conditionHistogram><condition><conditionId>3000</conditionId><conditionDisplayName>Like
+        New</conditionDisplayName></condition><count>2466241</count></conditionHistogram><conditionHistogram><condition><conditionId>1000</conditionId><conditionDisplayName>Brand
+        New</conditionDisplayName></condition><count>2009419</count></conditionHistogram><conditionHistogram><condition><conditionId>4000</conditionId><conditionDisplayName>Very
+        Good</conditionDisplayName></condition><count>856471</count></conditionHistogram><conditionHistogram><condition><conditionId>2750</conditionId><conditionDisplayName>Like
+        New</conditionDisplayName></condition><count>492805</count></conditionHistogram><conditionHistogram><condition><conditionId>5000</conditionId><conditionDisplayName>Good</conditionDisplayName></condition><count>275000</count></conditionHistogram><conditionHistogram><condition><conditionId>6000</conditionId><conditionDisplayName>Acceptable</conditionDisplayName></condition><count>66316</count></conditionHistogram><conditionHistogram><condition><conditionId>1500</conditionId></condition><count>846</count></conditionHistogram><conditionHistogram><condition><conditionId>2500</conditionId></condition><count>1</count></conditionHistogram></conditionHistogramContainer></getHistogramsResponse>
+    http_version: 
+  recorded_at: Wed, 30 Apr 2014 10:14:55 GMT
+recorded_with: VCR 2.9.0
