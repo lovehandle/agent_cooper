@@ -1,7 +1,11 @@
 shared_examples_for "Request" do
 
-  before(:each) do
+  before do
     AgentCooper::Config.app_id = app_id
+  end
+
+  after do
+    AgentCooper::Config.app_id = nil
   end
 
   let(:app_id)   { "12345ABCDE" }
